@@ -11,13 +11,48 @@ Edited: Yoav Wald, May 2018
 
 """
 import numpy as np
-from ex4_tools import *
+from util import Counter
+from scipy.stats import *
+
+#############################################
+# ID3:
+#############################################
+
+def get_iv(index_of_attribute, examples):
+    c = Counter()
+    for ex in examples:
+        c[ex[index_of_attribute]] += 1
+    percentages = np.array(list(c.values()))
+    percentages = percentages / len(examples)
+    return entropy(percentages, base=2)
+
+
+def get_ig(index_of_attribute, examples):
+    ig = 0
+    param = parameters[index_of_attribute]
+    for i in param:
+        att_examples = examples[examples[:, index_of_attribute] == i]
+        if len(att_examples) == 0:
+            continue
+        ig += (len(att_examples) / len(examples)) * get_entropy(att_examples)
+    return ig
+
+def get_entropy(examples):
+    count_goal = len(examples[examples[:, -1] == True])
+    p = count_goal / len(examples)
+    return entropy((p, 1 - p), base=2)
+
+#############################################
+# ID3 end
+#############################################
+
+
 
 class Node(object):
     """ A node in a real-valued decision tree.
         Set all the attributes properly for viewing the tree after training.
     """
-    def __init__(self,leaf = True,left = None,right = None,samples = 0,feature = None,theta = 0.5,misclassification = 0,label = None):
+    def __init__(self,leaf = True,children=None,samples = 0,attribute = None,misclassification = 0,label = None):
         """
         Parameters
         ----------
@@ -30,11 +65,9 @@ class Node(object):
         label : the label of the node, if it is a leaf
         """
         self.leaf = leaf
-        self.left = left
-        self.right = right
+        self.children = children
         self.samples = samples
-        self.feature = feature
-        self.theta = theta
+        self.attribute = attribute
         self.label = label
 
 
@@ -44,9 +77,9 @@ class DecisionTree(object):
         Training method: CART
     """
 
-    def __init__(self,max_depth):
+    def __init__(self,epsilon=0.01):
         self.root = None
-        self.max_depth = max_depth
+        self.epsilon = epsilon
 
     def train(self, X, y):
         """
