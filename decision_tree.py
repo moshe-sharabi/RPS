@@ -15,6 +15,15 @@ from util import Counter
 from scipy.stats import *
 
 #############################################
+# constants:
+#############################################
+
+Rock = 'R'
+Paper = 'P'
+Scissors = 'S'
+Choices = [Rock, Paper, Scissors]
+
+#############################################
 # ID3:
 #############################################
 
@@ -29,18 +38,20 @@ def get_iv(index_of_attribute, examples):
 
 def get_ig(index_of_attribute, examples):
     ig = 0
-    param = parameters[index_of_attribute]
-    for i in param:
-        att_examples = examples[examples[:, index_of_attribute] == i]
+    attribute_parameters = parameters[index_of_attribute]
+    for param in attribute_parameters:
+        att_examples = examples[examples[:, index_of_attribute] == param]
         if len(att_examples) == 0:
             continue
         ig += (len(att_examples) / len(examples)) * get_entropy(att_examples)
     return ig
 
 def get_entropy(examples):
-    count_goal = len(examples[examples[:, -1] == True])
-    p = count_goal / len(examples)
-    return entropy((p, 1 - p), base=2)
+    counts = []
+    for choice in Choices:
+        counts.append(len(examples[examples[:, -1] == choice]))
+    counts = np.array(counts) / len(examples)
+    return entropy(counts, base=2)
 
 #############################################
 # ID3 end
@@ -79,15 +90,15 @@ class DecisionTree(object):
 
     def __init__(self,epsilon=0.01):
         self.root = None
-        self.epsilon = epsilon
+        self.epsilon = epsilon  # todo use epsilon to prun
 
-    def train(self, X, y):
+    def train(self, examples):
         """
         Train this classifier over the sample (X,y)
         """
-        self.root = self.CART(X,y,np.transpose(X), 0)
+        self.root = self.CART(examples)
 
-    def CART(self,X, y, A, depth):
+    def CART(self, examples, available_indexes):
         """
         Gorw a decision tree with the CART method ()
 
@@ -101,52 +112,40 @@ class DecisionTree(object):
         -------
         node : an instance of the class Node (can be either a root of a subtree or a leaf)
         """
-        if len(X) == 0:
+        if len(examples) == 0:
             return Node(leaf=True, label=1)
 
-        if np.allclose(y, y[0]):  # if all the samples classifications are the same
-            return Node(leaf=True, label=y[0])
+        if np.allclose(examples[:,-1], examples[0,-1]):  # if all the samples classifications are the same
+            return Node(leaf=True, label=examples[0,-1])
 
-        if depth == self.max_depth:
-            return Node(samples=X, label=(1 if sum(y) >=0 else -1), leaf=True)
+        best_attribute_index = self.find_classification(examples, available_indexes)
+        remaining_indexes = available_indexes.copy()
+        remaining_indexes.remove(best_attribute_index)
 
-        feature, threshhold, X1, y1, X2, y2 = self.find_classification(X, y, A)
-        return Node(leaf=False, samples=X, feature=feature, theta=threshhold,
-                    left=self.CART(X1, y1, np.transpose(X1), depth + 1),
-                    right=self.CART(X2, y2, np.transpose(X2), depth + 1))
+        children = []
+        for param in parameters[best_attribute_index]:
+            children.append(self.CART(examples[examples[:,best_attribute_index == param]], remaining_indexes))
 
-    def find_classification(self, X, y, A):
+        return Node(leaf=False, samples=examples, attribute=best_attribute_index,
+                    children=children)
+
+    def find_classification(self, examples, available_indexes):
         """
         finds the best values for f, theta. also returns X1,y1,X2,y2 - the groups those values divide to.
 
         X, y : sample
         A : array of d*m real features, A[j,:] row corresponds to thresholds over x_j
         """
-        best_misclass = np.inf
+        H_ex = get_entropy(examples)
+        igrs = {}
+        for index in available_indexes:
+            iv = get_iv(index, examples)
+            ig = H_ex - get_ig(index, examples)
+            igr = ig / iv
+            igrs[index] = igr
+        best_att_index = max(igrs, key=lambda x: igrs[x])
 
-        for feature in range(len(A)):
-            for threshhold in A[feature]:
-
-                group_1 = X[:, feature] <= threshhold
-                group_2 = np.logical_not(group_1)
-
-                X1, y1 = X[group_1], y[group_1]
-                X2, y2 = X[group_2], y[group_2]
-
-                y1_label = 1 if sum(y1) > 0 else -1
-                y2_label = 1 if sum(y2) > 0 else -1
-
-                cur_misclass = sum(y1 != y1_label) + sum(y2 != y2_label)
-                if cur_misclass < best_misclass:
-                    best_misclass = cur_misclass
-                    best_feature = feature
-                    best_threshold = threshhold
-                    best_X1 = X1
-                    best_X2 = X2
-                    best_y1 = y1
-                    best_y2 = y2
-
-        return best_feature, best_threshold, best_X1, best_y1, best_X2, best_y2
+        return best_att_index
 
 
 
