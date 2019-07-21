@@ -13,6 +13,7 @@ Edited: Yoav Wald, May 2018
 import numpy as np
 from util import Counter
 from scipy.stats import *
+from Constants import *
 
 #############################################
 # constants:
