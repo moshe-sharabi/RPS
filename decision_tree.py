@@ -39,7 +39,7 @@ def get_iv(index_of_attribute, examples):
 
 def get_ig(index_of_attribute, examples):
     ig = 0
-    attribute_parameters = parameters[index_of_attribute]
+    attribute_parameters = parameters[attribute_names[index_of_attribute]]
     for param in attribute_parameters:
         att_examples = examples[examples[:, index_of_attribute] == param]
         if len(att_examples) == 0:
@@ -124,7 +124,7 @@ class DecisionTree(object):
         remaining_indexes.remove(best_attribute_index)
 
         children = []
-        for param in parameters[best_attribute_index]:
+        for param in parameters[attribute_names[best_attribute_index]]:
             children.append(self.CART(examples[examples[:,best_attribute_index == param]], remaining_indexes))
 
         return Node(leaf=False, samples=examples, attribute=best_attribute_index,
