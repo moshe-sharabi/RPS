@@ -42,13 +42,16 @@ LAST_PLAYED = "last played"
 attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_PLAYED_AFTER_COMP_MOVE, LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE]
 attribute_functions = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful, get_most_played_after_comp_move, get_last_sequence_length, get_pattern_next_choice]
 
+MAX_LAST_SEQUENCE_S_LENGTH = 5
+PARAM_MAX_LAST_SEQUENCE_S_LENGTH = str(MAX_LAST_SEQUENCE_S_LENGTH) + '+'
+
 parameters = {
     LAST_PLAYED: Choices,
     MOST_PLAYED: Choices,
     MOST_PLAYED_IN_LAST_10: Choices,
     MOST_SUCCESSFUL: Choices,
     MOST_PLAYED_AFTER_COMP_MOVE: Choices,
-    LAST_SEQUENCE_S_LENGTH: [1, 2, 3, 4, '5+'],
+    LAST_SEQUENCE_S_LENGTH: [1, 2, 3, 4, PARAM_MAX_LAST_SEQUENCE_S_LENGTH],
     PATTERN_S_NEXT_CHOICE: Choices + [NOT_AVAILABLE]
 
 }

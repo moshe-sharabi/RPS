@@ -44,6 +44,8 @@ def get_last_sequence_length(history):
         if game[INDEX_OF_PLAY] != sequence_play:
             return i
         i += 1
+    if i >= 5:
+        return PARAM_MAX_LAST_SEQUENCE_S_LENGTH
     return i
 
 def get_pattern_next_choice(history):
