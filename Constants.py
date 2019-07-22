@@ -1,5 +1,6 @@
 from attribute_functions import *
 
+
 Rock = 'R'
 Paper = 'P'
 Scissors = 'S'
@@ -20,6 +21,7 @@ neg = {
 WIN = 'W'
 DRAW = 'D'
 LOSS = 'L'
+NOT_AVAILABLE = 'N'
 
 points = {
     WIN: 1,
@@ -47,6 +49,6 @@ parameters = {
     MOST_SUCCESSFUL: Choices,
     MOST_PLAYED_AFTER_COMP_MOVE: Choices,
     LAST_SEQUENCE_S_LENGTH: [1, 2, 3, 4, '5+'],
-    PATTERN_S_NEXT_CHOICE: Choices + ['N']
+    PATTERN_S_NEXT_CHOICE: Choices + [NOT_AVAILABLE]
 
 }

@@ -55,4 +55,12 @@ def get_pattern_next_choice(history):
         set2 = history_no_results[1-i:]
         if set1[:-1] == set2:
             return set1[-1]
-    return
+    # for i=2 we check for at least 2 full patterns before this one
+    # i.e. R,S,R,S,R - next this function predicts R
+    if len(history) >= 5:
+        set1 = history_no_results[-5:-3]
+        set2 = history_no_results[-3:-1]
+        if set1 == set2 and set1[0] == history_no_results[-1]:
+            return set1[1]
+    # no pattern was found
+    return NOT_AVAILABLE
