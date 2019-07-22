@@ -5,7 +5,17 @@ Paper = 'P'
 Scissors = 'S'
 Choices = [Rock, Paper, Scissors]
 
-neg = {'PW': 'RL', 'PL': 'SW', 'PD': 'PD', 'RW': 'SL', 'RL': 'PW', 'RD': 'RD', 'SW': 'PL', 'SL': 'RW', 'SD': 'SD'}
+neg = {
+    'PW': 'RL',
+    'PL': 'SW',
+    'PD': 'PD',
+    'RW': 'SL',
+    'RL': 'PW',
+    'RD': 'RD',
+    'SW': 'PL',
+    'SL': 'RW',
+    'SD': 'SD'
+}
 
 WIN = 'W'
 DRAW = 'D'
