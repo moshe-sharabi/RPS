@@ -29,9 +29,11 @@ def get_most_successful(history):
     return c.argMax()
 
 def get_most_played_after_comp_move(history):
+    last_comp_play = neg[history[-1]][INDEX_OF_PLAY]
     c = Counter()
     for i in range(len(history)-1):
-        pass
+        if neg[history[i]][INDEX_OF_PLAY] == last_comp_play:
+            c[history[i+1][INDEX_OF_PLAY]] += 1
     return c.argMax()
 
 def get_last_sequence_length(history):
