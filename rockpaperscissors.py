@@ -8,6 +8,8 @@ scores = [0, 0]
 PLAYER_SCORE_INDEX = 0
 COMPUTER_SCORE_INDEX = 1
 scores_text = "SCORE:\nyou: {}\ncomputer: {}"
+
+
 # done
 ########################
 
@@ -56,7 +58,6 @@ def turn(userChoice):
     scores_textbox.configure(text=scores_text.format(scores[0], scores[1]))
 
 
-
 # main program
 mainWindow = Tk()
 mainWindow.title("Rock-Paper-Scissors by Nahaliel")
@@ -86,7 +87,8 @@ turnResult = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
 your_choice = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
 ai_choice = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
 ai_choice = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-scores_textbox = Label(mainWindow, width=20, text=scores_text.format(scores[0], scores[1]), justify=CENTER, font=("Helvetica", 20), fg="blue")
+scores_textbox = Label(mainWindow, width=20, text=scores_text.format(scores[0], scores[1]), justify=CENTER,
+                       font=("Helvetica", 20), fg="blue")
 
 # Tk GUI grid
 rockButton.grid(row=2, column=1)
