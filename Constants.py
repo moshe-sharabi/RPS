@@ -40,7 +40,17 @@ MOST_PLAYED_IN_LAST_10 = "most played in last 10"
 MOST_PLAYED = "most played"
 LAST_PLAYED = "last played"
 attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_PLAYED_AFTER_COMP_MOVE, LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE]
-attribute_functions = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful, get_most_played_after_comp_move, get_last_sequence_length, get_pattern_next_choice]
+num_rock = num_smth(Rock)
+num_scissors = num_smth(Scissors)
+num_paper = num_smth(Paper)
+last_seq_rock = sequence_smth(Rock)
+last_seq_paper = sequence_smth(Paper)
+last_seq_scissors = sequence_smth(Scissors)
+
+attribute_functions = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful,
+                       get_most_played_after_comp_move, get_last_sequence_length, get_pattern_next_choice,
+                       num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock, last_seq_paper,
+                       last_seq_scissors]
 
 MAX_LAST_SEQUENCE_S_LENGTH = 5
 PARAM_MAX_LAST_SEQUENCE_S_LENGTH = str(MAX_LAST_SEQUENCE_S_LENGTH) + '+'

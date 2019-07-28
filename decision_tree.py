@@ -14,6 +14,7 @@ import numpy as np
 from util import Counter
 from scipy.stats import *
 from Constants import *
+import json
 
 #############################################
 # constants:
@@ -27,6 +28,23 @@ Choices = [Rock, Paper, Scissors]
 #############################################
 # ID3:
 #############################################
+
+def read_histories(path):
+    """
+    parses the file to get a list of attributes according to the histories in the file
+    :param path: the path of file
+    :return: a list of attributes per history
+    """
+    file_str = open(path).read()
+    histories_str = file_str.split("\n")
+    histories_str = [history.split(" ") for history in histories_str]
+    ##histories_attributes = [[func(history)for func in attribute_functions] for history in histories_str[:-1]]
+    histories_attributes = []
+    for history in histories_str:
+        if history[0] != "":
+            histories_attributes.append([func(history)for func in attribute_functions])
+    return histories_attributes
+
 
 def get_iv(index_of_attribute, examples):
     c = Counter()
@@ -58,6 +76,24 @@ def get_entropy(examples):
 # ID3 end
 #############################################
 
+def save_tree_helper(node):
+    """
+    a helper function for saving the tree as ajson file
+    :param node: the node
+    :return: dictionary that desribes the sub tree in the node
+    """
+    node_dic = {}
+    node_dic["leaf"] = node.leaf
+    node_dic["samples"] = node.samples
+    node_dic['attribute'] = node.feature
+    node_dic["theta"] = node.theta
+    node_dic["label"] = node.label
+    if node.leaf:
+        node_dic['children'] = None
+        return node_dic
+    else:
+        node_dic['children'] = [save_tree_helper(child) for child in node.children]
+        return node_dic
 
 
 class Node(object):
@@ -82,6 +118,19 @@ class Node(object):
         self.attribute = attribute
         self.label = label
 
+def parse_dic_helper(dic):
+    """
+    a helper function to parse the dictionary to create a sub tree
+    :param dic: dictionary describing the sub tree
+    :return: the root of the sub tree
+    """
+    cur_node = Node(leaf=dic['leaf'], samples=dic['samples'], attribute=dic['attribute'], label=dic['label'])
+    if dic['leaf']:
+        return cur_node
+    else:
+        cur_children = [parse_dic_helper(child) for child in dic["children"]]
+        cur_node.children = cur_children
+        return cur_children
 
 class DecisionTree(object):
     """ A decision tree for binary classification.
@@ -89,15 +138,29 @@ class DecisionTree(object):
         Training method: CART
     """
 
-    def __init__(self,epsilon=0.01):
+    def __init__(self,epsilon=0.01, tree_path=None):
         self.root = None
         self.epsilon = epsilon  # todo use epsilon to prun
+        if tree_path is not None:
+            self.parse_tree_dic(tree_path)
 
     def train(self, examples):
         """
         Train this classifier over the sample (X,y)
         """
         self.root = self.CART(examples)
+
+    def parse_tree_dic(self,  tree_path):
+        """
+        parsing the tree from the json file
+        :param tree_path: the path of the json fille
+        :return: none
+        """
+        dic = {}
+        with open(tree_path, 'r') as fp:
+            dic = json.load(fp)
+        fp.close()
+        self.root = parse_dic_helper(dic)
 
     def CART(self, examples, available_indexes):
         """
@@ -179,3 +242,16 @@ class DecisionTree(object):
         the error of this classifier over the sample (X,y)
         """
         return sum(np.not_equal(self.predict(X), y)) / len(y)
+
+    def save_tree(self, path):
+        """
+        saves the current tree as a json file
+        :param path: the path the tree wil be stored
+        :return: none
+        """
+        dic = save_tree_helper(self.root)
+        with open(path, 'w') as fp:
+            json.dump(dic, fp, indent=1)
+        fp.close()
+
+
