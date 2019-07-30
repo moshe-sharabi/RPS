@@ -33,7 +33,7 @@ def get_most_played_after_comp_move(history):
     for i in range(len(history)-1):
         if cons.neg[history[i]][cons.INDEX_OF_PLAY] == last_comp_play:
             c[history[i+1][cons.INDEX_OF_PLAY]] += 1
-    return c.argMax()
+    return c.argMax() if c.argMax() else cons.NOT_AVAILABLE
 
 def get_last_sequence_length(history):
     sequence_play = history[-1][cons.INDEX_OF_PLAY]
@@ -92,7 +92,7 @@ def longer_sequence(history):
     for member in cons.Choices:
         flag = False
         counter = 0
-        for i in range(len(history) - 1, 0, -1):
+        for i in range(len(history) - 1, -1, -1):
             if history[i][cons.INDEX_OF_PLAY] == member:
                 flag = True
                 c[member] += 1
