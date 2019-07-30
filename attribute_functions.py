@@ -9,7 +9,7 @@ class HistoryException(ValueError):
 def get_last_played(history):
     if not history:
         raise HistoryException
-    return history[-1][0]
+    return history[-1][cons.INDEX_OF_PLAY]
 
 def get_most_played(history):
     c = Counter()
