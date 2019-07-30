@@ -1,5 +1,4 @@
 from util import Counter
-import Constants as cons
 
 
 class HistoryException(ValueError):
@@ -122,3 +121,5 @@ def sequence_smth(member):
             return cons.PARAM_MAX_LENGTH
         return counter#/float(len(history))
     return count
+
+import Constants as cons
