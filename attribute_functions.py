@@ -78,6 +78,8 @@ def num_smth(member):
         for move in history:
             if move[cons.INDEX_OF_PLAY] == member:
                 counter += 1
+        if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
+            return cons.PARAM_MAX_LENGTH
         return counter#/float(len(history))
     return count
 
@@ -116,5 +118,7 @@ def sequence_smth(member):
                 continue
             if flag:
                 break
+        if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
+            return cons.PARAM_MAX_LENGTH
         return counter#/float(len(history))
     return count
