@@ -1,15 +1,3 @@
-"""
-===================================================
-     Introduction to Machine Learning (67577)
-===================================================
-
-Skeleton for the decision tree classifier with real-values features.
-Training algorithm: CART
-
-Author: Noga Zaslavsky
-Edited: Yoav Wald, May 2018
-
-"""
 import numpy as np
 from util import Counter
 from scipy.stats import *
@@ -153,7 +141,7 @@ class DecisionTree(object):
     def parse_tree_dic(self,  tree_path):
         """
         parsing the tree from the json file
-        :param tree_path: the path of the json fille
+        :param tree_path: the path of the json file
         :return: none
         """
         dic = {}
