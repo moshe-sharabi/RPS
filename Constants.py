@@ -39,7 +39,16 @@ MOST_SUCCESSFUL = "most successful"
 MOST_PLAYED_IN_LAST_10 = "most played in last 10"
 MOST_PLAYED = "most played"
 LAST_PLAYED = "last played"
-attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_PLAYED_AFTER_COMP_MOVE, LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE]
+NUM_ROCK = "num rock"
+NUM_SCISSORS = "num scissors"
+NUM_PAPER = "num paper"
+LONGER_SEQUENCE = "longer sequence"
+LAST_SEQ_ROCK = "last sequence rock"
+LAST_SEQ_SCISSORS = "last sequence scissors"
+LAST_SEQ_PAPER = "last sequence paper"
+attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_PLAYED_AFTER_COMP_MOVE,
+                   LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE, NUM_ROCK, NUM_SCISSORS, NUM_PAPER, LONGER_SEQUENCE,
+                   LAST_SEQ_ROCK, LAST_SEQ_SCISSORS, LAST_SEQ_PAPER]
 num_rock = num_smth(Rock)
 num_scissors = num_smth(Scissors)
 num_paper = num_smth(Paper)
@@ -52,8 +61,10 @@ attribute_functions = [get_last_played, get_most_played, get_most_playedd_in_las
                        num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock, last_seq_paper,
                        last_seq_scissors]
 
-MAX_LAST_SEQUENCE_S_LENGTH = 5
-PARAM_MAX_LAST_SEQUENCE_S_LENGTH = str(MAX_LAST_SEQUENCE_S_LENGTH) + '+'
+# MAX_LAST_SEQUENCE_S_LENGTH = 5
+MAX_LENGTH_FOR_EVERYTHING = 5
+PARAM_MAX_LENGTH = str(MAX_LENGTH_FOR_EVERYTHING) + '+'
+LENGTH_PARAMETERS = list(range(1,MAX_LENGTH_FOR_EVERYTHING)) + [PARAM_MAX_LENGTH]
 
 parameters = {
     LAST_PLAYED: Choices,
@@ -61,7 +72,15 @@ parameters = {
     MOST_PLAYED_IN_LAST_10: Choices,
     MOST_SUCCESSFUL: Choices,
     MOST_PLAYED_AFTER_COMP_MOVE: Choices,
-    LAST_SEQUENCE_S_LENGTH: [1, 2, 3, 4, PARAM_MAX_LAST_SEQUENCE_S_LENGTH],
-    PATTERN_S_NEXT_CHOICE: Choices + [NOT_AVAILABLE]
-
+    LAST_SEQUENCE_S_LENGTH: LENGTH_PARAMETERS,
+    PATTERN_S_NEXT_CHOICE: Choices + [NOT_AVAILABLE],
+    NUM_ROCK: LENGTH_PARAMETERS,
+    NUM_SCISSORS: LENGTH_PARAMETERS,
+    NUM_PAPER: LENGTH_PARAMETERS,
+    LONGER_SEQUENCE: Choices,
+    LAST_SEQ_ROCK: LENGTH_PARAMETERS,
+    LAST_SEQ_SCISSORS: LENGTH_PARAMETERS,
+    LAST_SEQ_PAPER: LENGTH_PARAMETERS
 }
+
+assert len(attribute_names) == len(attribute_functions) == len(parameters)
