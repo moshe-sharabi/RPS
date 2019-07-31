@@ -1,5 +1,8 @@
+import os
+
 from attribute_functions import *
 from Constants import *
+import glob
 
 def read_histories(path):
     """
@@ -35,3 +38,14 @@ def get_parameters_and_predictions_for_history_length(games, length):
             game_prediction = game[length][INDEX_OF_PLAY]
             parameters_and_predictions.append(game_parameters + [game_prediction])
     return parameters_and_predictions, long_enough_games
+
+
+# main:
+example_folder_name = 'examples'
+example_folder = os.path.join('.', example_folder_name)
+example_files = glob.glob(os.path.join(example_folder, '*.txt'))
+example_games = []
+for path in example_files:
+    example_games += read_histories(path)
+print(len(example_games))
+
