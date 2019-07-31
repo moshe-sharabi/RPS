@@ -1,5 +1,5 @@
 import os
-
+from decision_tree import *
 from attribute_functions import *
 from Constants import *
 import glob
@@ -26,7 +26,7 @@ def get_parameters_and_predictions_for_history_length(games, length):
 
     if length == 0:
         # returns only a prediction (most played on first match)
-        played = [game[0][INDEX_OF_PLAY] for game in games]
+        played = [game[0] for game in games]
         return get_most_played(played)
 
     long_enough_games = []
@@ -34,7 +34,7 @@ def get_parameters_and_predictions_for_history_length(games, length):
     for game in games:
         if len(game) >= length+1:
             long_enough_games.append(game)
-            game_parameters = [func(game[:length])for func in attribute_functions]
+            game_parameters = [func(game[:length]) for func in attribute_functions_list]
             game_prediction = game[length][INDEX_OF_PLAY]
             parameters_and_predictions.append(game_parameters + [game_prediction])
     return parameters_and_predictions, long_enough_games
@@ -44,8 +44,22 @@ def get_parameters_and_predictions_for_history_length(games, length):
 example_folder_name = 'examples'
 example_folder = os.path.join('.', example_folder_name)
 example_files = glob.glob(os.path.join(example_folder, '*.txt'))
+tree_folder_name = 'trees'
+tree_folder = os.path.join('.', tree_folder_name)
 example_games = []
 for path in example_files:
     example_games += read_histories(path)
-print(len(example_games))
+
+examples = []
+example, example_games = get_parameters_and_predictions_for_history_length(example_games, 1)
+example = np.array(example)
+# print(example)
+examples.append(example)
+trees = []
+new_tree = DecisionTree()
+new_tree.CART(examples[-1])
+print(new_tree.root)
+trees.append(new_tree)
+trees[-1].save_tree(os.path.join(tree_folder, 'tree' + str(len(trees))))
+
 
