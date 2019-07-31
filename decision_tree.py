@@ -1,3 +1,5 @@
+import random
+
 from util import Counter
 from scipy.stats import *
 from Constants import *
@@ -40,7 +42,14 @@ class Prediction:
         scores[Rock] = self.scissors_percentage - self.paper_percentage
         scores[Paper] = self.rock_percentage - self.scissors_percentage
         scores[Scissors] = self.paper_percentage - self.rock_percentage
-        return scores.argMax()
+        best_score = scores[scores.argMax()]
+        choose_from = []
+        for choice in Choices:
+            if scores[choice] == best_score:
+                choose_from.append(choice)
+        if not choose_from:
+            return scores.argMax()
+        return random.choice(choose_from)
 
     def __str__(self):
         return str((self.rock_percentage, self.paper_percentage, self.scissors_percentage))
@@ -151,7 +160,7 @@ def parse_dic_helper(dic):
     :param dic: dictionary describing the sub tree
     :return: the root of the sub tree
     """
-    cur_node = Node(leaf=dic['leaf'], samples=dic['samples'], attribute=dic['attribute'], label=dic['label'])
+    cur_node = Node(leaf=dic['leaf'], attribute=dic['attribute'], label=dic['label'])
     if dic['leaf']:
         return cur_node
     else:
