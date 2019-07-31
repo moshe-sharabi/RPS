@@ -79,8 +79,8 @@ parameters = {
     NUM_PAPER: LENGTH_PARAMETERS,
     LONGER_SEQUENCE: Choices,
     LAST_SEQ_ROCK: LENGTH_PARAMETERS,
+    LAST_SEQ_PAPER: LENGTH_PARAMETERS,
     LAST_SEQ_SCISSORS: LENGTH_PARAMETERS,
-    LAST_SEQ_PAPER: LENGTH_PARAMETERS
 }
 
 assert len(attribute_names) == len(attribute_functions_list) == len(parameters)
