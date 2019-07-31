@@ -120,6 +120,15 @@ def parse_dic_helper(dic):
         cur_node.children = cur_children
         return cur_children
 
+
+def all_same(lst):
+    cmp = lst[0]
+    for obj in lst:
+        if obj != cmp:
+            return False
+    return True
+
+
 class DecisionTree(object):
     """ A decision tree for binary classification.
         max_depth - the maximum depth allowed for a node in this tree.
@@ -167,7 +176,7 @@ class DecisionTree(object):
         if len(examples) == 0:
             return Node(leaf=True, label=1)
 
-        if np.allclose(examples[:,-1], examples[0,-1]):  # if all the samples classifications are the same
+        if all_same(examples[:,-1]):  # if all the samples classifications are the same
             return Node(leaf=True, label=examples[0,-1])
 
         best_attribute_index = self.find_classification(examples, available_indexes)
