@@ -2,14 +2,52 @@ from util import Counter
 from scipy.stats import *
 from Constants import *
 import json
-
-##########################################################################################
-# the following is used to prevent numpy from raising warning when comparing length parameters - 0 == '5+'
-import warnings
 import numpy as np
 
-with warnings.catch_warnings():
-    warnings.simplefilter(action='ignore', category=FutureWarning)
+##########################################################################################
+# new!
+class Prediction:
+
+    def __init__(self, rock_percentage, paper_percentage = None, scissors_percentage = None):
+        """
+        usage options:
+        * enter those 3 percentages
+        * enter ROCK/PAPER/SCISSORS which means it is the prediction 100%
+        * enter list of prediction to calculate percentages from
+        """
+        if scissors_percentage is not None:
+            self.rock_percentage = rock_percentage
+            self.paper_percentage = paper_percentage
+            self.scissors_percentage = scissors_percentage
+            return
+
+        if isinstance(rock_percentage, str):
+            self.rock_percentage = int(rock_percentage == Rock)
+            self.paper_percentage = int(rock_percentage == Paper)
+            self.scissors_percentage = int(rock_percentage == Scissors)
+            return
+
+        # in the usage case of sending all the predictioins:
+        c = Counter()
+        for prediction in rock_percentage:
+            c[prediction] += 1
+        self.rock_percentage = c[Rock] / len(rock_percentage)
+        self.paper_percentage = c[Paper] / len(rock_percentage)
+        self.scissors_percentage = c[Scissors] / len(rock_percentage)
+
+    def best_counter(self):
+        scores = Counter()
+        scores[Rock] = self.scissors_percentage - self.paper_percentage
+        scores[Paper] = self.rock_percentage - self.scissors_percentage
+        scores[Scissors] = self.paper_percentage - self.rock_percentage
+        return scores.argMax()
+
+    def __str__(self):
+        return str((self.rock_percentage, self.paper_percentage, self.scissors_percentage))
+
+    def to_string(self):
+        return str(self)
+
 ##########################################################################################
 
 
@@ -30,7 +68,7 @@ def read_histories(path):
     histories_attributes = []
     for history in histories_str:
         if history[0] != "":
-            histories_attributes.append([func(history)for func in attribute_functions])
+            histories_attributes.append([func(history) for func in attribute_functions_list])
     return histories_attributes
 
 
@@ -44,13 +82,10 @@ def get_iv(index_of_attribute, examples):
 
 
 def get_ig(index_of_attribute, examples):
-    print(index_of_attribute)
     ig = 0
     attribute_parameters = parameters[attribute_names[index_of_attribute]]
     for param in attribute_parameters:
-        with warnings.catch_warnings():  # see at the top of this file
-            warnings.simplefilter(action='ignore', category=FutureWarning)
-            indexes = examples[:, index_of_attribute] == param
+        indexes = examples[:, index_of_attribute] == param
         att_examples = examples[indexes]
         if len(att_examples) == 0:
             continue
@@ -76,15 +111,15 @@ def save_tree_helper(node):
     """
     node_dic = {}
     node_dic["leaf"] = node.leaf
-    node_dic["samples"] = node.samples
-    node_dic['attribute'] = node.feature
-    node_dic["theta"] = node.theta
-    node_dic["label"] = node.label
+    # node_dic["samples"] = node.samples
+    node_dic['attribute'] = node.attribute
     if node.leaf:
         node_dic['children'] = None
+        node_dic["label"] = node.label.to_string()
         return node_dic
     else:
         node_dic['children'] = [save_tree_helper(child) for child in node.children]
+        node_dic["label"] = node.label
         return node_dic
 
 
@@ -177,25 +212,28 @@ class DecisionTree(object):
         -------
         node : an instance of the class Node (can be either a root of a subtree or a leaf)
         """
-        return self.CART_helper(examples, set(range(len(examples[0]) - 1)))
+        self.root = self.CART_helper(examples, set(range(len(examples[0]) - 1)))
 
     def CART_helper(self, examples, available_indexes):
+        print(examples)
         if len(examples) == 0:
-            return Node(leaf=True, label=Paper)
+            return Node(leaf=True, label=Prediction(Paper))
         if all_same(examples[:,
                     -1]):  # if all the samples classifications are the same
-            return Node(leaf=True, label=examples[0, -1])
+            return Node(leaf=True, label=Prediction(examples[0, -1]))
         best_attribute_index = self.find_classification(examples, available_indexes)
+        if best_attribute_index is None: # all examples are the same, with different predictions
+            played = examples[:,-1]
+            return Node(leaf=True, label=Prediction(played))
         remaining_indexes = available_indexes.copy()
         remaining_indexes.remove(best_attribute_index)
         children = []
         for param in parameters[attribute_names[best_attribute_index]]:
-            with warnings.catch_warnings():  # see at the top of this file
-                warnings.simplefilter(action='ignore', category=FutureWarning)
-                indexes = examples[:, best_attribute_index] == param
+            indexes = examples[:, best_attribute_index] == param
+            print("child " + param + ":")
             children.append(self.CART_helper(examples[indexes], remaining_indexes))
         return Node(leaf=False, samples=examples,
-                    attribute=best_attribute_index,
+                    attribute=attribute_names[best_attribute_index],
                     children=children)
 
     def find_classification(self, examples, available_indexes):
@@ -214,6 +252,10 @@ class DecisionTree(object):
             ig = H_ex - get_ig(index, examples)
             igr = ig / iv
             igrs[index] = igr
+        print(igrs)
+
+        if not igrs: # all examples are the same, with different predictions
+            return None
         best_att_index = max(igrs, key=lambda x: igrs[x])
 
         return best_att_index
@@ -235,11 +277,15 @@ class DecisionTree(object):
     def label_value(self, x, node):
         """
         returns the prediction for x on the decision tree starting at node.
+        :type node Node
         """
         if node.leaf:
-            return node.label
-        return self.label_value(x, node.left) if x[node.feature] <= node.theta else \
-            self.label_value(x, node.right)
+            return node.label.best_counter()
+        # todo check
+        nodes_attribute_index = attribute_names.index(node.attribute)
+        xs_parameter = x[nodes_attribute_index]
+        children_num = parameters[node.attribute].index(xs_parameter)
+        return self.label_value(x, node.children[children_num])
 
 
     def error(self, X, y):
