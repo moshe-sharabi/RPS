@@ -1,17 +1,17 @@
-import numpy as np
 from util import Counter
 from scipy.stats import *
 from Constants import *
 import json
 
-#############################################
-# constants:
-#############################################
+##########################################################################################
+# the following is used to prevent numpy from raising warning when comparing length parameters - 0 == '5+'
+import warnings
+import numpy as np
 
-Rock = 'R'
-Paper = 'P'
-Scissors = 'S'
-Choices = [Rock, Paper, Scissors]
+with warnings.catch_warnings():
+    warnings.simplefilter(action='ignore', category=FutureWarning)
+##########################################################################################
+
 
 #############################################
 # ID3:
@@ -44,10 +44,14 @@ def get_iv(index_of_attribute, examples):
 
 
 def get_ig(index_of_attribute, examples):
+    print(index_of_attribute)
     ig = 0
     attribute_parameters = parameters[attribute_names[index_of_attribute]]
     for param in attribute_parameters:
-        att_examples = examples[examples[:, index_of_attribute] == param]
+        with warnings.catch_warnings():  # see at the top of this file
+            warnings.simplefilter(action='ignore', category=FutureWarning)
+            indexes = examples[:, index_of_attribute] == param
+        att_examples = examples[indexes]
         if len(att_examples) == 0:
             continue
         ig += (len(att_examples) / len(examples)) * get_entropy(att_examples)
@@ -173,7 +177,7 @@ class DecisionTree(object):
         -------
         node : an instance of the class Node (can be either a root of a subtree or a leaf)
         """
-        return self.CART_helper(examples, set(range(len(examples[0] - 1))))
+        return self.CART_helper(examples, set(range(len(examples[0]) - 1)))
 
     def CART_helper(self, examples, available_indexes):
         if len(examples) == 0:
@@ -181,14 +185,15 @@ class DecisionTree(object):
         if all_same(examples[:,
                     -1]):  # if all the samples classifications are the same
             return Node(leaf=True, label=examples[0, -1])
-        best_attribute_index = self.find_classification(examples,
-                                                        available_indexes)
+        best_attribute_index = self.find_classification(examples, available_indexes)
         remaining_indexes = available_indexes.copy()
         remaining_indexes.remove(best_attribute_index)
         children = []
         for param in parameters[attribute_names[best_attribute_index]]:
-            children.append(
-                self.CART_helper(examples[examples[:, best_attribute_index == param]], remaining_indexes))
+            with warnings.catch_warnings():  # see at the top of this file
+                warnings.simplefilter(action='ignore', category=FutureWarning)
+                indexes = examples[:, best_attribute_index] == param
+            children.append(self.CART_helper(examples[indexes], remaining_indexes))
         return Node(leaf=False, samples=examples,
                     attribute=best_attribute_index,
                     children=children)
@@ -204,6 +209,8 @@ class DecisionTree(object):
         igrs = {}
         for index in available_indexes:
             iv = get_iv(index, examples)
+            if iv == 0:
+                continue
             ig = H_ex - get_ig(index, examples)
             igr = ig / iv
             igrs[index] = igr
