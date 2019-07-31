@@ -56,15 +56,15 @@ last_seq_rock = sequence_smth(Rock)
 last_seq_paper = sequence_smth(Paper)
 last_seq_scissors = sequence_smth(Scissors)
 
-attribute_functions = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful,
-                       get_most_played_after_comp_move, get_last_sequence_length, get_pattern_next_choice,
-                       num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock, last_seq_paper,
-                       last_seq_scissors]
+attribute_functions_list = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful,
+                            get_most_played_after_comp_move, get_last_sequence_length, get_pattern_next_choice,
+                            num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock, last_seq_paper,
+                            last_seq_scissors]
 
 # MAX_LAST_SEQUENCE_S_LENGTH = 5
 MAX_LENGTH_FOR_EVERYTHING = 5
 PARAM_MAX_LENGTH = str(MAX_LENGTH_FOR_EVERYTHING) + '+'
-LENGTH_PARAMETERS = list(range(1,MAX_LENGTH_FOR_EVERYTHING)) + [PARAM_MAX_LENGTH]
+LENGTH_PARAMETERS = [str(num) for num in range(MAX_LENGTH_FOR_EVERYTHING)] + [PARAM_MAX_LENGTH]
 
 parameters = {
     LAST_PLAYED: Choices,
@@ -83,4 +83,4 @@ parameters = {
     LAST_SEQ_PAPER: LENGTH_PARAMETERS
 }
 
-assert len(attribute_names) == len(attribute_functions) == len(parameters)
+assert len(attribute_names) == len(attribute_functions_list) == len(parameters)
