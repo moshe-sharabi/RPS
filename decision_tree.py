@@ -54,8 +54,8 @@ class Prediction:
     def __str__(self):
         return str((self.rock_percentage, self.paper_percentage, self.scissors_percentage))
 
-    def to_string(self):
-        return str(self)
+    def to_tuple(self):
+        return self.rock_percentage, self.paper_percentage, self.scissors_percentage
 
 ##########################################################################################
 
@@ -124,7 +124,7 @@ def save_tree_helper(node):
     node_dic['attribute'] = node.attribute
     if node.leaf:
         node_dic['children'] = None
-        node_dic["label"] = node.label.to_string()
+        node_dic["label"] = node.label.to_tuple()
         return node_dic
     else:
         node_dic['children'] = [save_tree_helper(child) for child in node.children]
@@ -162,11 +162,12 @@ def parse_dic_helper(dic):
     """
     cur_node = Node(leaf=dic['leaf'], attribute=dic['attribute'], label=dic['label'])
     if dic['leaf']:
+        cur_node.label = Prediction(cur_node.label)
         return cur_node
     else:
         cur_children = [parse_dic_helper(child) for child in dic["children"]]
         cur_node.children = cur_children
-        return cur_children
+        return cur_node
 
 
 def all_same(lst):
