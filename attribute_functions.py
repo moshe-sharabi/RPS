@@ -23,6 +23,8 @@ def get_most_playedd_in_last_10(history):
 
 def get_most_successful(history):
     c = Counter()
+    for member in cons.Choices:
+        c[member] = 0
     for game in history:
         c[game[cons.INDEX_OF_PLAY]] += cons.points[game[cons.INDEX_OF_RESULT]]
     return c.argMax()
@@ -44,7 +46,7 @@ def get_last_sequence_length(history):
             return i
         i += 1
     if i >= 5:
-        return cons.PARAM_MAX_LAST_SEQUENCE_S_LENGTH
+        return cons.PARAM_MAX_LENGTH
     return i
 
 def get_pattern_next_choice(history):
