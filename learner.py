@@ -1,8 +1,15 @@
 import os
+import random
+
 from decision_tree import *
 from attribute_functions import *
 from Constants import *
 import glob
+
+class Reflex_agent:
+
+    def predict(self, history):
+        return Prediction(history).best_counter()
 
 def read_histories(path):
     """
@@ -57,9 +64,12 @@ example = np.array(example)
 examples.append(example)
 trees = []
 new_tree = DecisionTree()
+# new_tree.parse_tree_dic(os.path.join(tree_folder, 'tree1'))
 new_tree.CART(examples[-1])
-print(new_tree.root)
 trees.append(new_tree)
 trees[-1].save_tree(os.path.join(tree_folder, 'tree' + str(len(trees))))
 
-
+for _ in range(10000):
+    x = example[int(random.random() * 10000)]
+    y = new_tree.predict([x])
+    print(x[-1], y)
