@@ -159,7 +159,7 @@ class DecisionTree(object):
         fp.close()
         self.root = parse_dic_helper(dic)
 
-    def CART(self, examples, available_indexes):
+    def CART(self, examples):
         """
         Gorw a decision tree with the CART method ()
 
@@ -173,21 +173,24 @@ class DecisionTree(object):
         -------
         node : an instance of the class Node (can be either a root of a subtree or a leaf)
         """
+        return self.CART_helper(examples, set(range(len(examples[0] - 1))))
+
+    def CART_helper(self, examples, available_indexes):
         if len(examples) == 0:
-            return Node(leaf=True, label=1)
-
-        if all_same(examples[:,-1]):  # if all the samples classifications are the same
-            return Node(leaf=True, label=examples[0,-1])
-
-        best_attribute_index = self.find_classification(examples, available_indexes)
+            return Node(leaf=True, label=Paper)
+        if all_same(examples[:,
+                    -1]):  # if all the samples classifications are the same
+            return Node(leaf=True, label=examples[0, -1])
+        best_attribute_index = self.find_classification(examples,
+                                                        available_indexes)
         remaining_indexes = available_indexes.copy()
         remaining_indexes.remove(best_attribute_index)
-
         children = []
         for param in parameters[attribute_names[best_attribute_index]]:
-            children.append(self.CART(examples[examples[:,best_attribute_index == param]], remaining_indexes))
-
-        return Node(leaf=False, samples=examples, attribute=best_attribute_index,
+            children.append(
+                self.CART_helper(examples[examples[:, best_attribute_index == param]], remaining_indexes))
+        return Node(leaf=False, samples=examples,
+                    attribute=best_attribute_index,
                     children=children)
 
     def find_classification(self, examples, available_indexes):
