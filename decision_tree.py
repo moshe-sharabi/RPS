@@ -225,7 +225,7 @@ class DecisionTree(object):
         self.root = self.CART_helper(examples, set(range(len(examples[0]) - 1)))
 
     def CART_helper(self, examples, available_indexes):
-        print(examples)
+        # print(examples)
         if len(examples) == 0:
             return Node(leaf=True, label=Prediction(Paper))
         if all_same(examples[:,
@@ -240,7 +240,7 @@ class DecisionTree(object):
         children = []
         for param in parameters[attribute_names[best_attribute_index]]:
             indexes = examples[:, best_attribute_index] == param
-            print("child " + param + ":")
+            # print("child " + param + ":")
             children.append(self.CART_helper(examples[indexes], remaining_indexes))
         return Node(leaf=False, samples=examples,
                     attribute=attribute_names[best_attribute_index],
@@ -262,7 +262,7 @@ class DecisionTree(object):
             ig = H_ex - get_ig(index, examples)
             igr = ig / iv
             igrs[index] = igr
-        print(igrs)
+        # print(igrs)
 
         if not igrs: # all examples are the same, with different predictions
             return None
@@ -283,7 +283,7 @@ class DecisionTree(object):
                 res.append(self.label_value(x, self.root))
             return np.array(res)
         except TypeError: # X is not iterable
-            return self.label_value(X)
+            return self.label_value(X, self.root)
 
 
     def label_value(self, x, node):
@@ -293,7 +293,7 @@ class DecisionTree(object):
         """
         if node.leaf:
             return node.label.best_counter()
-        # todo check
+        # todo check - I think it's fine (peleg)
         nodes_attribute_index = attribute_names.index(node.attribute)
         xs_parameter = x[nodes_attribute_index]
         children_num = parameters[node.attribute].index(xs_parameter)
