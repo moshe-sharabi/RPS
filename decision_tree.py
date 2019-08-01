@@ -162,7 +162,7 @@ def parse_dic_helper(dic):
     """
     cur_node = Node(leaf=dic['leaf'], attribute=dic['attribute'], label=dic['label'])
     if dic['leaf']:
-        cur_node.label = Prediction(cur_node.label)
+        cur_node.label = Prediction(*cur_node.label)
         return cur_node
     else:
         cur_children = [parse_dic_helper(child) for child in dic["children"]]
