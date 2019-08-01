@@ -29,10 +29,10 @@ class Prediction:
             self.scissors_percentage = int(rock_percentage == Scissors)
             return
 
-        # in the usage case of sending all the predictioins:
+        # in the usage case of sending all the history:
         c = Counter()
         for prediction in rock_percentage:
-            c[prediction] += 1
+            c[prediction[INDEX_OF_PLAY]] += 1
         self.rock_percentage = c[Rock] / len(rock_percentage)
         self.paper_percentage = c[Paper] / len(rock_percentage)
         self.scissors_percentage = c[Scissors] / len(rock_percentage)
@@ -271,17 +271,19 @@ class DecisionTree(object):
         return best_att_index
 
 
-
     def predict(self, X):
         """
         Returns
         -------
         y_hat : a prediction vector for X
         """
-        res = []
-        for x in X:
-            res.append(self.label_value(x, self.root))
-        return np.array(res)
+        try:
+            res = []
+            for x in X:
+                res.append(self.label_value(x, self.root))
+            return np.array(res)
+        except TypeError: # X is not iterable
+            return self.label_value(X)
 
 
     def label_value(self, x, node):
