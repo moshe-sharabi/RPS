@@ -292,7 +292,7 @@ class DecisionTree(object):
         :type node Node
         """
         if node.leaf:
-            return node.label.best_counter()
+            return node.label
         # todo check - I think it's fine (peleg)
         nodes_attribute_index = attribute_names.index(node.attribute)
         xs_parameter = x[nodes_attribute_index]
