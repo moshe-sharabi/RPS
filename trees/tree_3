@@ -1,0 +1,4854 @@
+{
+ "leaf": false,
+ "attribute": "last sequence paper",
+ "children": [
+  {
+   "leaf": false,
+   "attribute": "num rock",
+   "children": [
+    {
+     "leaf": false,
+     "attribute": "last sequence length",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3944069431051109,
+            0.3317261330761813,
+            0.2738669238187078
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.4247104247104247,
+            0.30115830115830117,
+            0.27413127413127414
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.39403973509933776,
+            0.2764900662251656,
+            0.3294701986754967
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.37009345794392523,
+            0.23738317757009345,
+            0.3925233644859813
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.33882783882783885,
+            0.38461538461538464,
+            0.2765567765567766
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.35991820040899797,
+            0.310838445807771,
+            0.3292433537832311
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3129496402877698,
+            0.42589928057553955,
+            0.26115107913669067
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3320547945205479,
+            0.4021917808219178,
+            0.26575342465753427
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3741935483870968,
+            0.35591397849462364,
+            0.2698924731182796
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.29981378026070765,
+            0.42830540037243947,
+            0.2718808193668529
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "last sequence length",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "longer sequence",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "last played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3218390804597701,
+                0.3563218390804598,
+                0.3218390804597701
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "most played",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3311036789297659,
+                  0.3076923076923077,
+                  0.3612040133779264
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.33114754098360655,
+                  0.28688524590163933,
+                  0.3819672131147541
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3365617433414044,
+              0.24455205811138014,
+              0.4188861985472155
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "last played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.28239845261121854,
+                0.3036750483558994,
+                0.41392649903288203
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26556776556776557,
+                0.3424908424908425,
+                0.39194139194139194
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "last played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.32731648616125153,
+                0.2851985559566787,
+                0.38748495788206977
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.31773399014778325,
+                0.31773399014778325,
+                0.3645320197044335
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3224461431549687,
+                0.31549687282835304,
+                0.36205698401667824
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2759051186017478,
+                0.3333333333333333,
+                0.39076154806491886
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3355018587360595,
+                0.29275092936802977,
+                0.37174721189591076
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.35294117647058826,
+                0.28143021914648214,
+                0.36562860438292966
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "longer sequence",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2857142857142857,
+                0.31065759637188206,
+                0.4036281179138322
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.260752688172043,
+                0.24193548387096775,
+                0.49731182795698925
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2882882882882883,
+                0.2810810810810811,
+                0.4306306306306306
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": false,
+               "attribute": "last played",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3372093023255814,
+                  0.24709302325581395,
+                  0.41569767441860467
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3333333333333333,
+                  0.25555555555555554,
+                  0.4111111111111111
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": false,
+               "attribute": "last played",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.32642487046632124,
+                  0.2823834196891192,
+                  0.3911917098445596
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.2851851851851852,
+                  0.28703703703703703,
+                  0.42777777777777776
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "last played",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.2871287128712871,
+                  0.2838283828382838,
+                  0.429042904290429
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.32418952618453867,
+                  0.2543640897755611,
+                  0.42144638403990026
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                }
+               ],
+               "label": null
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3922077922077922,
+              0.21558441558441557,
+              0.3922077922077922
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.43200962695547535,
+              0.26353790613718414,
+              0.30445246690734057
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3881453154875717,
+              0.28489483747609945,
+              0.32695984703632885
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "last played",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3791469194312796,
+              0.24170616113744076,
+              0.3791469194312796
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3524590163934426,
+                0.319672131147541,
+                0.32786885245901637
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3457142857142857,
+                0.31142857142857144,
+                0.34285714285714286
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3976311336717428,
+              0.2961082910321489,
+              0.3062605752961083
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.33805668016194335,
+              0.3441295546558704,
+              0.31781376518218624
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.29411764705882354,
+              0.33613445378151263,
+              0.3697478991596639
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.34355828220858897,
+                0.3619631901840491,
+                0.294478527607362
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3218390804597701,
+                0.30114942528735633,
+                0.37701149425287356
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.38807339449541284,
+            0.3091743119266055,
+            0.30275229357798167
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.37297734627831713,
+            0.2977346278317152,
+            0.32928802588996764
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.35449101796407184,
+            0.288622754491018,
+            0.3568862275449102
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.37293729372937295,
+            0.25412541254125415,
+            0.37293729372937295
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.391705069124424,
+            0.42857142857142855,
+            0.17972350230414746
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3723404255319149,
+            0.2872340425531915,
+            0.3404255319148936
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "num scissors",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most played after <comp move>",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3010858835143139,
+            0.32773938795656465,
+            0.3711747285291214
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3384146341463415,
+            0.29573170731707316,
+            0.36585365853658536
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3674293405114401,
+            0.31763122476446837,
+            0.3149394347240915
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.2816205533596838,
+            0.3814229249011858,
+            0.33695652173913043
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.32238805970149254,
+            0.33134328358208953,
+            0.34626865671641793
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.2958963282937365,
+            0.3390928725701944,
+            0.3650107991360691
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "last played",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "last sequence length",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.33146853146853145,
+                0.22237762237762237,
+                0.4461538461538462
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.31336129418813663,
+                0.26303175554224084,
+                0.42360695026962253
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.33243606998654107,
+              0.22476446837146702,
+              0.4427994616419919
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "last sequence length",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2912723449001052,
+                0.2754994742376446,
+                0.4332281808622503
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.23091787439613526,
+                0.3391304347826087,
+                0.42995169082125606
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last sequence length",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3553008595988539,
+                0.18911174785100288,
+                0.45558739255014324
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3488843813387424,
+                0.2332657200811359,
+                0.4178498985801217
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3055091819699499,
+                0.2370617696160267,
+                0.4574290484140234
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.39631336405529954,
+                0.2423963133640553,
+                0.36129032258064514
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.37354988399071926,
+                0.27958236658932717,
+                0.3468677494199536
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              1,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "last sequence length",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.31910112359550563,
+                0.21348314606741572,
+                0.46741573033707867
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.32987012987012987,
+                0.2675324675324675,
+                0.4025974025974026
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3645533141210375,
+              0.31412103746397696,
+              0.32132564841498557
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2949526813880126,
+              0.3722397476340694,
+              0.33280757097791797
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.407557354925776,
+              0.3157894736842105,
+              0.2766531713900135
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.36395147313691506,
+              0.2703639514731369,
+              0.36568457538994803
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.34050179211469533,
+              0.25448028673835127,
+              0.4050179211469534
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.34581105169340465,
+              0.24242424242424243,
+              0.4117647058823529
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.30491803278688523,
+            0.380327868852459,
+            0.31475409836065577
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "most played after <comp move>",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4720670391061452,
+          0.23184357541899442,
+          0.29608938547486036
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.46872586872586874,
+          0.23166023166023167,
+          0.2996138996138996
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4211618257261411,
+          0.2551867219917012,
+          0.3236514522821577
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.39322533136966126,
+          0.23711340206185566,
+          0.3696612665684831
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "last sequence rock",
+   "children": [
+    {
+     "leaf": false,
+     "attribute": "longer sequence",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.41346153846153844,
+              0.3153846153846154,
+              0.27115384615384613
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3648124191461837,
+              0.3350582147477361,
+              0.3001293661060802
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4330708661417323,
+              0.2795275590551181,
+              0.2874015748031496
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4279749478079332,
+              0.29227557411273486,
+              0.2797494780793319
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.40572792362768495,
+              0.3221957040572792,
+              0.2720763723150358
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.42618741976893454,
+              0.34403080872913994,
+              0.22978177150192555
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.345,
+              0.33,
+              0.325
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.40594059405940597,
+              0.31683168316831684,
+              0.27722772277227725
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.41110065851364064,
+              0.2878645343367827,
+              0.30103480714957664
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4048582995951417,
+              0.291497975708502,
+              0.30364372469635625
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.42948717948717946,
+              0.23717948717948717,
+              0.3333333333333333
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.38224852071005916,
+              0.30177514792899407,
+              0.31597633136094677
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4656964656964657,
+              0.2785862785862786,
+              0.25571725571725573
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.38688524590163936,
+              0.29508196721311475,
+              0.3180327868852459
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3775933609958506,
+              0.37344398340248963,
+              0.24896265560165975
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4,
+              0.2896551724137931,
+              0.3103448275862069
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "last played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4486486486486487,
+              0.327027027027027,
+              0.22432432432432434
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.45901639344262296,
+              0.3073770491803279,
+              0.2336065573770492
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "last played",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most successful",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.44357976653696496,
+              0.32490272373540857,
+              0.23151750972762647
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4169184290030212,
+              0.36555891238670696,
+              0.2175226586102719
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.35795454545454547,
+              0.4034090909090909,
+              0.23863636363636365
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most successful",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4530612244897959,
+              0.3122448979591837,
+              0.23469387755102042
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.48493975903614456,
+              0.21987951807228914,
+              0.29518072289156627
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.49146757679180886,
+              0.36177474402730375,
+              0.14675767918088736
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most successful",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4316644113667118,
+              0.3044654939106901,
+              0.2638700947225981
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.392904073587385,
+              0.31274638633377133,
+              0.2943495400788436
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.41203703703703703,
+              0.3194444444444444,
+              0.26851851851851855
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3325942350332594,
+                0.31042128603104213,
+                0.35698447893569846
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3227990970654628,
+                0.29345372460496616,
+                0.3837471783295711
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3686868686868687,
+                0.2962962962962963,
+                0.335016835016835
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4251207729468599,
+                0.2608695652173913,
+                0.3140096618357488
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.46932515337423314,
+                0.25766871165644173,
+                0.27300613496932513
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3973268529769137,
+                0.3110571081409477,
+                0.2916160388821385
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.35456475583864117,
+                0.3036093418259023,
+                0.34182590233545646
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3355048859934853,
+                0.2736156351791531,
+                0.39087947882736157
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3333333333333333,
+                0.32688172043010755,
+                0.33978494623655914
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4435483870967742,
+                0.25,
+                0.3064516129032258
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.38108882521489973,
+                0.2607449856733524,
+                0.35816618911174786
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4358974358974359,
+                0.28402366863905326,
+                0.28007889546351084
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4107744107744108,
+                0.3333333333333333,
+                0.2558922558922559
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.6270491803278688,
+                0.21721311475409835,
+                0.1557377049180328
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5255474452554745,
+                0.22627737226277372,
+                0.24817518248175183
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4482758620689655,
+                0.31896551724137934,
+                0.23275862068965517
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4304635761589404,
+                0.32229580573951433,
+                0.24724061810154527
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.39408866995073893,
+                0.33497536945812806,
+                0.270935960591133
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3348314606741573,
+            0.39101123595505616,
+            0.27415730337078653
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.38461538461538464,
+            0.3727810650887574,
+            0.24260355029585798
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.29417670682730923,
+            0.3644578313253012,
+            0.3413654618473896
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.384180790960452,
+            0.3050847457627119,
+            0.3107344632768362
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3850267379679144,
+            0.27807486631016043,
+            0.33689839572192515
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.29329608938547486,
+            0.29329608938547486,
+            0.4134078212290503
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.36220472440944884,
+            0.3661417322834646,
+            0.27165354330708663
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.27817745803357313,
+            0.3908872901678657,
+            0.33093525179856115
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.2903225806451613,
+            0.3548387096774194,
+            0.3548387096774194
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "last played",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "num paper",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2276707530647986,
+                0.5026269702276708,
+                0.26970227670753066
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3028919330289193,
+                0.4003044140030441,
+                0.2968036529680365
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3188180404354588,
+                0.40746500777604977,
+                0.2737169517884914
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2571428571428571,
+                0.49714285714285716,
+                0.24571428571428572
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.29935720844811753,
+                0.4527089072543618,
+                0.24793388429752067
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.27889207258834764,
+                0.4584527220630373,
+                0.2626552053486151
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.28532608695652173,
+              0.4375,
+              0.27717391304347827
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3426470588235294,
+              0.3558823529411765,
+              0.3014705882352941
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2956204379562044,
+              0.40693430656934304,
+              0.29744525547445255
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "num paper",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most played",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3708609271523179,
+                0.3708609271523179,
+                0.2582781456953642
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26143790849673204,
+                0.41830065359477125,
+                0.3202614379084967
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3262786596119929,
+                0.3880070546737213,
+                0.2857142857142857
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.354978354978355,
+                0.3722943722943723,
+                0.2727272727272727
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.34375,
+                0.38825757575757575,
+                0.26799242424242425
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.33112582781456956,
+                0.40397350993377484,
+                0.26490066225165565
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3768844221105528,
+              0.35678391959798994,
+              0.2663316582914573
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.39285714285714285,
+              0.40476190476190477,
+              0.20238095238095238
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.37119113573407203,
+              0.37119113573407203,
+              0.25761772853185594
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "num paper",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.39452054794520547,
+                0.3589041095890411,
+                0.2465753424657534
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.35406698564593303,
+                0.40669856459330145,
+                0.23923444976076555
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.30670926517571884,
+                0.38977635782747605,
+                0.3035143769968051
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.32193732193732194,
+                0.4188034188034188,
+                0.25925925925925924
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26,
+                0.41,
+                0.33
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3562152133580705,
+                0.38404452690166974,
+                0.2597402597402597
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4117647058823529,
+              0.35294117647058826,
+              0.23529411764705882
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.36318407960199006,
+              0.3482587064676617,
+              0.2885572139303483
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.34971098265895956,
+              0.3352601156069364,
+              0.315028901734104
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "num rock",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.30089628681177977,
+                0.3764404609475032,
+                0.322663252240717
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.23732251521298176,
+                0.4259634888438134,
+                0.3367139959432049
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26515151515151514,
+                0.4686147186147186,
+                0.2662337662337662
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2456445993031359,
+                0.4547038327526132,
+                0.29965156794425085
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.27791563275434245,
+                0.41811414392059554,
+                0.303970223325062
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.30318257956448913,
+                0.4304857621440536,
+                0.2663316582914573
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2857142857142857,
+                0.42857142857142855,
+                0.2857142857142857
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.1926605504587156,
+                0.44036697247706424,
+                0.3669724770642202
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.30158730158730157,
+                0.3492063492063492,
+                0.3492063492063492
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3711340206185567,
+                0.36082474226804123,
+                0.26804123711340205
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2944120100083403,
+                0.3769808173477898,
+                0.3286071726438699
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26744186046511625,
+                0.42093023255813955,
+                0.3116279069767442
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2868525896414343,
+                0.4163346613545817,
+                0.2968127490039841
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26573426573426573,
+                0.46853146853146854,
+                0.26573426573426573
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3620689655172414,
+                0.4396551724137931,
+                0.19827586206896552
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played after <comp move>",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3206751054852321,
+                0.4092827004219409,
+                0.270042194092827
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2564102564102564,
+                0.41025641025641024,
+                0.3333333333333333
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.31403118040089084,
+                0.37861915367483295,
+                0.30734966592427615
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.28439306358381505,
+              0.33179190751445087,
+              0.3838150289017341
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2640901771336554,
+              0.35426731078904994,
+              0.38164251207729466
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3359442993907746,
+              0.3289817232375979,
+              0.33507397737162753
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.36607142857142855,
+              0.3482142857142857,
+              0.2857142857142857
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2901023890784983,
+              0.4061433447098976,
+              0.3037542662116041
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.27721088435374147,
+              0.3656462585034014,
+              0.35714285714285715
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.29593810444874274,
+              0.4081237911025145,
+              0.29593810444874274
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3333333333333333,
+              0.3888888888888889,
+              0.2777777777777778
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4472049689440994,
+              0.32919254658385094,
+              0.2236024844720497
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "last sequence length",
+   "children": [
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": false,
+     "attribute": "num rock",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3466981132075472,
+            0.33372641509433965,
+            0.31957547169811323
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.36429433051869725,
+            0.3112183353437877,
+            0.32448733413751507
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.30058479532163745,
+            0.3286549707602339,
+            0.3707602339181287
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.41007194244604317,
+            0.3319630010277492,
+            0.2579650565262076
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.4280155642023346,
+            0.3229571984435798,
+            0.2490272373540856
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.410958904109589,
+            0.3333333333333333,
+            0.2557077625570776
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "most played after <comp move>",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.28105906313645623,
+            0.38289205702647655,
+            0.3360488798370672
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3492723492723493,
+            0.3783783783783784,
+            0.27234927234927236
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3525641025641026,
+            0.3888888888888889,
+            0.25854700854700857
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most successful",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.325764192139738,
+            0.42096069868995634,
+            0.25327510917030566
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.2952755905511811,
+            0.4015748031496063,
+            0.3031496062992126
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3228346456692913,
+            0.4199475065616798,
+            0.2572178477690289
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "most played after <comp move>",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.25688073394495414,
+          0.2810675562969141,
+          0.46205170975813176
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.27586206896551724,
+          0.3390804597701149,
+          0.3850574712643678
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.26043878273177634,
+          0.3651804670912951,
+          0.3743807501769285
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.27154046997389036,
+          0.3028720626631854,
+          0.4255874673629243
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": true,
+   "attribute": null,
+   "children": null,
+   "label": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "leaf": true,
+   "attribute": null,
+   "children": null,
+   "label": [
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "leaf": true,
+   "attribute": null,
+   "children": null,
+   "label": [
+    0,
+    0,
+    0
+   ]
+  }
+ ],
+ "label": null
+}
