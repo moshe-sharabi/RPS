@@ -6,6 +6,9 @@ from attribute_functions import *
 from Constants import *
 import glob
 
+TREE_FILE_PREFIX = 'tree_'
+
+
 class Reflex_agent:
 
     def predict(self, history):
@@ -23,6 +26,11 @@ def read_histories(path):
 
     return histories_str
 
+
+def get_parameters(history):
+    return [func(history) for func in attribute_functions_list]
+
+
 def get_parameters_and_predictions_for_history_length(games, length):
     """
     for every game that is long enough returns a list of parameters (one for every attribute) and the player's next move.
@@ -34,42 +42,78 @@ def get_parameters_and_predictions_for_history_length(games, length):
     if length == 0:
         # returns only a prediction (most played on first match)
         played = [game[0] for game in games]
-        return get_most_played(played)
+        return Prediction(played), games
 
     long_enough_games = []
     parameters_and_predictions = []
     for game in games:
         if len(game) >= length+1:
             long_enough_games.append(game)
-            game_parameters = [func(game[:length]) for func in attribute_functions_list]
+            history = game[:length]
+            game_parameters = get_parameters(history)
             game_prediction = game[length][INDEX_OF_PLAY]
             parameters_and_predictions.append(game_parameters + [game_prediction])
     return parameters_and_predictions, long_enough_games
 
 
-# main:
-example_folder_name = 'examples'
-example_folder = os.path.join('.', example_folder_name)
-example_files = glob.glob(os.path.join(example_folder, '*.txt'))
-tree_folder_name = 'trees'
-tree_folder = os.path.join('.', tree_folder_name)
-example_games = []
-for path in example_files:
-    example_games += read_histories(path)
+def build_trees(example_files):
+    global all_examples, all_trees
+    example_games = []
+    for path in example_files:
+        example_games += read_histories(path)
 
-examples = []
-example, example_games = get_parameters_and_predictions_for_history_length(example_games, 1)
-example = np.array(example)
-# print(example)
-examples.append(example)
-trees = []
-new_tree = DecisionTree()
-# new_tree.parse_tree_dic(os.path.join(tree_folder, 'tree1'))
-new_tree.CART(examples[-1])
-trees.append(new_tree)
-trees[-1].save_tree(os.path.join(tree_folder, 'tree' + str(len(trees))))
+    all_examples = []
+    all_trees = dict()
+    length = 0
+    while example_games:
+        examples = []
+        new_examples, example_games = get_parameters_and_predictions_for_history_length(
+            example_games, length)
+        next_length = length + 1
+        while next_length not in ai_agent.jumping_iterations and example_games:
+            examples, example_games = get_parameters_and_predictions_for_history_length(
+                example_games, length)
+            new_examples += examples
+            next_length += 1
 
-for _ in range(10000):
-    x = example[int(random.random() * 10000)]
-    y = new_tree.predict([x])
-    print(x[-1], y)
+        all_examples.append(new_examples)
+        new_tree = DecisionTree()
+        if length == 0:  # examples is a Prediction for player's move. assuming (1 in jumping_iterations)
+            new_tree.root = Node(leaf=True, label=new_examples)
+        else:
+            new_examples = np.array(new_examples)
+            new_tree.CART(new_examples)
+        all_trees[length] = new_tree
+        new_tree.save_tree(os.path.join(ai_agent.tree_folder, TREE_FILE_PREFIX + str(length)))
+        length = next_length
+    return all_trees, all_examples
+
+
+class ai_agent:
+    jumping_iterations = [0,1,2,3,4,5]
+    example_folder_name = 'examples'
+    example_folder = os.path.join('.', example_folder_name)
+    tree_folder_name = 'trees'
+    tree_folder = os.path.join('.', tree_folder_name)
+    example_files = glob.glob(os.path.join(example_folder, '*.txt'))
+    tree_files = glob.glob(os.path.join(tree_folder, '*.txt'))
+
+    def __init__(self):
+        self.all_trees = []
+        self.all_examples = []
+        for length in ai_agent.jumping_iterations:
+            if os.path.join(ai_agent.tree_folder, TREE_FILE_PREFIX + str(length)) not in ai_agent.tree_files:
+                self.build()
+                return
+            new_tree = DecisionTree()
+            new_tree.parse_tree_dic(os.path.join(ai_agent.tree_folder, TREE_FILE_PREFIX + str(length)))
+            self.all_trees.append(new_tree)
+
+
+    def build(self):
+        self.all_trees, self.all_examples = build_trees(ai_agent.example_files)
+
+    def predict(self, history):
+        for length in ai_agent[::-1]:
+            if len(history) >= length:
+                return self.all_trees[length].predict(get_parameters(history))
