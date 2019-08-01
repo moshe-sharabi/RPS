@@ -67,12 +67,10 @@ def build_trees(example_files):
     length = 0
     while example_games:
         examples = []
-        new_examples, example_games = get_parameters_and_predictions_for_history_length(
-            example_games, length)
+        new_examples, example_games = get_parameters_and_predictions_for_history_length(example_games, length)
         next_length = length + 1
         while next_length not in AI_agent.jumping_iterations and example_games:
-            examples, example_games = get_parameters_and_predictions_for_history_length(
-                example_games, length)
+            examples, example_games = get_parameters_and_predictions_for_history_length(example_games, next_length)
             new_examples += examples
             next_length += 1
 
@@ -97,7 +95,7 @@ class AI_agent:
     tree_folder_name = 'trees'
     tree_folder = os.path.join('.', tree_folder_name)
     example_files = glob.glob(os.path.join(example_folder, '*.txt'))
-    tree_files = glob.glob(os.path.join(tree_folder, '*.txt'))
+    tree_files = glob.glob(os.path.join(tree_folder, '*'))
 
     def __init__(self):
         self.all_trees = []
@@ -120,3 +118,7 @@ class AI_agent:
                 if length == 0:
                     return self.all_trees[length].predict(None)
                 return self.all_trees[length].predict(get_parameters(history))
+
+def main():
+    ai = AI_agent()
+    # ai.build()
