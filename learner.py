@@ -90,6 +90,7 @@ def build_trees(example_files):
 
 
 class ai_agent:
+    # constants:
     jumping_iterations = [0,1,2,3,4,5]
     example_folder_name = 'examples'
     example_folder = os.path.join('.', example_folder_name)
