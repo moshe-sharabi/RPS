@@ -227,7 +227,7 @@ class DecisionTree(object):
     def CART_helper(self, examples, available_indexes):
         # print(examples)
         if len(examples) == 0:
-            return Node(leaf=True, label=Prediction(Paper))
+            return Node(leaf=True, label=Prediction(0,0,0))
         if all_same(examples[:,
                     -1]):  # if all the samples classifications are the same
             return Node(leaf=True, label=Prediction(examples[0, -1]))
