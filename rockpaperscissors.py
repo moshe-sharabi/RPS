@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# todo switch slash with os.path.slash
 from random import *
 from tkinter import *
 from learner import *
@@ -14,30 +13,32 @@ COMPUTER_SCORE_INDEX = 1
 class GamePlay:
     scores = [0, 0]
     history = []
+    file = None
 
-    def __init__(self, agent):
+    def __init__(self, agent=RandomAgent()):
         self.agent = agent
         self.next_move = self.agent.predict(self.history).best_counter()
 
         # main program
         self.mainWindow = Tk()
         self.scores_text = "SCORE:\nYou: {}\nComputer: {}"
+        self.write_mode = BooleanVar()
         self.mainWindow.title("Rock-Paper-Scissors by Nahaliel")
 
         # images
         self.emptyImage = PhotoImage()
-        self.rockImage_player = PhotoImage(file="images/rockPlayer.png")
-        self.rockImage_computer = PhotoImage(file="images/rockComputer.png")
-        self.paperImage_player = PhotoImage(file="images/paperPlayer.png")
-        self.paperImage_computer = PhotoImage(file="images/paperComputer.png")
-        self.scissorsImage_player = PhotoImage(file="images/scissorsPlayer.png")
-        self.scissorsImage_computer = PhotoImage(file="images/scissorsComputer.png")
-        self.rockButtonImage = PhotoImage(file="images/rockButton.png")
-        self.paperButtonImage = PhotoImage(file="images/paperButton.png")
-        self.scissorsButtonImage = PhotoImage(file="images/scissorsButton.png")
-        self.random_button_image = PhotoImage(file="images/RAND_button.png")
-        self.reflex_button_image = PhotoImage(file="images/REFLEX_button.png")
-        self.ai_button_image = PhotoImage(file="images/AI_button.png")
+        self.rockImage_player = PhotoImage(file="images"+os.path.sep+"rockPlayer.png")
+        self.rockImage_computer = PhotoImage(file="images"+os.path.sep+"rockComputer.png")
+        self.paperImage_player = PhotoImage(file="images"+os.path.sep+"paperPlayer.png")
+        self.paperImage_computer = PhotoImage(file="images"+os.path.sep+"paperComputer.png")
+        self.scissorsImage_player = PhotoImage(file="images"+os.path.sep+"scissorsPlayer.png")
+        self.scissorsImage_computer = PhotoImage(file="images"+os.path.sep+"scissorsComputer.png")
+        self.rockButtonImage = PhotoImage(file="images"+os.path.sep+"rockButton.png")
+        self.paperButtonImage = PhotoImage(file="images"+os.path.sep+"paperButton.png")
+        self.scissorsButtonImage = PhotoImage(file="images"+os.path.sep+"scissorsButton.png")
+        self.random_button_image = PhotoImage(file="images"+os.path.sep+"RAND_button.png")
+        self.reflex_button_image = PhotoImage(file="images"+os.path.sep+"REFLEX_button.png")
+        self.ai_button_image = PhotoImage(file="images"+os.path.sep+"AI_button.png")
 
         self.userImage = Label(image=self.emptyImage)
         self.userImage.image = self.emptyImage
@@ -54,31 +55,45 @@ class GamePlay:
         self.rockButton = Button(self.mainWindow, image=self.rockButtonImage, command=self.user_choice_rock)
         self.paperButton = Button(self.mainWindow, image=self.paperButtonImage, command=self.user_choice_paper)
         self.scissorsButton = Button(self.mainWindow, image=self.scissorsButtonImage, command=self.user_choice_scissors)
-        self.random_agent_button = Button(self.mainWindow, image=self.random_button_image, command=self.random_agent_chosen)
-        self.reflex_agent_button = Button(self.mainWindow, image=self.reflex_button_image, command=self.reflex_agent_chosen)
+        self.random_agent_button = Button(self.mainWindow, image=self.random_button_image,
+                                          command=self.random_agent_chosen)
+        self.reflex_agent_button = Button(self.mainWindow, image=self.reflex_button_image,
+                                          command=self.reflex_agent_chosen)
         self.ai_agent_button = Button(self.mainWindow, image=self.ai_button_image, command=self.ai_agent_chosen)
+        self.write_mode_button = Checkbutton(self.mainWindow, text="Write episode to examples",
+                                             variable=self.write_mode)
         self.locate_agent_buttons()
 
     def random_agent_chosen(self):
+        if self.write_mode.get():
+            self.file = open("examples"+os.path.sep+"random_examples.txt", 'a')
         self.agent_chosen(RandomAgent())
 
     def reflex_agent_chosen(self):
+        if self.write_mode.get():
+            self.file = open("examples"+os.path.sep+"reflex_examples.txt", 'a')
         self.agent_chosen(ReflexAgent())
 
     def ai_agent_chosen(self):
+        if self.write_mode.get():
+            self.file = open("examples"+os.path.sep+"ai_examples.txt", 'a')
         self.agent_chosen(AI_agent())
 
     def agent_chosen(self, agent):
+        if self.write_mode.get() and self.file.read():
+            self.file.write('\n')
         self.agent = agent
         self.ai_agent_button.grid_remove()
         self.reflex_agent_button.grid_remove()
         self.random_agent_button.grid_remove()
+        self.write_mode_button.grid_remove()
         self.locate_play_table()
 
     def locate_agent_buttons(self):
         self.ai_agent_button.grid(row=2, column=1)
         self.reflex_agent_button.grid(row=2, column=2)
         self.random_agent_button.grid(row=2, column=3)
+        self.write_mode_button.grid(row=3, column=1)
 
     def locate_play_table(self):
         # Tk GUI grid
@@ -116,6 +131,7 @@ class GamePlay:
 
     # gameplay section
     def turn(self, user_choice):
+        to_write = user_choice
         opponent_choice = self.next_move
         self.your_choice.configure(text="Your Choice")
         self.ai_choice.configure(text="Computer Choice")
@@ -128,18 +144,26 @@ class GamePlay:
 
         if opponent_choice == user_choice:
             self.turnResult.configure(text="It's a draw.", fg="gray")
+            to_write += 'D'
         elif ((opponent_choice == Rock and user_choice == Scissors) or (
                 opponent_choice == Paper and user_choice == Rock) or (
                       opponent_choice == Scissors and user_choice == Paper)):
             self.turnResult.configure(text="You lose!", fg="red")
             self.scores[COMPUTER_SCORE_INDEX] += 1
+            to_write += 'L'
+
         else:
             self.turnResult.configure(text="You win!", fg="green")
             self.scores[PLAYER_SCORE_INDEX] += 1
+            to_write += 'W'
         self.scores_textbox.configure(text=self.scores_text.format(self.scores[0], self.scores[1]))
+        if self.write_mode.get():
+            self.file.write(to_write + ' ')
 
     def play(self):
         self.mainWindow.mainloop()
+        if self.write_mode.get():
+            self.file.close()
 
 
 game = GamePlay()
