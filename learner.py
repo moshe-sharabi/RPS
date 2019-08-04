@@ -12,12 +12,14 @@ TREE_FILE_PREFIX = 'tree_'
 class RandomAgent:
     @staticmethod
     def predict(history):
-        return random.choice([Rock, Paper, Scissors])
+        # return random.choice([Rock, Paper, Scissors])
+        return Prediction(0, 0, 0)
 
 
-class Reflex_agent:
-
+class ReflexAgent:
     def predict(self, history):
+        if not history:
+            return Prediction(0, 0, 0)
         return Prediction(history)
 
 
@@ -119,13 +121,8 @@ class AI_agent:
         self.all_trees, self.all_examples = build_trees(AI_agent.example_files)
 
     def predict(self, history):
-        for length in AI_agent[::-1]:
+        for length in self.jumping_iterations[::-1]:
             if len(history) >= length:
                 if length == 0:
                     return self.all_trees[length].predict(None)
                 return self.all_trees[length].predict(get_parameters(history))
-
-
-def main():
-    ai = AI_agent()
-    # ai.build()

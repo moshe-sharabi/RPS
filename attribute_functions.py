@@ -1,14 +1,17 @@
 from util import Counter
+import Constants as cons
 
 
 class HistoryException(ValueError):
     def __init__(self):
         super(HistoryException, self).__init__()
 
+
 def get_last_played(history):
     if not history:
         raise HistoryException
     return history[-1][cons.INDEX_OF_PLAY]
+
 
 def get_most_played(history):
     c = Counter()
@@ -16,10 +19,12 @@ def get_most_played(history):
         c[game[cons.INDEX_OF_PLAY]] += 1
     return c.argMax()
 
+
 def get_most_playedd_in_last_10(history):
     if len(history) <= 10:
         return get_most_played(history)
     return get_most_played(history[-10:])
+
 
 def get_most_successful(history):
     c = Counter()
@@ -29,13 +34,15 @@ def get_most_successful(history):
         c[game[cons.INDEX_OF_PLAY]] += cons.points[game[cons.INDEX_OF_RESULT]]
     return c.argMax()
 
+
 def get_most_played_after_comp_move(history):
     last_comp_play = cons.neg[history[-1]][cons.INDEX_OF_PLAY]
     c = Counter()
-    for i in range(len(history)-1):
+    for i in range(len(history) - 1):
         if cons.neg[history[i]][cons.INDEX_OF_PLAY] == last_comp_play:
-            c[history[i+1][cons.INDEX_OF_PLAY]] += 1
+            c[history[i + 1][cons.INDEX_OF_PLAY]] += 1
     return c.argMax() if c.argMax() else cons.NOT_AVAILABLE
+
 
 def get_last_sequence_length(history):
     sequence_play = history[-1][cons.INDEX_OF_PLAY]
@@ -49,13 +56,14 @@ def get_last_sequence_length(history):
         return cons.PARAM_MAX_LENGTH
     return i
 
+
 def get_pattern_next_choice(history):
     history_no_results = [game[cons.INDEX_OF_PLAY] for game in history]
-    longest_possible_sequence = len(history)/2 if len(history)%2==0 else int(len(history)/2)+1
+    longest_possible_sequence = len(history) / 2 if len(history) % 2 == 0 else int(len(history) / 2) + 1
     shortest_checked_sequence = 2
-    for i in range(int(longest_possible_sequence) ,int(shortest_checked_sequence),-1): # i is sequence length
-        set1 = history_no_results[1-i*2:1-i]
-        set2 = history_no_results[1-i:]
+    for i in range(int(longest_possible_sequence), int(shortest_checked_sequence), -1):  # i is sequence length
+        set1 = history_no_results[1 - i * 2:1 - i]
+        set2 = history_no_results[1 - i:]
         if set1[:-1] == set2:
             return set1[-1]
     # for i=2 we check for at least 2 full patterns before this one
@@ -68,12 +76,14 @@ def get_pattern_next_choice(history):
     # no pattern was found
     return cons.NOT_AVAILABLE
 
+
 def num_smth(member):
     """
     return a functionn that counts how many times the member appeared in history
     :param member: member
     :return: the function
     """
+
     def count(history):
         counter = 0
         for move in history:
@@ -81,8 +91,10 @@ def num_smth(member):
                 counter += 1
         if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
             return cons.PARAM_MAX_LENGTH
-        return counter#/float(len(history))
+        return counter  # /float(len(history))
+
     return count
+
 
 def longer_sequence(history):
     """
@@ -103,12 +115,14 @@ def longer_sequence(history):
                 break
     return c.argMax()
 
+
 def sequence_smth(member):
     """
     creates a function that countss the lenght of the last sequence of the member in history
     :param member:the member
     :return:the function
     """
+
     def count(history):
         flag = False
         counter = 0
@@ -121,7 +135,6 @@ def sequence_smth(member):
                 break
         if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
             return cons.PARAM_MAX_LENGTH
-        return counter#/float(len(history))
-    return count
+        return counter  # /float(len(history))
 
-import Constants as cons
+    return count
