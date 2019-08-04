@@ -9,10 +9,17 @@ import glob
 TREE_FILE_PREFIX = 'tree_'
 
 
+class RandomAgent:
+    @staticmethod
+    def predict(history):
+        return random.choice([Rock, Paper, Scissors])
+
+
 class Reflex_agent:
 
     def predict(self, history):
         return Prediction(history)
+
 
 def read_histories(path):
     """
@@ -22,7 +29,7 @@ def read_histories(path):
     """
     file_str = open(path).read()
     histories_str = file_str.split("\n")
-    histories_str = [history.split(" ") for history in histories_str if history] #if history is not empty
+    histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
 
     return histories_str
 
@@ -47,7 +54,7 @@ def get_parameters_and_predictions_for_history_length(games, length):
     long_enough_games = []
     parameters_and_predictions = []
     for game in games:
-        if len(game) >= length+1:
+        if len(game) >= length + 1:
             long_enough_games.append(game)
             history = game[:length]
             game_parameters = get_parameters(history)
@@ -89,7 +96,7 @@ def build_trees(example_files):
 
 class AI_agent:
     # constants:
-    jumping_iterations = [0,1,2,3,4,5]
+    jumping_iterations = [0, 1, 2, 3, 4, 5]
     example_folder_name = 'examples'
     example_folder = os.path.join('.', example_folder_name)
     tree_folder_name = 'trees'
@@ -108,7 +115,6 @@ class AI_agent:
             new_tree.parse_tree_dic(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(length)))
             self.all_trees.append(new_tree)
 
-
     def build(self):
         self.all_trees, self.all_examples = build_trees(AI_agent.example_files)
 
@@ -118,6 +124,7 @@ class AI_agent:
                 if length == 0:
                     return self.all_trees[length].predict(None)
                 return self.all_trees[length].predict(get_parameters(history))
+
 
 def main():
     ai = AI_agent()

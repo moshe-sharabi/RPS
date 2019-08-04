@@ -1,105 +1,119 @@
 #!/usr/bin/python3
 from random import *
 from tkinter import *
+from learner import *
 
 ########################
-# our code here:
-scores = [0, 0]
 PLAYER_SCORE_INDEX = 0
 COMPUTER_SCORE_INDEX = 1
-scores_text = "SCORE:\nyou: {}\ncomputer: {}"
 
 
-# done
 ########################
 
-# choice section
-def userChoiceRock():
-    userChoice = "rock"
-    turn(userChoice)
-    userImage.configure(image=rockImage_player)
+class GamePlay:
+    def __init__(self, agent=RandomAgent):
+        self.agent = agent
+        self.scores = [0, 0]
+        self.PLAYER_SCORE_INDEX = 0
+        self.COMPUTER_SCORE_INDEX = 1
+        self.scores_text = "SCORE:\nYou: {}\nComputer: {}"
+        self.history = []
+        self.next_move = agent.predict(self.history)
+
+        # main program
+        self.mainWindow = Tk()
+        self.mainWindow.title("Rock-Paper-Scissors by Nahaliel")
+        self.rockButtonImage = PhotoImage(file="images/rockButton.png")
+        self.rockButton = Button(self.mainWindow, image=self.rockButtonImage, command=self.user_choice_rock)
+        self.paperButtonImage = PhotoImage(file="images/paperButton.png")
+        self.paperButton = Button(self.mainWindow, image=self.paperButtonImage, command=self.user_choice_paper)
+        self.scissorsButtonImage = PhotoImage(file="images/scissorsButton.png")
+        self.scissorsButton = Button(self.mainWindow, image=self.scissorsButtonImage, command=self.user_choice_scissors)
+
+        # images
+        # emptyImage = PhotoImage(file="images/empty.gif")
+        self.emptyImage = PhotoImage()
+        self.rockImage_player = PhotoImage(file="images/rockPlayer.png")
+        self.rockImage_computer = PhotoImage(file="images/rockComputer.png")
+        self.paperImage_player = PhotoImage(file="images/paperPlayer.png")
+        self.paperImage_computer = PhotoImage(file="images/paperComputer.png")
+        self.scissorsImage_player = PhotoImage(file="images/scissorsPlayer.png")
+        self.scissorsImage_computer = PhotoImage(file="images/scissorsComputer.png")
+
+        self.userImage = Label(image=self.emptyImage)
+        self.userImage.image = self.emptyImage
+        self.opponentImage = Label(image=self.emptyImage)
+        self.opponentImage.image = self.emptyImage
+
+        self.turnResult = Label(self.mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
+        self.your_choice = Label(self.mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
+        self.ai_choice = Label(self.mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
+        self.scores_textbox = Label(self.mainWindow, width=20,
+                                    text=self.scores_text.format(self.scores[0], self.scores[1]),
+                                    justify=CENTER,
+                                    font=("Helvetica", 20), fg="blue")
+
+        # Tk GUI grid
+        self.rockButton.grid(row=2, column=1)
+        self.paperButton.grid(row=2, column=2)
+        self.scissorsButton.grid(row=2, column=3)
+        self.userImage.grid(row=3, column=1)
+        self.opponentImage.grid(row=3, column=3)
+        self.turnResult.grid(row=3, column=2)
+        self.ai_choice.grid(row=4, column=3)
+        self.your_choice.grid(row=4, column=1)
+        self.scores_textbox.grid(row=4, column=2)
+
+    # choice section
+    def user_choice_rock(self):
+        self.history.append(Rock)
+        userChoice = Rock
+        self.turn(userChoice)
+        self.userImage.configure(image=self.rockImage_player)
+        self.next_move = self.agent.predict(self.history)
+
+    def user_choice_paper(self):
+        self.history.append(Paper)
+        userChoice = Paper
+        self.turn(userChoice)
+        self.userImage.configure(image=self.paperImage_player)
+        self.next_move = self.agent.predict(self.history)
+
+    def user_choice_scissors(self):
+        self.history.append(Scissors)
+        userChoice = Scissors
+        self.turn(userChoice)
+        self.userImage.configure(image=self.scissorsImage_player)
+        self.next_move = self.agent.predict(self.history)
+
+    # gameplay section
+    def turn(self, user_choice):
+        # opponent = [Rock, Paper, Scissors]
+        opponent_choice = self.next_move
+        self.your_choice.configure(text="Your Choice")
+        self.ai_choice.configure(text="Computer Choice")
+        if opponent_choice == Rock:
+            self.opponentImage.configure(image=self.rockImage_computer)
+        elif opponent_choice == Paper:
+            self.opponentImage.configure(image=self.paperImage_computer)
+        else:
+            self.opponentImage.configure(image=self.scissorsImage_computer)
+
+        if opponent_choice == user_choice:
+            self.turnResult.configure(text="It's a draw.", fg="gray")
+        elif ((opponent_choice == Rock and user_choice == Scissors) or (
+                opponent_choice == Paper and user_choice == Rock) or (
+                      opponent_choice == Scissors and user_choice == Paper)):
+            self.turnResult.configure(text="You lose!", fg="red")
+            self.scores[COMPUTER_SCORE_INDEX] += 1
+        else:
+            self.turnResult.configure(text="You win!", fg="green")
+            self.scores[PLAYER_SCORE_INDEX] += 1
+        self.scores_textbox.configure(text=self.scores_text.format(self.scores[0], self.scores[1]))
+
+    def play(self):
+        self.mainWindow.mainloop()
 
 
-def userChoicePaper():
-    userChoice = "paper"
-    turn(userChoice)
-    userImage.configure(image=paperImage_player)
-
-
-def userChoiceScissors():
-    userChoice = "scissors"
-    turn(userChoice)
-    userImage.configure(image=scissorsImage_player)
-
-
-# gameplay section
-def turn(userChoice):
-    opponent = ['rock', 'paper', 'scissors']
-    opponent_choice = opponent[randint(0, 2)]
-    your_choice.configure(text="Your Choice")
-    ai_choice.configure(text="Computer Choice")
-    if opponent_choice == 'rock':
-        opponentImage.configure(image=rockImage_computer)
-    elif opponent_choice == 'paper':
-        opponentImage.configure(image=paperImage_computer)
-    else:
-        opponentImage.configure(image=scissorsImage_computer)
-
-    if opponent_choice == userChoice:
-        turnResult.configure(text="It's a draw.", fg="gray")
-    elif ((opponent_choice == 'rock' and userChoice == 'scissors') or (
-            opponent_choice == 'paper' and userChoice == 'rock') or (
-                  opponent_choice == 'scissors' and userChoice == 'paper')):
-        turnResult.configure(text="You lose!", fg="red")
-        scores[COMPUTER_SCORE_INDEX] += 1
-    else:
-        turnResult.configure(text="You win!", fg="green")
-        scores[PLAYER_SCORE_INDEX] += 1
-    scores_textbox.configure(text=scores_text.format(scores[0], scores[1]))
-
-
-# main program
-mainWindow = Tk()
-mainWindow.title("Rock-Paper-Scissors by Nahaliel")
-rockButtonImage = PhotoImage(file="images/rockButton.png")
-rockButton = Button(mainWindow, image=rockButtonImage, command=userChoiceRock)
-paperButtonImage = PhotoImage(file="images/paperButton.png")
-paperButton = Button(mainWindow, image=paperButtonImage, command=userChoicePaper)
-scissorsButtonImage = PhotoImage(file="images/scissorsButton.png")
-scissorsButton = Button(mainWindow, image=scissorsButtonImage, command=userChoiceScissors)
-
-# images
-# emptyImage = PhotoImage(file="images/empty.gif")
-emptyImage = PhotoImage()
-rockImage_player = PhotoImage(file="images/rockPlayer.png")
-rockImage_computer = PhotoImage(file="images/rockComputer.png")
-paperImage_player = PhotoImage(file="images/paperPlayer.png")
-paperImage_computer = PhotoImage(file="images/paperComputer.png")
-scissorsImage_player = PhotoImage(file="images/scissorsPlayer.png")
-scissorsImage_computer = PhotoImage(file="images/scissorsComputer.png")
-
-userImage = Label(image=emptyImage)
-userImage.image = emptyImage
-opponentImage = Label(image=emptyImage)
-opponentImage.image = emptyImage
-
-turnResult = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-your_choice = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-ai_choice = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-ai_choice = Label(mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-scores_textbox = Label(mainWindow, width=20, text=scores_text.format(scores[0], scores[1]), justify=CENTER,
-                       font=("Helvetica", 20), fg="blue")
-
-# Tk GUI grid
-rockButton.grid(row=2, column=1)
-paperButton.grid(row=2, column=2)
-scissorsButton.grid(row=2, column=3)
-userImage.grid(row=3, column=1)
-opponentImage.grid(row=3, column=3)
-turnResult.grid(row=3, column=2)
-ai_choice.grid(row=4, column=3)
-your_choice.grid(row=4, column=1)
-scores_textbox.grid(row=4, column=2)
-
-# mainloop
-mainWindow.mainloop()
+game = GamePlay()
+game.play()
