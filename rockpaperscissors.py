@@ -110,21 +110,18 @@ class GamePlay:
 
     # choice section
     def user_choice_rock(self):
-        self.history.append(Rock)
         userChoice = Rock
         self.turn(userChoice)
         self.user_image.configure(image=self.rock_image_user)
         self.next_move = self.agent.predict(self.history).best_counter()
 
     def user_choice_paper(self):
-        self.history.append(Paper)
         userChoice = Paper
         self.turn(userChoice)
         self.user_image.configure(image=self.paper_image_user)
         self.next_move = self.agent.predict(self.history).best_counter()
 
     def user_choice_scissors(self):
-        self.history.append(Scissors)
         userChoice = Scissors
         self.turn(userChoice)
         self.user_image.configure(image=self.scissors_image_user)
@@ -158,6 +155,7 @@ class GamePlay:
             self.scores[PLAYER_SCORE_INDEX] += 1
             to_write += 'W'
         self.scores_textbox.configure(text=self.scores_text.format(self.scores[0], self.scores[1]))
+        self.history.append(to_write)
         if self.write_mode.get():
             self.output_file.write(to_write + ' ')
 

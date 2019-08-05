@@ -6,11 +6,12 @@ from Constants import *
 import json
 import numpy as np
 
+
 ##########################################################################################
 # new!
 class Prediction:
 
-    def __init__(self, rock_percentage, paper_percentage = None, scissors_percentage = None):
+    def __init__(self, rock_percentage, paper_percentage=None, scissors_percentage=None):
         """
         usage options:
         * enter those 3 percentages
@@ -57,6 +58,7 @@ class Prediction:
     def to_tuple(self):
         return self.rock_percentage, self.paper_percentage, self.scissors_percentage
 
+
 ##########################################################################################
 
 
@@ -101,12 +103,14 @@ def get_ig(index_of_attribute, examples):
         ig += (len(att_examples) / len(examples)) * get_entropy(att_examples)
     return ig
 
+
 def get_entropy(examples):
     counts = []
     for choice in Choices:
         counts.append(len(examples[examples[:, -1] == choice]))
     counts = np.array(counts) / len(examples)
     return entropy(counts, base=2)
+
 
 #############################################
 # ID3 end
@@ -136,7 +140,8 @@ class Node(object):
     """ A node in a real-valued decision tree.
         Set all the attributes properly for viewing the tree after training.
     """
-    def __init__(self,leaf = True,children=None,samples = 0,attribute = None,misclassification = 0,label = None):
+
+    def __init__(self, leaf=True, children=None, samples=0, attribute=None, misclassification=0, label=None):
         """
         Parameters
         ----------
@@ -153,6 +158,7 @@ class Node(object):
         self.samples = samples
         self.attribute = attribute
         self.label = label
+
 
 def parse_dic_helper(dic):
     """
@@ -184,7 +190,7 @@ class DecisionTree(object):
         Training method: CART
     """
 
-    def __init__(self,epsilon=0.01, tree_path=None):
+    def __init__(self, epsilon=0.01, tree_path=None):
         self.root = None
         self.epsilon = epsilon  # todo use epsilon to prun
         if tree_path is not None:
@@ -196,7 +202,7 @@ class DecisionTree(object):
         """
         self.root = self.CART(examples)
 
-    def parse_tree_dic(self,  tree_path):
+    def parse_tree_dic(self, tree_path):
         """
         parsing the tree from the json file
         :param tree_path: the path of the json file
@@ -227,13 +233,13 @@ class DecisionTree(object):
     def CART_helper(self, examples, available_indexes):
         # print(examples)
         if len(examples) == 0:
-            return Node(leaf=True, label=Prediction(0,0,0))
+            return Node(leaf=True, label=Prediction(0, 0, 0))
         if all_same(examples[:,
                     -1]):  # if all the samples classifications are the same
             return Node(leaf=True, label=Prediction(examples[0, -1]))
         best_attribute_index = self.find_classification(examples, available_indexes)
-        if best_attribute_index is None: # all examples are the same, with different predictions
-            played = examples[:,-1]
+        if best_attribute_index is None:  # all examples are the same, with different predictions
+            played = examples[:, -1]
             return Node(leaf=True, label=Prediction(played))
         remaining_indexes = available_indexes.copy()
         remaining_indexes.remove(best_attribute_index)
@@ -264,12 +270,11 @@ class DecisionTree(object):
             igrs[index] = igr
         # print(igrs)
 
-        if not igrs: # all examples are the same, with different predictions
+        if not igrs:  # all examples are the same, with different predictions
             return None
         best_att_index = max(igrs, key=lambda x: igrs[x])
 
         return best_att_index
-
 
     def predict(self, X):
         """
@@ -282,9 +287,8 @@ class DecisionTree(object):
             for x in X:
                 res.append(self.label_value(x, self.root))
             return np.array(res)
-        except TypeError: # X is not iterable
+        except TypeError:  # X is not iterable
             return self.label_value(X, self.root)
-
 
     def label_value(self, x, node):
         """
@@ -298,7 +302,6 @@ class DecisionTree(object):
         xs_parameter = x[nodes_attribute_index]
         children_num = parameters[node.attribute].index(xs_parameter)
         return self.label_value(x, node.children[children_num])
-
 
     def error(self, X, y):
         """
@@ -318,5 +321,3 @@ class DecisionTree(object):
         with open(path, 'w') as fp:
             json.dump(dic, fp, indent=1)
         fp.close()
-
-
