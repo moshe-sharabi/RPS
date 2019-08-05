@@ -20,47 +20,47 @@ class GamePlay:
     def __init__(self):
 
         # main program
-        self.mainWindow = Tk()
+        self.main_window = Tk()
         self.scores_text = "SCORE:\nYou: {}\nComputer: {}"
         self.write_mode = BooleanVar()
-        self.mainWindow.title("Rock-Paper-Scissors by Nahaliel")
+        self.main_window.title("Rock-Paper-Scissors by Nahaliel")
 
         # images
-        self.emptyImage = PhotoImage()
-        self.rockImage_player = PhotoImage(file="images"+os.path.sep+"rockPlayer.png")
-        self.rockImage_computer = PhotoImage(file="images"+os.path.sep+"rockComputer.png")
-        self.paperImage_player = PhotoImage(file="images"+os.path.sep+"paperPlayer.png")
-        self.paperImage_computer = PhotoImage(file="images"+os.path.sep+"paperComputer.png")
-        self.scissorsImage_player = PhotoImage(file="images"+os.path.sep+"scissorsPlayer.png")
-        self.scissorsImage_computer = PhotoImage(file="images"+os.path.sep+"scissorsComputer.png")
-        self.rockButtonImage = PhotoImage(file="images"+os.path.sep+"rockButton.png")
-        self.paperButtonImage = PhotoImage(file="images"+os.path.sep+"paperButton.png")
-        self.scissorsButtonImage = PhotoImage(file="images"+os.path.sep+"scissorsButton.png")
+        self.empty_image = PhotoImage()
+        self.rock_image_user = PhotoImage(file="images" + os.path.sep + "rockPlayer.png")
+        self.rock_image_computer = PhotoImage(file="images" + os.path.sep + "rockComputer.png")
+        self.paper_image_user = PhotoImage(file="images" + os.path.sep + "paperPlayer.png")
+        self.paper_image_computer = PhotoImage(file="images" + os.path.sep + "paperComputer.png")
+        self.scissors_image_user = PhotoImage(file="images" + os.path.sep + "scissorsPlayer.png")
+        self.scissors_image_computer = PhotoImage(file="images"+os.path.sep+"scissorsComputer.png")
+        self.rock_button_image = PhotoImage(file="images"+os.path.sep+"rockButton.png")
+        self.paper_button_image = PhotoImage(file="images"+os.path.sep+"paperButton.png")
+        self.scissors_button_image = PhotoImage(file="images"+os.path.sep+"scissorsButton.png")
         self.random_button_image = PhotoImage(file="images"+os.path.sep+"RAND_button.png")
         self.reflex_button_image = PhotoImage(file="images"+os.path.sep+"REFLEX_button.png")
         self.ai_button_image = PhotoImage(file="images"+os.path.sep+"AI_button.png")
 
-        self.userImage = Label(image=self.emptyImage)
-        self.userImage.image = self.emptyImage
-        self.opponentImage = Label(image=self.emptyImage)
-        self.opponentImage.image = self.emptyImage
+        self.user_image = Label(image=self.empty_image)
+        self.user_image.image = self.empty_image
+        self.computer_image = Label(image=self.empty_image)
+        self.computer_image.image = self.empty_image
 
-        self.turnResult = Label(self.mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-        self.your_choice = Label(self.mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-        self.ai_choice = Label(self.mainWindow, width=20, justify=CENTER, font=("Helvetica", 20))
-        self.scores_textbox = Label(self.mainWindow, width=20,
+        self.turn_result = Label(self.main_window, width=20, justify=CENTER, font=("Helvetica", 20))
+        self.your_choice = Label(self.main_window, width=20, justify=CENTER, font=("Helvetica", 20))
+        self.ai_choice = Label(self.main_window, width=20, justify=CENTER, font=("Helvetica", 20))
+        self.scores_textbox = Label(self.main_window, width=20,
                                     text=self.scores_text.format(self.scores[0], self.scores[1]), justify=CENTER,
                                     font=("Helvetica", 20), fg="blue")
 
-        self.rockButton = Button(self.mainWindow, image=self.rockButtonImage, command=self.user_choice_rock)
-        self.paperButton = Button(self.mainWindow, image=self.paperButtonImage, command=self.user_choice_paper)
-        self.scissorsButton = Button(self.mainWindow, image=self.scissorsButtonImage, command=self.user_choice_scissors)
-        self.random_agent_button = Button(self.mainWindow, image=self.random_button_image,
+        self.rock_button = Button(self.main_window, image=self.rock_button_image, command=self.user_choice_rock)
+        self.paper_button = Button(self.main_window, image=self.paper_button_image, command=self.user_choice_paper)
+        self.scissors_button = Button(self.main_window, image=self.scissors_button_image, command=self.user_choice_scissors)
+        self.random_agent_button = Button(self.main_window, image=self.random_button_image,
                                           command=self.random_agent_chosen)
-        self.reflex_agent_button = Button(self.mainWindow, image=self.reflex_button_image,
+        self.reflex_agent_button = Button(self.main_window, image=self.reflex_button_image,
                                           command=self.reflex_agent_chosen)
-        self.ai_agent_button = Button(self.mainWindow, image=self.ai_button_image, command=self.ai_agent_chosen)
-        self.write_mode_button = Checkbutton(self.mainWindow, text="Write episode to examples",
+        self.ai_agent_button = Button(self.main_window, image=self.ai_button_image, command=self.ai_agent_chosen)
+        self.write_mode_button = Checkbutton(self.main_window, text="Write episode to examples",
                                              variable=self.write_mode)
         self.locate_agent_buttons()
 
@@ -98,12 +98,12 @@ class GamePlay:
 
     def locate_play_table(self):
         # Tk GUI grid
-        self.rockButton.grid(row=2, column=1)
-        self.paperButton.grid(row=2, column=2)
-        self.scissorsButton.grid(row=2, column=3)
-        self.userImage.grid(row=3, column=1)
-        self.opponentImage.grid(row=3, column=3)
-        self.turnResult.grid(row=3, column=2)
+        self.rock_button.grid(row=2, column=1)
+        self.paper_button.grid(row=2, column=2)
+        self.scissors_button.grid(row=2, column=3)
+        self.user_image.grid(row=3, column=1)
+        self.computer_image.grid(row=3, column=3)
+        self.turn_result.grid(row=3, column=2)
         self.ai_choice.grid(row=4, column=3)
         self.your_choice.grid(row=4, column=1)
         self.scores_textbox.grid(row=4, column=2)
@@ -113,48 +113,48 @@ class GamePlay:
         self.history.append(Rock)
         userChoice = Rock
         self.turn(userChoice)
-        self.userImage.configure(image=self.rockImage_player)
+        self.user_image.configure(image=self.rock_image_user)
         self.next_move = self.agent.predict(self.history).best_counter()
 
     def user_choice_paper(self):
         self.history.append(Paper)
         userChoice = Paper
         self.turn(userChoice)
-        self.userImage.configure(image=self.paperImage_player)
+        self.user_image.configure(image=self.paper_image_user)
         self.next_move = self.agent.predict(self.history).best_counter()
 
     def user_choice_scissors(self):
         self.history.append(Scissors)
         userChoice = Scissors
         self.turn(userChoice)
-        self.userImage.configure(image=self.scissorsImage_player)
+        self.user_image.configure(image=self.scissors_image_user)
         self.next_move = self.agent.predict(self.history).best_counter()
 
     # gameplay section
     def turn(self, user_choice):
         to_write = user_choice
-        opponent_choice = self.next_move
+        computer_choice = self.next_move
         self.your_choice.configure(text="Your Choice")
         self.ai_choice.configure(text="Computer Choice")
-        if opponent_choice == Rock:
-            self.opponentImage.configure(image=self.rockImage_computer)
-        elif opponent_choice == Paper:
-            self.opponentImage.configure(image=self.paperImage_computer)
+        if computer_choice == Rock:
+            self.computer_image.configure(image=self.rock_image_computer)
+        elif computer_choice == Paper:
+            self.computer_image.configure(image=self.paper_image_computer)
         else:
-            self.opponentImage.configure(image=self.scissorsImage_computer)
+            self.computer_image.configure(image=self.scissors_image_computer)
 
-        if opponent_choice == user_choice:
-            self.turnResult.configure(text="It's a draw.", fg="gray")
+        if computer_choice == user_choice:
+            self.turn_result.configure(text="It's a draw.", fg="gray")
             to_write += 'D'
-        elif ((opponent_choice == Rock and user_choice == Scissors) or (
-                opponent_choice == Paper and user_choice == Rock) or (
-                      opponent_choice == Scissors and user_choice == Paper)):
-            self.turnResult.configure(text="You lose!", fg="red")
+        elif ((computer_choice == Rock and user_choice == Scissors) or (
+                computer_choice == Paper and user_choice == Rock) or (
+                      computer_choice == Scissors and user_choice == Paper)):
+            self.turn_result.configure(text="You lose!", fg="red")
             self.scores[COMPUTER_SCORE_INDEX] += 1
             to_write += 'L'
 
         else:
-            self.turnResult.configure(text="You win!", fg="green")
+            self.turn_result.configure(text="You win!", fg="green")
             self.scores[PLAYER_SCORE_INDEX] += 1
             to_write += 'W'
         self.scores_textbox.configure(text=self.scores_text.format(self.scores[0], self.scores[1]))
@@ -162,7 +162,7 @@ class GamePlay:
             self.output_file.write(to_write + ' ')
 
     def play(self):
-        self.mainWindow.mainloop()
+        self.main_window.mainloop()
         if self.write_mode.get():
             self.output_file.close()
 
