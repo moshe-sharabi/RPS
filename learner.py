@@ -125,4 +125,4 @@ class AI_agent:
             if len(history) >= length:
                 if length == 0:
                     return self.all_trees[length].predict(None)
-                return self.all_trees[length].predict(get_parameters(history))
+                return self.all_trees[length].predict(np.array(get_parameters(history)))
