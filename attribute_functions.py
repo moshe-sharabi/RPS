@@ -50,7 +50,8 @@ def get_last_sequence_length(history):
     i = 1
     for game in reversed_history:
         if game[cons.INDEX_OF_PLAY] != sequence_play:
-            return i
+            if i >= cons.MAX_LENGTH_FOR_EVERYTHING:
+                return cons.PARAM_MAX_LENGTH
         i += 1
     if i >= cons.MAX_LENGTH_FOR_EVERYTHING:
         return cons.PARAM_MAX_LENGTH
