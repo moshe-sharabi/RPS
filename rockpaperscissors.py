@@ -13,11 +13,11 @@ COMPUTER_SCORE_INDEX = 1
 class GamePlay:
     scores = [0, 0]
     history = []
-    file = None
+    output_file = None
+    agent = None
+    next_move = None
 
-    def __init__(self, agent=RandomAgent()):
-        self.agent = agent
-        self.next_move = self.agent.predict(self.history).best_counter()
+    def __init__(self):
 
         # main program
         self.mainWindow = Tk()
@@ -66,27 +66,28 @@ class GamePlay:
 
     def random_agent_chosen(self):
         if self.write_mode.get():
-            self.file = open("examples"+os.path.sep+"random_examples.txt", 'a')
+            self.output_file = open("examples" + os.path.sep + "random_examples.txt", 'a')
         self.agent_chosen(RandomAgent())
 
     def reflex_agent_chosen(self):
         if self.write_mode.get():
-            self.file = open("examples"+os.path.sep+"reflex_examples.txt", 'a')
+            self.output_file = open("examples" + os.path.sep + "reflex_examples.txt", 'a')
         self.agent_chosen(ReflexAgent())
 
     def ai_agent_chosen(self):
         if self.write_mode.get():
-            self.file = open("examples"+os.path.sep+"ai_examples.txt", 'a')
+            self.output_file = open("examples" + os.path.sep + "ai_examples.txt", 'a')
         self.agent_chosen(AI_agent())
 
     def agent_chosen(self, agent):
-        if self.write_mode.get() and self.file.read():
-            self.file.write('\n')
+        if self.write_mode.get() and self.output_file.read():
+            self.output_file.write('\n')
         self.agent = agent
         self.ai_agent_button.grid_remove()
         self.reflex_agent_button.grid_remove()
         self.random_agent_button.grid_remove()
         self.write_mode_button.grid_remove()
+        self.next_move = self.agent.predict(self.history).best_counter()
         self.locate_play_table()
 
     def locate_agent_buttons(self):
@@ -158,12 +159,12 @@ class GamePlay:
             to_write += 'W'
         self.scores_textbox.configure(text=self.scores_text.format(self.scores[0], self.scores[1]))
         if self.write_mode.get():
-            self.file.write(to_write + ' ')
+            self.output_file.write(to_write + ' ')
 
     def play(self):
         self.mainWindow.mainloop()
         if self.write_mode.get():
-            self.file.close()
+            self.output_file.close()
 
 
 game = GamePlay()
