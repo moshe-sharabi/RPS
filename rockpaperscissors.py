@@ -60,7 +60,7 @@ class GamePlay:
         self.reflex_agent_button = Button(self.main_window, image=self.reflex_button_image,
                                           command=self.reflex_agent_chosen)
         self.ai_agent_button = Button(self.main_window, image=self.ai_button_image, command=self.ai_agent_chosen)
-        self.write_mode_button = Checkbutton(self.main_window, text="Write episode to examples",
+        self.write_mode_button = Checkbutton(self.main_window, text="save log to file",
                                              variable=self.write_mode)
         self.locate_agent_buttons()
 
