@@ -276,19 +276,11 @@ class DecisionTree(object):
 
         return best_att_index
 
-    def predict(self, X):
+    def predict(self, example):
         """
-        Returns
-        -------
-        y_hat : a prediction vector for X
+        Returns a prediction vector for the given example
         """
-        try:
-            res = []
-            for x in X:
-                res.append(self.label_value(x, self.root))
-            return np.array(res)
-        except TypeError:  # X is not iterable
-            return self.label_value(X, self.root)
+        return self.label_value(example, self.root)
 
     def label_value(self, x, node):
         """
