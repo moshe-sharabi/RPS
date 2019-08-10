@@ -170,7 +170,9 @@ class GamePlay:
             self.output_file.write('\n')
             self.output_file.close()
             name = os.path.basename(self.output_file_path)
-            os.system(f"git commit ' + self.output_file_path + ' -m \'updated {name}\'")
+            command = "git commit " + self.output_file_path + f" -m \"updated {name}\""
+            print(command)
+            os.system(command)
             os.system('git push')
         if self.build_process:
             self.build_process.join()
