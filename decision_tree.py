@@ -238,7 +238,7 @@ class DecisionTree(object):
                     -1]):  # if all the samples classifications are the same
             return Node(leaf=True, label=Prediction(examples[0, -1]))
         if len(examples) <= number_of_examples_cut:
-            print("prunning")
+            # print("prunning")
             played = examples[:, -1]
             return Node(leaf=True, label=Prediction(played))
         best_attribute_index = self.find_classification(examples, available_indexes)
