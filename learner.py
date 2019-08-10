@@ -32,6 +32,9 @@ def read_histories(path):
     file_str = open(path).read()
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
+    for hist_str in histories_str:
+        if histories_str[-1] == '':
+            histories_str.pop()
 
     return histories_str
 
