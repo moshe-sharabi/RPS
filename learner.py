@@ -1,5 +1,5 @@
 import os
-import random
+import Constants
 
 from decision_tree import *
 from attribute_functions import *
@@ -29,11 +29,13 @@ def read_histories(path):
     :param path: the path of file
     :return: a list of attributes per history
     """
+    # get update from git:
+    os.system('git checkout master -- ' + path)
     file_str = open(path).read()
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
     for hist_str in histories_str:
-        if len(histories_str[-1]) != 2:
+        if histories_str[-1] not in Constants.neg:
             hist_str.pop()
 
     return histories_str
@@ -130,4 +132,5 @@ class AI_agent:
                 example = np.array(get_parameters(history))
                 return self.all_trees[length].predict(example)
 
-AI_agent().build()
+if __name__ == '__main__':
+    AI_agent().build()
