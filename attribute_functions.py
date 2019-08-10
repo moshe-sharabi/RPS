@@ -6,7 +6,11 @@ class HistoryException(ValueError):
     def __init__(self):
         super(HistoryException, self).__init__()
 
-
+def quantize(count):
+    if count < 5:
+        return str(count)
+    else:
+        return "5+"
 def get_last_played(history):
     if not history:
         raise HistoryException
@@ -55,7 +59,7 @@ def get_last_sequence_length(history):
         i += 1
     if i >= cons.MAX_LENGTH_FOR_EVERYTHING:
         return cons.PARAM_MAX_LENGTH
-    return i
+    return quantize(i)
 
 
 def get_pattern_next_choice(history):
@@ -92,7 +96,7 @@ def num_smth(member):
                 counter += 1
         if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
             return cons.PARAM_MAX_LENGTH
-        return counter  # /float(len(history))
+        return quantize(counter)  # /float(len(history))
 
     return count
 
@@ -136,6 +140,6 @@ def sequence_smth(member):
                 break
         if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
             return cons.PARAM_MAX_LENGTH
-        return counter  # /float(len(history))
+        return quantize(counter)  # /float(len(history))
 
     return count
