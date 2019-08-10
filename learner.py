@@ -35,7 +35,7 @@ def read_histories(path):
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
     for hist_str in histories_str:
-        if histories_str[-1] not in Constants.neg:
+        if hist_str[-1] not in Constants.neg:
             hist_str.pop()
 
     return histories_str
