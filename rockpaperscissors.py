@@ -80,7 +80,7 @@ class GamePlay:
         if self.write_mode.get():
             self.output_file = open("examples" + os.path.sep + "ai_examples.txt", 'a')
         self.agent_chosen(AI_agent())
-        # running in the background
+        # running in the background todo # if we want
         thread = threading.Thread(target=self.agent.build, args=())
         # thread.daemon = True  # Daemonize thread
         thread.start()
