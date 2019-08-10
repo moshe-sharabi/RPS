@@ -8,7 +8,7 @@
    "children": [
     {
      "leaf": false,
-     "attribute": "last sequence length",
+     "attribute": "num scissors",
      "children": [
       {
        "leaf": true,
@@ -314,17 +314,155 @@
     },
     {
      "leaf": false,
-     "attribute": "last sequence length",
+     "attribute": "last sequence rock",
      "children": [
       {
-       "leaf": true,
-       "attribute": null,
-       "children": null,
-       "label": [
-        0,
-        0,
-        0
-       ]
+       "leaf": false,
+       "attribute": "most successful",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.38807339449541284,
+            0.3091743119266055,
+            0.30275229357798167
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.37297734627831713,
+            0.2977346278317152,
+            0.32928802588996764
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.35449101796407184,
+            0.288622754491018,
+            0.3568862275449102
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.37293729372937295,
+            0.25412541254125415,
+            0.37293729372937295
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.391705069124424,
+            0.42857142857142855,
+            0.17972350230414746
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3723404255319149,
+            0.2872340425531915,
+            0.3404255319148936
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
       },
       {
        "leaf": false,
@@ -1045,152 +1183,14 @@
        "label": null
       },
       {
-       "leaf": false,
-       "attribute": "most successful",
-       "children": [
-        {
-         "leaf": false,
-         "attribute": "most played after <comp move>",
-         "children": [
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0,
-            0,
-            0
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0.38807339449541284,
-            0.3091743119266055,
-            0.30275229357798167
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0,
-            0,
-            0
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0.37297734627831713,
-            0.2977346278317152,
-            0.32928802588996764
-           ]
-          }
-         ],
-         "label": null
-        },
-        {
-         "leaf": false,
-         "attribute": "most played after <comp move>",
-         "children": [
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0,
-            0,
-            0
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0.35449101796407184,
-            0.288622754491018,
-            0.3568862275449102
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0,
-            0,
-            0
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0.37293729372937295,
-            0.25412541254125415,
-            0.37293729372937295
-           ]
-          }
-         ],
-         "label": null
-        },
-        {
-         "leaf": false,
-         "attribute": "most played after <comp move>",
-         "children": [
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0,
-            0,
-            0
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0.391705069124424,
-            0.42857142857142855,
-            0.17972350230414746
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0,
-            0,
-            0
-           ]
-          },
-          {
-           "leaf": true,
-           "attribute": null,
-           "children": null,
-           "label": [
-            0.3723404255319149,
-            0.2872340425531915,
-            0.3404255319148936
-           ]
-          }
-         ],
-         "label": null
-        }
-       ],
-       "label": null
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
       },
       {
        "leaf": true,
@@ -1344,7 +1344,7 @@
            "children": [
             {
              "leaf": false,
-             "attribute": "last sequence length",
+             "attribute": "last sequence rock",
              "children": [
               {
                "leaf": true,
@@ -1431,7 +1431,7 @@
             },
             {
              "leaf": false,
-             "attribute": "last sequence length",
+             "attribute": "last sequence rock",
              "children": [
               {
                "leaf": true,
@@ -1501,7 +1501,7 @@
           },
           {
            "leaf": false,
-           "attribute": "last sequence length",
+           "attribute": "last sequence rock",
            "children": [
             {
              "leaf": true,
@@ -1676,7 +1676,7 @@
             },
             {
              "leaf": false,
-             "attribute": "last sequence length",
+             "attribute": "last sequence rock",
              "children": [
               {
                "leaf": true,
@@ -4377,7 +4377,7 @@
   },
   {
    "leaf": false,
-   "attribute": "last sequence length",
+   "attribute": "num paper",
    "children": [
     {
      "leaf": true,
