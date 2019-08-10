@@ -87,8 +87,6 @@ class GamePlay:
 
 
     def agent_chosen(self, agent):
-        if self.write_mode.get() and self.output_file.read():
-            self.output_file.write('\n')
         self.agent = agent
         self.ai_agent_button.grid_remove()
         self.reflex_agent_button.grid_remove()
@@ -169,6 +167,7 @@ class GamePlay:
     def play(self):
         self.main_window.mainloop()
         if self.write_mode.get():
+            self.output_file.write('\n')
             self.output_file.close()
         if self.build_process:
             self.build_process.join()
