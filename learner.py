@@ -1,12 +1,14 @@
-import os
-import Constants
-
 from decision_tree import *
 from attribute_functions import *
 from Constants import *
 import glob
+import random
 
 TREE_FILE_PREFIX = 'tree_'
+LEN_EPOCH = 7
+ROCK_IND = 0
+PAPER_IND = 1
+SCISSORS_IND = 2
 
 
 class RandomAgent:
@@ -134,5 +136,132 @@ class AI_agent:
                 example = np.array(get_parameters(history))
                 return self.all_trees[length].predict(example)
 
-if __name__ == '__main__':
-    AI_agent().build()
+class OnlineEpochAgent:
+
+    def __init__(self, epoch, round1, gamma1):
+        self.trees = []
+        self.epoch = epoch
+        self.round = round1
+        self.gamma = gamma1
+        self.counter = 0
+        self.epoch_examples = []
+        self.cur_round = []
+        self.entire_history = []
+        self.last_play = Paper
+        new_tree = DecisionTree()
+        if self.round > 5:
+            new_tree.parse_tree_dic(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(5)))
+        else:
+            new_tree.parse_tree_dic(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(self.round)))
+        self.trees.append(new_tree)
+
+    def tree_voting(self):
+        if len(self.entire_history) < self.round:
+            return random.choice(Choices)
+        cur_history = self.entire_history[-self.round:]
+        example = get_parameters(cur_history)
+        votes = {Rock: 0, Paper: 0, Scissors: 0}
+        for i in range(len(self.trees)):
+            cur_prediction = self.trees[i].predict(example)
+            rock_percentage, paper_percentage, scissors_percentage = cur_prediction.to_tuple()
+            cur_power = np.power(self.gamma, len(self.trees) - 1 - i)
+            votes[Rock] += rock_percentage*cur_power
+            votes[Paper] += paper_percentage*cur_power
+            votes[Scissors] += scissors_percentage*cur_power
+        return max(votes.keys(), key=(lambda x: votes[x]))
+
+    def get_wins(self):
+        c = Counter()
+        for game in self.entire_history:
+            c[game[INDEX_OF_RESULT]] += 1
+        print("L:" + str(c[LOSS]/len(self.entire_history)) + "\n" +
+              "W:" + str(c[WIN]/len(self.entire_history)) + "\n" +
+              "d:" + str(c[DRAW]/len(self.entire_history)))
+
+    def predict(self, previous_play):
+        if previous_play is None:
+            return self.last_play
+        self.counter += 1
+        if self.counter == self.round:
+            example = get_parameters(self.cur_round) + [previous_play]
+            self.epoch_examples.append(example)
+            if len(self.epoch_examples) == self.epoch:
+                cur_tree = DecisionTree()
+                cur_tree.train(np.array(self.epoch_examples))
+                self.trees.append(cur_tree)
+                self.epoch_examples = []
+            self.counter = 0
+            self.cur_round = []
+        else:
+            self.cur_round.append(PAIR_TRANSLATOR[previous_play + self.last_play])
+        self.entire_history.append(PAIR_TRANSLATOR[previous_play + self.last_play])
+        self.last_play = self.tree_voting()
+        return self.last_play
+
+
+class OnlineSingleTreeAgent:
+
+    def __init__(self, epoch, round1):
+        self.tree  = None
+        self.epoch = epoch
+        self.round = round1
+        self.counter = 0
+        self.round_counter = 0
+        self.all_examples = []
+        self.cur_round = []
+        self.entire_history = []
+        self.last_play = Paper
+        new_tree = DecisionTree()
+        if self.round > 5:
+            new_tree.parse_tree_dic(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(5)))
+        else:
+            new_tree.parse_tree_dic(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(self.round)))
+        self.tree = new_tree
+
+    def get_wins(self):
+        c = Counter()
+        for game in self.entire_history:
+            c[game[INDEX_OF_RESULT]] += 1
+        print(c)
+
+    def predict(self, previous_play):
+        if previous_play is None:
+            return self.last_play
+        self.counter += 1
+        if self.counter == self.round:
+            example = get_parameters(self.cur_round) + [previous_play]
+            self.all_examples.append(example)
+            if self.round_counter == self.epoch:
+                cur_tree = DecisionTree()
+                cur_tree.train(np.array(self.all_examples))
+                self.tree = cur_tree
+                self.round_counter = 0
+            else:
+                self.round_counter += 1
+            self.counter = 0
+
+            self.cur_round = []
+        else:
+            self.cur_round.append(PAIR_TRANSLATOR[previous_play + self.last_play])
+        self.entire_history.append(PAIR_TRANSLATOR[previous_play + self.last_play])
+        if len(self.entire_history) < self.round:
+            self.last_play = random.choice(Choices)
+            return self.last_play
+        cur_history = self.entire_history[-self.round:]
+        example = get_parameters(cur_history)
+        rock_percentage, paper_percentage, scissors_percentage = self.tree.predict(example).to_tuple()
+        precentage = {Rock: rock_percentage, Scissors: scissors_percentage, Paper: paper_percentage}
+        self.last_play = max(precentage.keys(), key=(lambda x: precentage[x]))
+        return self.last_play
+
+
+
+flag = True
+idk = OnlineEpochAgent(5, 5, 0.9)
+last_choice = None
+our_choice = None
+for i in range(500):
+    for j in range(25):
+        our_choice = idk.predict(last_choice)
+        last_choice = random.choice(Choices)
+idk.get_wins()

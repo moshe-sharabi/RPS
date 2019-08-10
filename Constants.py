@@ -18,6 +18,8 @@ neg = {
     'SD': 'SD'
 }
 
+
+
 WIN = 'W'
 DRAW = 'D'
 LOSS = 'L'
@@ -27,6 +29,21 @@ points = {
     WIN: 1,
     DRAW: 0,
     LOSS: -1
+}
+
+PAIR_TRANSLATOR ={
+    "RR": "RD",
+    "RP": "RL",
+    "RS": "RW",
+    "PR": "PW",
+    "PP": "PD",
+    "PS": "PL",
+    "SR": "SL",
+    "SP": "SW",
+    "SS": "SD",
+
+
+
 }
 
 INDEX_OF_PLAY = 0

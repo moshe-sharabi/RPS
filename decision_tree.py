@@ -231,7 +231,7 @@ class DecisionTree(object):
         -------
         node : an instance of the class Node (can be either a root of a subtree or a leaf)
         """
-        self.root = self.CART_helper(examples, set(range(len(examples[0]) - 1)), int(len(examples) * self.epsilon))
+        return self.CART_helper(examples, set(range(len(examples[0]) - 1)), int(len(examples) * self.epsilon))
 
     def CART_helper(self, examples, available_indexes, number_of_examples_cut = 0):
         # print(examples)
