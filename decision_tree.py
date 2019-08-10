@@ -75,6 +75,9 @@ def read_histories(path):
     file_str = open(path).read()
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str]
+    for hist_str in histories_str:
+        if histories_str[-1] == '':
+            histories_str.pop()
     ##histories_attributes = [[func(history)for func in attribute_functions] for history in histories_str[:-1]]
     histories_attributes = []
     for history in histories_str:
