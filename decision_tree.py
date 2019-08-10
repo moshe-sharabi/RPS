@@ -190,7 +190,7 @@ class DecisionTree(object):
         Training method: CART
     """
 
-    def __init__(self, epsilon=0.001, tree_path=None):
+    def __init__(self, epsilon=0.01, tree_path=None):
         self.root = None
         self.epsilon = epsilon  # todo use epsilon to prun
         if tree_path is not None:
@@ -238,6 +238,7 @@ class DecisionTree(object):
                     -1]):  # if all the samples classifications are the same
             return Node(leaf=True, label=Prediction(examples[0, -1]))
         if len(examples) <= number_of_examples_cut:
+            print("prunning")
             played = examples[:, -1]
             return Node(leaf=True, label=Prediction(played))
         best_attribute_index = self.find_classification(examples, available_indexes)
@@ -250,7 +251,7 @@ class DecisionTree(object):
         for param in parameters[attribute_names[best_attribute_index]]:
             indexes = examples[:, best_attribute_index] == param
             # print("child " + param + ":")
-            children.append(self.CART_helper(examples[indexes], remaining_indexes))
+            children.append(self.CART_helper(examples[indexes], remaining_indexes, number_of_examples_cut))
         return Node(leaf=False, samples=examples,
                     attribute=attribute_names[best_attribute_index],
                     children=children)
