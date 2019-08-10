@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import threading
 from random import *
 from tkinter import *
 from learner import *
@@ -18,6 +19,7 @@ class GamePlay:
     next_move = None
 
     def __init__(self):
+        self.build_process = None
 
         # main program
         self.main_window = Tk()
@@ -78,6 +80,11 @@ class GamePlay:
         if self.write_mode.get():
             self.output_file = open("examples" + os.path.sep + "ai_examples.txt", 'a')
         self.agent_chosen(AI_agent())
+        # running in the background
+        thread = threading.Thread(target=self.agent.build, args=())
+        # thread.daemon = True  # Daemonize thread
+        thread.start()
+
 
     def agent_chosen(self, agent):
         if self.write_mode.get() and self.output_file.read():
@@ -163,6 +170,8 @@ class GamePlay:
         self.main_window.mainloop()
         if self.write_mode.get():
             self.output_file.close()
+        if self.build_process:
+            self.build_process.join()
 
 
 game = GamePlay()
