@@ -167,6 +167,7 @@ class GamePlay:
         if self.write_mode.get():
             os.system('git checkout master -- ' + self.output_file_path)
             self.output_file = open(self.output_file_path, 'a')
+            self.output_file.write(' '.join(self.history))
             self.output_file.write('\n')
             self.output_file.close()
             name = os.path.basename(self.output_file_path)
