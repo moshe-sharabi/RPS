@@ -7,10 +7,10 @@ class HistoryException(ValueError):
         super(HistoryException, self).__init__()
 
 def quantize(count):
-    if count < 5:
+    if count < cons.MAX_LENGTH_FOR_EVERYTHING:
         return str(count)
     else:
-        return "5+"
+        return cons.PARAM_MAX_LENGTH
 def get_last_played(history):
     if not history:
         raise HistoryException
