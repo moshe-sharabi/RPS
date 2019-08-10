@@ -321,5 +321,6 @@ class DecisionTree(object):
             json.dump(dic, fp, indent=1)
         fp.close()
         name = os.path.basename(path)
-        os.system(f"git commit ' + path +' -m \'new {name}\'")
+        command = "git commit " + path + f" -m \"new {name}\""
+        os.system(command)
         os.system('git push')
