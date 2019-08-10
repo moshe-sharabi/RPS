@@ -1,5 +1,5 @@
 import random
-
+import os
 from util import Counter
 from scipy.stats import *
 from Constants import *
@@ -320,3 +320,6 @@ class DecisionTree(object):
         with open(path, 'w') as fp:
             json.dump(dic, fp, indent=1)
         fp.close()
+        name = os.path.basename(path)
+        os.system(f"git commit ' + path +' -m \'new {name}\'")
+        os.system('git push')
