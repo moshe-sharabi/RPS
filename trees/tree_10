@@ -1,0 +1,5145 @@
+{
+ "leaf": false,
+ "attribute": "last sequence paper",
+ "children": [
+  {
+   "leaf": false,
+   "attribute": "most played in last 10",
+   "children": [
+    {
+     "leaf": false,
+     "attribute": "longer sequence",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most played after <comp move>",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "last sequence rock",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.6666666666666666,
+            0.25,
+            0.08333333333333333
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.6285714285714286,
+            0.14285714285714285,
+            0.22857142857142856
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.8333333333333334,
+            0.0,
+            0.16666666666666666
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.7692307692307693,
+            0.15384615384615385,
+            0.07692307692307693
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "num paper",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "last sequence scissors",
+             "children": [
+              {
+               "leaf": false,
+               "attribute": "most successful",
+               "children": [
+                {
+                 "leaf": false,
+                 "attribute": "num scissors",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.9405405405405406,
+                    0.043243243243243246,
+                    0.016216216216216217
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.8333333333333334,
+                    0.16666666666666666,
+                    0.0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  }
+                 ],
+                 "label": null
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.7837837837837838,
+                  0.16216216216216217,
+                  0.05405405405405406
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": false,
+               "attribute": "most successful",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.7142857142857143,
+                  0.14285714285714285,
+                  0.14285714285714285
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "patterns next choice",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.896551724137931,
+                    0.05172413793103448,
+                    0.05172413793103448
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    1,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.9230769230769231,
+                    0.07692307692307693,
+                    0.0
+                   ]
+                  }
+                 ],
+                 "label": null
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.6666666666666666,
+                0.3333333333333333,
+                0.0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                1
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.7931034482758621,
+              0.20689655172413793,
+              0.0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.2777777777777778,
+          0.3333333333333333,
+          0.3888888888888889
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.7096774193548387,
+          0.1935483870967742,
+          0.0967741935483871
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.42105263157894735,
+        0.21052631578947367,
+        0.3684210526315789
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "most played",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "last sequence rock",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.07692307692307693,
+          0.8076923076923077,
+          0.11538461538461539
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.21052631578947367,
+          0.38596491228070173,
+          0.40350877192982454
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.35714285714285715,
+          0.21428571428571427,
+          0.42857142857142855
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          1,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.0,
+          0.5,
+          0.5
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      0
+     ]
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "last sequence rock",
+   "children": [
+    {
+     "leaf": false,
+     "attribute": "num scissors",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.25,
+        0.25,
+        0.5
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.4,
+        0.4,
+        0.2
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most played after <comp move>",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.14634146341463414,
+          0.6585365853658537,
+          0.1951219512195122
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.2777777777777778,
+          0.3333333333333333,
+          0.3888888888888889
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.5,
+          0.16666666666666666,
+          0.3333333333333333
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "last played",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "last sequence scissors",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.5454545454545454,
+          0.36363636363636365,
+          0.09090909090909091
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "longer sequence",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "num paper",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.47674418604651164,
+              0.23255813953488372,
+              0.29069767441860467
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "patterns next choice",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.35714285714285715,
+                0.5714285714285714,
+                0.07142857142857142
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.125,
+                0.5625,
+                0.3125
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3448275862068966,
+                0.1724137931034483,
+                0.4827586206896552
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "most played in last 10",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3068181818181818,
+                  0.3409090909090909,
+                  0.3522727272727273
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.13513513513513514,
+                  0.2702702702702703,
+                  0.5945945945945946
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                }
+               ],
+               "label": null
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "patterns next choice",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2,
+                0.44,
+                0.36
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.21951219512195122,
+                0.4634146341463415,
+                0.3170731707317073
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2962962962962963,
+                0.2222222222222222,
+                0.48148148148148145
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "num rock",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.2,
+                  0.4,
+                  0.4
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3333333333333333,
+                  0.5555555555555556,
+                  0.1111111111111111
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.22916666666666666,
+                  0.375,
+                  0.3958333333333333
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.2535211267605634,
+                  0.36619718309859156,
+                  0.38028169014084506
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "most played in last 10",
+                 "children": [
+                  {
+                   "leaf": false,
+                   "attribute": "most played",
+                   "children": [
+                    {
+                     "leaf": false,
+                     "attribute": "num scissors",
+                     "children": [
+                      {
+                       "leaf": true,
+                       "attribute": null,
+                       "children": null,
+                       "label": [
+                        0,
+                        0,
+                        0
+                       ]
+                      },
+                      {
+                       "leaf": true,
+                       "attribute": null,
+                       "children": null,
+                       "label": [
+                        0.46153846153846156,
+                        0.3076923076923077,
+                        0.23076923076923078
+                       ]
+                      },
+                      {
+                       "leaf": true,
+                       "attribute": null,
+                       "children": null,
+                       "label": [
+                        0.23255813953488372,
+                        0.3953488372093023,
+                        0.37209302325581395
+                       ]
+                      },
+                      {
+                       "leaf": true,
+                       "attribute": null,
+                       "children": null,
+                       "label": [
+                        0.4074074074074074,
+                        0.18518518518518517,
+                        0.4074074074074074
+                       ]
+                      },
+                      {
+                       "leaf": true,
+                       "attribute": null,
+                       "children": null,
+                       "label": [
+                        0.23076923076923078,
+                        0.38461538461538464,
+                        0.38461538461538464
+                       ]
+                      },
+                      {
+                       "leaf": true,
+                       "attribute": null,
+                       "children": null,
+                       "label": [
+                        0,
+                        0,
+                        1
+                       ]
+                      }
+                     ],
+                     "label": null
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.0,
+                      0.5,
+                      0.5
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0,
+                      0,
+                      0
+                     ]
+                    }
+                   ],
+                   "label": null
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.75,
+                    0.0,
+                    0.25
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  }
+                 ],
+                 "label": null
+                }
+               ],
+               "label": null
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "patterns next choice",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.23529411764705882,
+                0.23529411764705882,
+                0.5294117647058824
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.0,
+                0.5454545454545454,
+                0.45454545454545453
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.17391304347826086,
+                0.4782608695652174,
+                0.34782608695652173
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "most played after <comp move>",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.375,
+                  0.2916666666666667,
+                  0.3333333333333333
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.17857142857142858,
+                  0.35714285714285715,
+                  0.4642857142857143
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.24285714285714285,
+                  0.44285714285714284,
+                  0.3142857142857143
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.5,
+                  0.0,
+                  0.5
+                 ]
+                }
+               ],
+               "label": null
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played in last 10",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2,
+                0.3333333333333333,
+                0.4666666666666667
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.6,
+                0.1,
+                0.3
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "most played after <comp move>",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.4230769230769231,
+                  0.19230769230769232,
+                  0.38461538461538464
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.0,
+                  0.7272727272727273,
+                  0.2727272727272727
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.2602739726027397,
+                  0.3972602739726027,
+                  0.3424657534246575
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.0,
+                  0.5,
+                  0.5
+                 ]
+                }
+               ],
+               "label": null
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            1,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            1
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "patterns next choice",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.16666666666666666,
+            0.5833333333333334,
+            0.25
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.1,
+            0.36666666666666664,
+            0.5333333333333333
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5833333333333334,
+            0.25,
+            0.16666666666666666
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "num rock",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.0,
+              0.5,
+              0.5
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.44,
+              0.28,
+              0.28
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2692307692307692,
+              0.38461538461538464,
+              0.34615384615384615
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3373493975903614,
+              0.24096385542168675,
+              0.42168674698795183
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most successful",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.30434782608695654,
+                0.391304347826087,
+                0.30434782608695654
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.24324324324324326,
+                0.3783783783783784,
+                0.3783783783783784
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.14285714285714285,
+                0.7142857142857143,
+                0.14285714285714285
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.3392857142857143,
+          0.26785714285714285,
+          0.39285714285714285
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.7272727272727273,
+          0.18181818181818182,
+          0.09090909090909091
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.14285714285714285,
+          0.5714285714285714,
+          0.2857142857142857
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "last sequence scissors",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "longer sequence",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "num scissors",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.5,
+              0.4,
+              0.1
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.30985915492957744,
+              0.23943661971830985,
+              0.4507042253521127
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "num rock",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.6666666666666666,
+                0.3333333333333333,
+                0.0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5625,
+                0.125,
+                0.3125
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.35714285714285715,
+                0.23214285714285715,
+                0.4107142857142857
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5652173913043478,
+                0.11594202898550725,
+                0.3188405797101449
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.41025641025641024,
+                0.3076923076923077,
+                0.28205128205128205
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": false,
+               "attribute": "patterns next choice",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.625,
+                  0.125,
+                  0.25
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.0,
+                  0.3333333333333333,
+                  0.6666666666666666
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.14285714285714285,
+                  0.35714285714285715,
+                  0.5
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.34615384615384615,
+                  0.3076923076923077,
+                  0.34615384615384615
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": false,
+               "attribute": "most played in last 10",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.45454545454545453,
+                  0.45454545454545453,
+                  0.09090909090909091
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "most successful",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.44642857142857145,
+                    0.3392857142857143,
+                    0.21428571428571427
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.3333333333333333,
+                    0.19444444444444445,
+                    0.4722222222222222
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.47619047619047616,
+                    0.2857142857142857,
+                    0.23809523809523808
+                   ]
+                  }
+                 ],
+                 "label": null
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.42857142857142855,
+                  0.42857142857142855,
+                  0.14285714285714285
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.30303030303030304,
+                0.4090909090909091,
+                0.2878787878787879
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most played",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.23529411764705882,
+                0.23529411764705882,
+                0.5294117647058824
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "most played in last 10",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.4166666666666667,
+                  0.3333333333333333,
+                  0.25
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "num paper",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.3684210526315789,
+                    0.18421052631578946,
+                    0.4473684210526316
+                   ]
+                  },
+                  {
+                   "leaf": false,
+                   "attribute": "patterns next choice",
+                   "children": [
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.5,
+                      0.0,
+                      0.5
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.4,
+                      0.2,
+                      0.4
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.5,
+                      0.1,
+                      0.4
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.39705882352941174,
+                      0.3382352941176471,
+                      0.2647058823529412
+                     ]
+                    }
+                   ],
+                   "label": null
+                  },
+                  {
+                   "leaf": false,
+                   "attribute": "patterns next choice",
+                   "children": [
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.5454545454545454,
+                      0.18181818181818182,
+                      0.2727272727272727
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.42857142857142855,
+                      0.2857142857142857,
+                      0.2857142857142857
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.16666666666666666,
+                      0.4166666666666667,
+                      0.4166666666666667
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.4492753623188406,
+                      0.2463768115942029,
+                      0.30434782608695654
+                     ]
+                    }
+                   ],
+                   "label": null
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.5294117647058824,
+                    0.20588235294117646,
+                    0.2647058823529412
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.18181818181818182,
+                    0.5454545454545454,
+                    0.2727272727272727
+                   ]
+                  }
+                 ],
+                 "label": null
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.23529411764705882,
+                  0.29411764705882354,
+                  0.47058823529411764
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5714285714285714,
+                0.23809523809523808,
+                0.19047619047619047
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5,
+            0.5,
+            0.0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "longer sequence",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            1,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "patterns next choice",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2777777777777778,
+              0.5555555555555556,
+              0.16666666666666666
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              1,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.5384615384615384,
+              0.07692307692307693,
+              0.38461538461538464
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played in last 10",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5384615384615384,
+                0.2564102564102564,
+                0.20512820512820512
+               ]
+              },
+              {
+               "leaf": false,
+               "attribute": "most played",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.5,
+                  0.4,
+                  0.1
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "most successful",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.4642857142857143,
+                    0.26785714285714285,
+                    0.26785714285714285
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.40384615384615385,
+                    0.2692307692307692,
+                    0.3269230769230769
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.4375,
+                    0.5,
+                    0.0625
+                   ]
+                  }
+                 ],
+                 "label": null
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.6,
+                  0.0,
+                  0.4
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.18181818181818182,
+                0.45454545454545453,
+                0.36363636363636365
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4025974025974026,
+          0.33766233766233766,
+          0.2597402597402597
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.25,
+          0.42857142857142855,
+          0.32142857142857145
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.1875,
+          0.3125,
+          0.5
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "last sequence scissors",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.47058823529411764,
+          0.11764705882352941,
+          0.4117647058823529
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "longer sequence",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "num paper",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.5384615384615384,
+              0.46153846153846156,
+              0.0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.358974358974359,
+              0.4230769230769231,
+              0.21794871794871795
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "num rock",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                1,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2631578947368421,
+                0.2631578947368421,
+                0.47368421052631576
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.46153846153846156,
+                0.2692307692307692,
+                0.2692307692307692
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3472222222222222,
+                0.4027777777777778,
+                0.25
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4107142857142857,
+                0.3392857142857143,
+                0.25
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most successful",
+             "children": [
+              {
+               "leaf": false,
+               "attribute": "patterns next choice",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3333333333333333,
+                  0.25,
+                  0.4166666666666667
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.3888888888888889,
+                  0.5,
+                  0.1111111111111111
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.25,
+                  0.75,
+                  0.0
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "num scissors",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.6666666666666666,
+                    0.3333333333333333,
+                    0.0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.2222222222222222,
+                    0.3333333333333333,
+                    0.4444444444444444
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.4864864864864865,
+                    0.2972972972972973,
+                    0.21621621621621623
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.4074074074074074,
+                    0.48148148148148145,
+                    0.1111111111111111
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.5,
+                    0.35714285714285715,
+                    0.14285714285714285
+                   ]
+                  }
+                 ],
+                 "label": null
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3170731707317073,
+                0.4268292682926829,
+                0.25609756097560976
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.26666666666666666,
+                0.4666666666666667,
+                0.26666666666666666
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most successful",
+             "children": [
+              {
+               "leaf": false,
+               "attribute": "most played",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.6,
+                  0.2,
+                  0.2
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.375,
+                  0.375,
+                  0.25
+                 ]
+                },
+                {
+                 "leaf": false,
+                 "attribute": "most played in last 10",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.09090909090909091,
+                    0.5454545454545454,
+                    0.36363636363636365
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.6666666666666666,
+                    0.0,
+                    0.3333333333333333
+                   ]
+                  },
+                  {
+                   "leaf": false,
+                   "attribute": "num rock",
+                   "children": [
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0,
+                      0,
+                      0
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.4117647058823529,
+                      0.17647058823529413,
+                      0.4117647058823529
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.375,
+                      0.4166666666666667,
+                      0.20833333333333334
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.3953488372093023,
+                      0.27906976744186046,
+                      0.32558139534883723
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.5,
+                      0.15,
+                      0.35
+                     ]
+                    },
+                    {
+                     "leaf": true,
+                     "attribute": null,
+                     "children": null,
+                     "label": [
+                      0.14285714285714285,
+                      0.2857142857142857,
+                      0.5714285714285714
+                     ]
+                    }
+                   ],
+                   "label": null
+                  }
+                 ],
+                 "label": null
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": false,
+               "attribute": "patterns next choice",
+               "children": [
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.2,
+                  0.4,
+                  0.4
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.45454545454545453,
+                  0.45454545454545453,
+                  0.09090909090909091
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.25,
+                  0.4166666666666667,
+                  0.3333333333333333
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.4057971014492754,
+                  0.3333333333333333,
+                  0.2608695652173913
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2159090909090909,
+                0.3977272727272727,
+                0.38636363636363635
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            1
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "patterns next choice",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5,
+            0.5,
+            0.0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.45714285714285713,
+            0.2857142857142857,
+            0.2571428571428571
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.4166666666666667,
+            0.5833333333333334,
+            0.0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.25,
+              0.36666666666666664,
+              0.38333333333333336
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.26865671641791045,
+              0.3283582089552239,
+              0.40298507462686567
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4864864864864865,
+              0.25675675675675674,
+              0.25675675675675674
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              1,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.22727272727272727,
+          0.42424242424242425,
+          0.3484848484848485
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.20833333333333334,
+          0.4583333333333333,
+          0.3333333333333333
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.16666666666666666,
+          0.6111111111111112,
+          0.2222222222222222
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "patterns next choice",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.4533333333333333,
+        0.26666666666666666,
+        0.28
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.16363636363636364,
+        0.3090909090909091,
+        0.5272727272727272
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.4246575342465753,
+        0.3287671232876712,
+        0.2465753424657534
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "longer sequence",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "last played",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "most successful",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "num paper",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.36363636363636365,
+                0.36363636363636365,
+                0.2727272727272727
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3783783783783784,
+                0.2972972972972973,
+                0.32432432432432434
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.24,
+                0.26,
+                0.5
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5,
+                0.3181818181818182,
+                0.18181818181818182
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.05555555555555555,
+                0.2777777777777778,
+                0.6666666666666666
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "num rock",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3333333333333333,
+                0.3333333333333333,
+                0.3333333333333333
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.7272727272727273,
+                0.18181818181818182,
+                0.09090909090909091
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2857142857142857,
+                0.39285714285714285,
+                0.32142857142857145
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2894736842105263,
+                0.4342105263157895,
+                0.27631578947368424
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.10416666666666667,
+              0.25,
+              0.6458333333333334
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "num scissors",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              1,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.2631578947368421,
+              0.3157894736842105,
+              0.42105263157894735
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4507042253521127,
+              0.23943661971830985,
+              0.30985915492957744
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.34615384615384615,
+              0.32051282051282054,
+              0.3333333333333333
+             ]
+            },
+            {
+             "leaf": false,
+             "attribute": "most played in last 10",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.1,
+                0.2,
+                0.7
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.43373493975903615,
+                0.26506024096385544,
+                0.30120481927710846
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5714285714285714,
+                0.0,
+                0.42857142857142855
+               ]
+              }
+             ],
+             "label": null
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "num paper",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.25,
+                0.0,
+                0.75
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2608695652173913,
+                0.34782608695652173,
+                0.391304347826087
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.5789473684210527,
+                0.3684210526315789,
+                0.05263157894736842
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4074074074074074,
+                0.18518518518518517,
+                0.4074074074074074
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.21739130434782608,
+                0.5652173913043478,
+                0.21739130434782608
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "most successful",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.37254901960784315,
+                0.35294117647058826,
+                0.27450980392156865
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.24242424242424243,
+                0.3939393939393939,
+                0.36363636363636365
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.4,
+                0.5333333333333333,
+                0.06666666666666667
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": false,
+             "attribute": "last sequence scissors",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                1,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.23684210526315788,
+                0.39473684210526316,
+                0.3684210526315789
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.23529411764705882,
+                0.23529411764705882,
+                0.5294117647058824
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.0,
+              0.3333333333333333,
+              0.6666666666666666
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4225352112676056,
+          0.30985915492957744,
+          0.2676056338028169
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "longer sequence",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "patterns next choice",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.2222222222222222,
+          0.5555555555555556,
+          0.2222222222222222
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.0,
+          0.8,
+          0.2
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.5,
+          0.21428571428571427,
+          0.2857142857142857
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "num scissors",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5,
+            0.0,
+            0.5
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.4444444444444444,
+            0.2222222222222222,
+            0.3333333333333333
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3013698630136986,
+            0.3287671232876712,
+            0.3698630136986301
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most played in last 10",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "num paper",
+             "children": [
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.6,
+                0.2,
+                0.2
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.24242424242424243,
+                0.24242424242424243,
+                0.5151515151515151
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.2926829268292683,
+                0.36585365853658536,
+                0.34146341463414637
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.42857142857142855,
+                0.35714285714285715,
+                0.21428571428571427
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.3333333333333333,
+                0.0,
+                0.6666666666666666
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3,
+              0.1,
+              0.6
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3170731707317073,
+            0.2804878048780488,
+            0.4024390243902439
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5476190476190477,
+            0.2619047619047619,
+            0.19047619047619047
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.625,
+        0.25,
+        0.125
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "patterns next choice",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        1,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        1,
+        0
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most played",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "last sequence scissors",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            1,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.27848101265822783,
+            0.3924050632911392,
+            0.3291139240506329
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5,
+            0.21428571428571427,
+            0.2857142857142857
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3333333333333333,
+            0.6666666666666666,
+            0.0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            1
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.7,
+          0.1,
+          0.2
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.8,
+          0.0,
+          0.2
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "longer sequence",
+     "children": [
+      {
+       "leaf": false,
+       "attribute": "most played",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": false,
+           "attribute": "num paper",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.625,
+              0.16666666666666666,
+              0.20833333333333334
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.47619047619047616,
+              0.2857142857142857,
+              0.23809523809523808
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.7272727272727273,
+              0.2727272727272727,
+              0.0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              1,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              1,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.1111111111111111,
+            0.6666666666666666,
+            0.2222222222222222
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.7142857142857143,
+            0.14285714285714285,
+            0.14285714285714285
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          1,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          1,
+          0
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      }
+     ],
+     "label": null
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "last played",
+   "children": [
+    {
+     "leaf": false,
+     "attribute": "patterns next choice",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.4375,
+        0.4375,
+        0.125
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.2,
+        0.26666666666666666,
+        0.5333333333333333
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.23684210526315788,
+        0.2631578947368421,
+        0.5
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "last sequence scissors",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.125,
+          0.625,
+          0.25
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "num paper",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3235294117647059,
+            0.17647058823529413,
+            0.5
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most successful",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4423076923076923,
+              0.3076923076923077,
+              0.25
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.42857142857142855,
+              0.14285714285714285,
+              0.42857142857142855
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.19230769230769232,
+              0.4230769230769231,
+              0.38461538461538464
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": false,
+           "attribute": "most played after <comp move>",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3888888888888889,
+              0.19444444444444445,
+              0.4166666666666667
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.14814814814814814,
+              0.5555555555555556,
+              0.2962962962962963
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.1724137931034483,
+              0.4482758620689655,
+              0.3793103448275862
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.6666666666666666,
+              0.0,
+              0.3333333333333333
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.21739130434782608,
+            0.34782608695652173,
+            0.43478260869565216
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "last sequence rock",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "num scissors",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.45454545454545453,
+              0.36363636363636365,
+              0.18181818181818182
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.38461538461538464,
+              0.3076923076923077,
+              0.3076923076923077
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.3870967741935484,
+              0.0967741935483871,
+              0.5161290322580645
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.10526315789473684,
+              0.5263157894736842,
+              0.3684210526315789
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3333333333333333,
+            0.18518518518518517,
+            0.48148148148148145
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.0,
+            0.7777777777777778,
+            0.2222222222222222
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.0,
+            0.5,
+            0.5
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4090909090909091,
+          0.3181818181818182,
+          0.2727272727272727
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.5714285714285714,
+          0.0,
+          0.42857142857142855
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.2857142857142857,
+          0.5714285714285714,
+          0.14285714285714285
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "last sequence rock",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.24,
+        0.48,
+        0.28
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "last sequence scissors",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "patterns next choice",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.1111111111111111,
+            0.2222222222222222,
+            0.6666666666666666
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            1,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.45454545454545453,
+            0.2727272727272727,
+            0.2727272727272727
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "most played in last 10",
+           "children": [
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4,
+              0.18,
+              0.42
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.36585365853658536,
+              0.36585365853658536,
+              0.2682926829268293
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.4810126582278481,
+              0.26582278481012656,
+              0.25316455696202533
+             ]
+            }
+           ],
+           "label": null
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4098360655737705,
+          0.29508196721311475,
+          0.29508196721311475
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.38461538461538464,
+          0.46153846153846156,
+          0.15384615384615385
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.0,
+          0.5,
+          0.5
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.5,
+          0.3333333333333333,
+          0.16666666666666666
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": false,
+       "attribute": "patterns next choice",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.3333333333333333,
+          0.6666666666666666,
+          0.0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          1,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.16666666666666666,
+          0.6666666666666666,
+          0.16666666666666666
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "num scissors",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            1,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5,
+            0.125,
+            0.375
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.34285714285714286,
+            0.2857142857142857,
+            0.37142857142857144
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.27586206896551724,
+            0.4827586206896552,
+            0.2413793103448276
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3125,
+            0.4375,
+            0.25
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.42857142857142855,
+        0.30952380952380953,
+        0.2619047619047619
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.7,
+        0.2,
+        0.1
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.5714285714285714,
+        0.0,
+        0.42857142857142855
+       ]
+      }
+     ],
+     "label": null
+    },
+    {
+     "leaf": false,
+     "attribute": "patterns next choice",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.1935483870967742,
+        0.6451612903225806,
+        0.16129032258064516
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.3870967741935484,
+        0.25806451612903225,
+        0.3548387096774194
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.15384615384615385,
+        0.5384615384615384,
+        0.3076923076923077
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "last sequence scissors",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.23529411764705882,
+          0.35294117647058826,
+          0.4117647058823529
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "num rock",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.0,
+            0.6666666666666666,
+            0.3333333333333333
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.5555555555555556,
+            0.2222222222222222,
+            0.2222222222222222
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3275862068965517,
+            0.4482758620689655,
+            0.22413793103448276
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.27058823529411763,
+            0.36470588235294116,
+            0.36470588235294116
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3068181818181818,
+            0.4431818181818182,
+            0.25
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3013698630136986,
+            0.3424657534246575,
+            0.3561643835616438
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": false,
+         "attribute": "last sequence rock",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.25,
+            0.25,
+            0.5
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3235294117647059,
+            0.4411764705882353,
+            0.23529411764705882
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.38461538461538464,
+            0.3076923076923077,
+            0.3076923076923077
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.625,
+            0.125,
+            0.25
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            1,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.6666666666666666,
+            0.0,
+            0.3333333333333333
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.3157894736842105,
+          0.5263157894736842,
+          0.15789473684210525
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.4,
+          0.13333333333333333,
+          0.4666666666666667
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.15384615384615385,
+          0.46153846153846156,
+          0.38461538461538464
+         ]
+        }
+       ],
+       "label": null
+      }
+     ],
+     "label": null
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "patterns next choice",
+   "children": [
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0.18181818181818182,
+      0.45454545454545453,
+      0.36363636363636365
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0.5714285714285714,
+      0.0,
+      0.42857142857142855
+     ]
+    },
+    {
+     "leaf": false,
+     "attribute": "last sequence scissors",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.2,
+        0.0,
+        0.8
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "most played after <comp move>",
+       "children": [
+        {
+         "leaf": false,
+         "attribute": "num scissors",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3333333333333333,
+            0.5238095238095238,
+            0.14285714285714285
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.36666666666666664,
+            0.36666666666666664,
+            0.26666666666666666
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.43478260869565216,
+            0.2608695652173913,
+            0.30434782608695654
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.2777777777777778,
+            0.3333333333333333,
+            0.3888888888888889
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.3333333333333333,
+            0.0,
+            0.6666666666666666
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.3424657534246575,
+          0.3561643835616438,
+          0.3013698630136986
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "num scissors",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            0
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.36,
+            0.2,
+            0.44
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.38095238095238093,
+            0.35714285714285715,
+            0.2619047619047619
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.1590909090909091,
+            0.3409090909090909,
+            0.5
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.24,
+            0.2,
+            0.56
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.16666666666666666,
+            0.4166666666666667,
+            0.4166666666666667
+           ]
+          }
+         ],
+         "label": null
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.2,
+          0.8,
+          0.0
+         ]
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.39285714285714285,
+        0.25,
+        0.35714285714285715
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.125,
+        0.625,
+        0.25
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.4,
+        0.2,
+        0.4
+       ]
+      }
+     ],
+     "label": null
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "patterns next choice",
+   "children": [
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0.0,
+      0.5,
+      0.5
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0.75,
+      0.0,
+      0.25
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      1,
+      0,
+      0
+     ]
+    },
+    {
+     "leaf": false,
+     "attribute": "last sequence scissors",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.2,
+        0.4,
+        0.4
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "longer sequence",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.0,
+          0.5,
+          0.5
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "most played in last 10",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.38461538461538464,
+            0.38461538461538464,
+            0.23076923076923078
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.0,
+            0.8,
+            0.2
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.35294117647058826,
+            0.35294117647058826,
+            0.29411764705882354
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.20588235294117646,
+        0.35294117647058826,
+        0.4411764705882353
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.4166666666666667,
+        0.16666666666666666,
+        0.4166666666666667
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        1,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      }
+     ],
+     "label": null
+    }
+   ],
+   "label": null
+  },
+  {
+   "leaf": false,
+   "attribute": "most played",
+   "children": [
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "leaf": true,
+     "attribute": null,
+     "children": null,
+     "label": [
+      0,
+      1,
+      0
+     ]
+    },
+    {
+     "leaf": false,
+     "attribute": "patterns next choice",
+     "children": [
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        1
+       ]
+      },
+      {
+       "leaf": false,
+       "attribute": "longer sequence",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.5,
+          0.0,
+          0.5
+         ]
+        },
+        {
+         "leaf": false,
+         "attribute": "most played after <comp move>",
+         "children": [
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0,
+            0,
+            1
+           ]
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.0,
+            0.6666666666666666,
+            0.3333333333333333
+           ]
+          },
+          {
+           "leaf": false,
+           "attribute": "last sequence rock",
+           "children": [
+            {
+             "leaf": false,
+             "attribute": "num scissors",
+             "children": [
+              {
+               "leaf": false,
+               "attribute": "most successful",
+               "children": [
+                {
+                 "leaf": false,
+                 "attribute": "num rock",
+                 "children": [
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0.0072992700729927005,
+                    0.029197080291970802,
+                    0.9635036496350365
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    1
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  },
+                  {
+                   "leaf": true,
+                   "attribute": null,
+                   "children": null,
+                   "label": [
+                    0,
+                    0,
+                    0
+                   ]
+                  }
+                 ],
+                 "label": null
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0,
+                  0,
+                  0
+                 ]
+                },
+                {
+                 "leaf": true,
+                 "attribute": null,
+                 "children": null,
+                 "label": [
+                  0.0,
+                  0.5,
+                  0.5
+                 ]
+                }
+               ],
+               "label": null
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.18181818181818182,
+                0.0,
+                0.8181818181818182
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                1,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0.0,
+                0.25,
+                0.75
+               ]
+              },
+              {
+               "leaf": true,
+               "attribute": null,
+               "children": null,
+               "label": [
+                0,
+                0,
+                0
+               ]
+              }
+             ],
+             "label": null
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.25806451612903225,
+              0.12903225806451613,
+              0.6129032258064516
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0.375,
+              0.125,
+              0.5
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              1
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            },
+            {
+             "leaf": true,
+             "attribute": null,
+             "children": null,
+             "label": [
+              0,
+              0,
+              0
+             ]
+            }
+           ],
+           "label": null
+          },
+          {
+           "leaf": true,
+           "attribute": null,
+           "children": null,
+           "label": [
+            0.0,
+            0.3333333333333333,
+            0.6666666666666666
+           ]
+          }
+         ],
+         "label": null
+        }
+       ],
+       "label": null
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0.3442622950819672,
+        0.2786885245901639,
+        0.3770491803278688
+       ]
+      }
+     ],
+     "label": null
+    }
+   ],
+   "label": null
+  }
+ ],
+ "label": null
+}
