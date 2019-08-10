@@ -33,8 +33,8 @@ def read_histories(path):
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
     for hist_str in histories_str:
-        if histories_str[-1] == '':
-            histories_str.pop()
+        if len(histories_str[-1]) != 2:
+            hist_str.pop()
 
     return histories_str
 
@@ -50,7 +50,6 @@ def get_parameters_and_predictions_for_history_length(games, length):
     :param games: the games we learn from
     :param length: the length of the history we want to learn
     """
-
     if length == 0:
         # returns only a prediction (most played on first match)
         played = [game[0] for game in games]
@@ -130,3 +129,5 @@ class AI_agent:
                     return self.all_trees[length].predict(None)
                 example = np.array(get_parameters(history))
                 return self.all_trees[length].predict(example)
+
+AI_agent().build()
