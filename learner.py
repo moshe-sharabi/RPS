@@ -222,7 +222,9 @@ class OnlineSingleTreeAgent:
         c = Counter()
         for game in self.entire_history:
             c[game[INDEX_OF_RESULT]] += 1
-        print(c)
+        print("L:" + str(c[LOSS]/len(self.entire_history)) + "\n" +
+              "W:" + str(c[WIN]/len(self.entire_history)) + "\n" +
+              "d:" + str(c[DRAW]/len(self.entire_history)))
 
     def predict(self, previous_play):
         if previous_play is None:
@@ -257,7 +259,7 @@ class OnlineSingleTreeAgent:
 
 
 flag = True
-idk = OnlineEpochAgent(5, 5, 0.9)
+idk = OnlineSingleTreeAgent(5, 5)
 last_choice = None
 our_choice = None
 for i in range(500):
