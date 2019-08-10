@@ -68,17 +68,17 @@ class GamePlay:
 
     def random_agent_chosen(self):
         if self.write_mode.get():
-            self.output_file = open("examples" + os.path.sep + "random_examples.txt", 'a')
+            self.output_file_path = "examples" + os.path.sep + "random_examples.txt"
         self.agent_chosen(RandomAgent())
 
     def reflex_agent_chosen(self):
         if self.write_mode.get():
-            self.output_file = open("examples" + os.path.sep + "reflex_examples.txt", 'a')
+            self.output_file_path = "examples" + os.path.sep + "reflex_examples.txt"
         self.agent_chosen(ReflexAgent())
 
     def ai_agent_chosen(self):
         if self.write_mode.get():
-            self.output_file = open("examples" + os.path.sep + "ai_examples.txt", 'a')
+            self.output_file_path = "examples" + os.path.sep + "ai_examples.txt"
         self.agent_chosen(AI_agent())
         # running in the background todo # if we want
         thread = threading.Thread(target=self.agent.build, args=())
@@ -161,14 +161,17 @@ class GamePlay:
             to_write += 'W'
         self.scores_textbox.configure(text=self.scores_text.format(self.scores[0], self.scores[1]))
         self.history.append(to_write)
-        if self.write_mode.get():
-            self.output_file.write(to_write + ' ')
 
     def play(self):
         self.main_window.mainloop()
         if self.write_mode.get():
+            os.system('git checkout master -- ' + self.output_file_path)
+            self.output_file = open(self.output_file_path, 'a')
             self.output_file.write('\n')
             self.output_file.close()
+            name = os.path.basename(self.output_file_path)
+            os.system(f"git commit ' + self.output_file_path + ' -m \'updated {name}\'")
+            os.system('git push')
         if self.build_process:
             self.build_process.join()
 
