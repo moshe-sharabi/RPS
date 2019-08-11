@@ -10,6 +10,11 @@ ROCK_IND = 0
 PAPER_IND = 1
 SCISSORS_IND = 2
 
+class Dummy:
+    def __init__(self, idk):
+        self.idk = idk
+    def best_counter(self):
+        return self.idk
 
 class RandomAgent:
     @staticmethod
@@ -39,7 +44,7 @@ def read_histories(path):
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
     for hist_str in histories_str:
-        if hist_str[-1] not in Constants.neg:
+        if hist_str[-1] not in neg:
             hist_str.pop()
 
     return histories_str
@@ -163,7 +168,7 @@ class OnlineEpochAgent:
         votes = {Rock: 0, Paper: 0, Scissors: 0}
         for i in range(len(self.trees)):
             cur_prediction = self.trees[i].predict(example)
-            rock_percentage, paper_percentage, scissors_percentage = cur_prediction.to_tuple()
+            rock_percentage, paper_percentage, scissors_percentage = cur_prediction.best_counter_precentage()
             cur_power = np.power(self.gamma, len(self.trees) - 1 - i)
             votes[Rock] += rock_percentage*cur_power
             votes[Paper] += paper_percentage*cur_power
@@ -178,12 +183,13 @@ class OnlineEpochAgent:
               "W:" + str(c[WIN]/len(self.entire_history)) + "\n" +
               "d:" + str(c[DRAW]/len(self.entire_history)))
 
-    def predict(self, previous_play):
-        if previous_play is None:
-            return self.last_play
+    def predict(self, history):
+        if len(history) == 0:
+            return Dummy(self.last_play)
+        previous_play = history[-1]
         self.counter += 1
         if self.counter == self.round:
-            example = get_parameters(self.cur_round) + [previous_play]
+            example = get_parameters(self.cur_round) + [previous_play[INDEX_OF_PLAY]]
             self.epoch_examples.append(example)
             if len(self.epoch_examples) == self.epoch:
                 cur_tree = DecisionTree()
@@ -193,10 +199,10 @@ class OnlineEpochAgent:
             self.counter = 0
             self.cur_round = []
         else:
-            self.cur_round.append(PAIR_TRANSLATOR[previous_play + self.last_play])
-        self.entire_history.append(PAIR_TRANSLATOR[previous_play + self.last_play])
+            self.cur_round.append(previous_play)
+        self.entire_history.append(previous_play)
         self.last_play = self.tree_voting()
-        return self.last_play
+        return Dummy(self.last_play)
 
 
 class OnlineSingleTreeAgent:
@@ -226,12 +232,13 @@ class OnlineSingleTreeAgent:
               "W:" + str(c[WIN]/len(self.entire_history)) + "\n" +
               "d:" + str(c[DRAW]/len(self.entire_history)))
 
-    def predict(self, previous_play):
-        if previous_play is None:
-            return self.last_play
+    def predict(self, history):
+        if len(history) == 0:
+            return Dummy(self.last_play)
+        previous_play = history[-1]
         self.counter += 1
         if self.counter == self.round:
-            example = get_parameters(self.cur_round) + [previous_play]
+            example = get_parameters(self.cur_round) + [previous_play[INDEX_OF_PLAY]]
             self.all_examples.append(example)
             if self.round_counter == self.epoch:
                 cur_tree = DecisionTree()
@@ -244,26 +251,27 @@ class OnlineSingleTreeAgent:
 
             self.cur_round = []
         else:
-            self.cur_round.append(PAIR_TRANSLATOR[previous_play + self.last_play])
-        self.entire_history.append(PAIR_TRANSLATOR[previous_play + self.last_play])
+            self.cur_round.append(previous_play)
+        self.entire_history.append(previous_play)
         if len(self.entire_history) < self.round:
             self.last_play = random.choice(Choices)
-            return self.last_play
+            return Dummy(self.last_play)
         cur_history = self.entire_history[-self.round:]
         example = get_parameters(cur_history)
-        rock_percentage, paper_percentage, scissors_percentage = self.tree.predict(example).to_tuple()
+        rock_percentage, paper_percentage, scissors_percentage = self.tree.predict(example).best_counter_precentage()
         precentage = {Rock: rock_percentage, Scissors: scissors_percentage, Paper: paper_percentage}
         self.last_play = max(precentage.keys(), key=(lambda x: precentage[x]))
-        return self.last_play
+        return Dummy(self.last_play)
 
 
-
-flag = True
-idk = OnlineSingleTreeAgent(5, 5)
-last_choice = None
-our_choice = None
-for i in range(500):
-    for j in range(25):
-        our_choice = idk.predict(last_choice)
-        last_choice = random.choice(Choices)
-idk.get_wins()
+if __name__ == "__main__":
+    flag = True
+    idk = OnlineEpochAgent(5, 3, 0.9)
+    last_choice = None
+    our_choice = None
+    for i in range(2):
+        for j in range(15):
+            our_choice = idk.predict(last_choice)
+            last_choice = input("your_choice")
+            print("our choice:" + our_choice + "\n")
+    idk.get_wins()

@@ -38,6 +38,13 @@ class Prediction:
         self.paper_percentage = c[Paper] / len(rock_percentage)
         self.scissors_percentage = c[Scissors] / len(rock_percentage)
 
+    def best_counter_precentage(self):
+        scores = Counter()
+        scores[Rock] = self.scissors_percentage - self.paper_percentage
+        scores[Paper] = self.rock_percentage - self.scissors_percentage
+        scores[Scissors] = self.paper_percentage - self.rock_percentage
+        return scores[Rock], scores[Paper], scores[Scissors]
+
     def best_counter(self):
         scores = Counter()
         scores[Rock] = self.scissors_percentage - self.paper_percentage

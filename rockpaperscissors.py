@@ -41,7 +41,8 @@ class GamePlay:
         self.random_button_image = PhotoImage(file="images"+os.path.sep+"RAND_button.png")
         self.reflex_button_image = PhotoImage(file="images"+os.path.sep+"REFLEX_button.png")
         self.ai_button_image = PhotoImage(file="images"+os.path.sep+"AI_button.png")
-
+        self.epoch_button_image = PhotoImage(file="images" + os.path.sep + "Online_Forest.png")
+        self.single_button_image = PhotoImage(file="images"+os.path.sep+"Online_Single_Tree.png")
         self.user_image = Label(image=self.empty_image)
         self.user_image.image = self.empty_image
         self.computer_image = Label(image=self.empty_image)
@@ -62,6 +63,8 @@ class GamePlay:
         self.reflex_agent_button = Button(self.main_window, image=self.reflex_button_image,
                                           command=self.reflex_agent_chosen)
         self.ai_agent_button = Button(self.main_window, image=self.ai_button_image, command=self.ai_agent_chosen)
+        self.epoch_agent_button = Button(self.main_window, image=self.epoch_button_image, command=self.epoch_agent_chosen)
+        self.single_agent_button = Button(self.main_window, image=self.single_button_image, command=self.single_agent_chosen)
         self.write_mode_button = Checkbutton(self.main_window, text="save log to file",
                                              variable=self.write_mode)
         self.locate_agent_buttons()
@@ -85,6 +88,15 @@ class GamePlay:
         # thread.daemon = True  # Daemonize thread
         thread.start()
 
+    def epoch_agent_chosen(self):
+        if self.write_mode.get():
+            self.output_file_path = "examples" + os.path.sep + "epoch_examples.txt"
+        self.agent_chosen(OnlineEpochAgent(5, 5, 0.9))
+
+    def single_agent_chosen(self):
+        if self.write_mode.get():
+            self.output_file_path = "examples" + os.path.sep + "single_examples.txt"
+        self.agent_chosen(OnlineSingleTreeAgent(5, 5))
 
     def agent_chosen(self, agent):
         self.agent = agent
@@ -92,6 +104,8 @@ class GamePlay:
         self.reflex_agent_button.grid_remove()
         self.random_agent_button.grid_remove()
         self.write_mode_button.grid_remove()
+        self.epoch_agent_button.grid_remove()
+        self.single_agent_button.grid_remove()
         self.next_move = self.agent.predict(self.history).best_counter()
         self.locate_play_table()
 
@@ -99,6 +113,8 @@ class GamePlay:
         self.ai_agent_button.grid(row=2, column=1)
         self.reflex_agent_button.grid(row=2, column=2)
         self.random_agent_button.grid(row=2, column=3)
+        self.epoch_agent_button.grid(row=3, column=2)
+        self.single_agent_button.grid(row=3, column=3)
         self.write_mode_button.grid(row=3, column=1)
 
     def locate_play_table(self):
