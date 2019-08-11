@@ -102,7 +102,7 @@ def build_trees(example_files):
             new_tree.root = Node(leaf=True, label=new_examples)
         else:
             new_examples = np.array(new_examples)
-            new_tree.CART(new_examples)
+            new_tree.train(new_examples)
         all_trees[length] = new_tree
         new_tree.save_tree(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(length)))
         length = next_length
@@ -139,7 +139,7 @@ class AI_agent:
                 if length == 0:
                     return self.all_trees[length].predict(None)
                 example = np.array(get_parameters(history))
-                return self.all_trees[length].predict(example)
+                return self.all_trees[AI_agent.jumping_iterations.index(length)].predict(example)
 
 class OnlineEpochAgent:
 
@@ -261,6 +261,7 @@ class OnlineSingleTreeAgent:
         rock_percentage, paper_percentage, scissors_percentage = self.tree.predict(example).best_counter_precentage()
         precentage = {Rock: rock_percentage, Scissors: scissors_percentage, Paper: paper_percentage}
         self.last_play = max(precentage.keys(), key=(lambda x: precentage[x]))
+
         return Dummy(self.last_play)
 
 
