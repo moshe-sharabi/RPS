@@ -39,7 +39,7 @@ def read_histories(path):
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
     for hist_str in histories_str:
-        if hist_str[-1] not in Constants.neg:
+        if hist_str[-1] not in neg:
             hist_str.pop()
 
     return histories_str
@@ -258,12 +258,12 @@ class OnlineSingleTreeAgent:
 
 
 
-flag = True
-idk = OnlineSingleTreeAgent(5, 5)
-last_choice = None
-our_choice = None
-for i in range(500):
-    for j in range(25):
-        our_choice = idk.predict(last_choice)
-        last_choice = random.choice(Choices)
-idk.get_wins()
+# flag = True
+# idk = OnlineSingleTreeAgent(5, 5)
+# last_choice = None
+# our_choice = None
+# for i in range(500):
+#     for j in range(25):
+#         our_choice = idk.predict(last_choice)
+#         last_choice = random.choice(Choices)
+# idk.get_wins()
