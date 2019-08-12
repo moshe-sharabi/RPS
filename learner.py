@@ -335,13 +335,14 @@ class OnlineSingleTreeAgent:
 
 
 if __name__ == "__main__":
-    flag = True
-    idk = OnlineEpochAgent(5, 3, 0.9)
-    last_choice = None
-    our_choice = None
-    for i in range(2):
-        for j in range(15):
-            our_choice = idk.predict(last_choice)
-            last_choice = input("your_choice")
-            print("our choice:" + our_choice + "\n")
-    idk.get_wins()
+    AI_agent().build()
+    # flag = True
+    # idk = OnlineEpochAgent(5, 3, 0.9)
+    # last_choice = None
+    # our_choice = None
+    # for i in range(2):
+    #     for j in range(15):
+    #         our_choice = idk.predict(last_choice)
+    #         last_choice = input("your_choice")
+    #         print("our choice:" + our_choice + "\n")
+    # idk.get_wins()

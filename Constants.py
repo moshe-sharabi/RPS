@@ -53,6 +53,7 @@ PATTERN_S_NEXT_CHOICE = "patterns next choice"
 LAST_SEQUENCE_S_LENGTH = "last sequence length"
 MOST_PLAYED_AFTER_COMP_MOVE = "most played after <comp move>"
 MOST_SUCCESSFUL = "most successful"
+MOST_SUCCESSFUL_IN_LAST_5 = "most successful in last 5"
 MOST_PLAYED_IN_LAST_10 = "most played in last 10"
 MOST_PLAYED = "most played"
 LAST_PLAYED = "last played"
@@ -63,9 +64,9 @@ LONGER_SEQUENCE = "longer sequence"
 LAST_SEQ_ROCK = "last sequence rock"
 LAST_SEQ_SCISSORS = "last sequence scissors"
 LAST_SEQ_PAPER = "last sequence paper"
-attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_PLAYED_AFTER_COMP_MOVE,
-                   LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE, NUM_ROCK, NUM_SCISSORS, NUM_PAPER, LONGER_SEQUENCE,
-                   LAST_SEQ_ROCK, LAST_SEQ_SCISSORS, LAST_SEQ_PAPER]
+attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_SUCCESSFUL_IN_LAST_5,
+                   MOST_PLAYED_AFTER_COMP_MOVE, LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE, NUM_ROCK, NUM_SCISSORS,
+                   NUM_PAPER, LONGER_SEQUENCE, LAST_SEQ_ROCK, LAST_SEQ_SCISSORS, LAST_SEQ_PAPER]
 num_rock = num_smth(Rock)
 num_scissors = num_smth(Scissors)
 num_paper = num_smth(Paper)
@@ -74,9 +75,9 @@ last_seq_paper = sequence_smth(Paper)
 last_seq_scissors = sequence_smth(Scissors)
 
 attribute_functions_list = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful,
-                            get_most_played_after_comp_move, get_last_sequence_length, get_pattern_next_choice,
-                            num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock, last_seq_paper,
-                            last_seq_scissors]
+                            get_most_successful_in_last_5, get_most_played_after_comp_move, get_last_sequence_length,
+                            get_pattern_next_choice, num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock,
+                            last_seq_paper, last_seq_scissors]
 
 # MAX_LAST_SEQUENCE_S_LENGTH = 5
 MAX_LENGTH_FOR_EVERYTHING = 5
@@ -88,6 +89,7 @@ parameters = {
     MOST_PLAYED: Choices,
     MOST_PLAYED_IN_LAST_10: Choices,
     MOST_SUCCESSFUL: Choices,
+    MOST_SUCCESSFUL_IN_LAST_5: Choices,
     MOST_PLAYED_AFTER_COMP_MOVE: Choices + [NOT_AVAILABLE],
     LAST_SEQUENCE_S_LENGTH: LENGTH_PARAMETERS,
     PATTERN_S_NEXT_CHOICE: Choices + [NOT_AVAILABLE],

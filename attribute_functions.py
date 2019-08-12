@@ -39,6 +39,10 @@ def get_most_successful(history):
     return c.argMax()
 
 
+def get_most_successful_in_last_5(history):
+    return get_most_successful(history[-5:])
+
+
 def get_most_played_after_comp_move(history):
     last_comp_play = cons.neg[history[-1]][cons.INDEX_OF_PLAY]
     c = Counter()
