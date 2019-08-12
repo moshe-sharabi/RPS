@@ -59,11 +59,24 @@ class Prediction:
             return scores.argMax()
         return random.choice(choose_from)
 
+    def best_counter_probabilistic(self):
+        scores = Counter()
+        scores[Rock] = self.scissors_percentage - self.paper_percentage
+        scores[Paper] = self.rock_percentage - self.scissors_percentage
+        scores[Scissors] = self.paper_percentage - self.rock_percentage
+        base = min(scores.values())
+        rock_prob = self.scissors_percentage + scores[Rock]*base
+        scissors_prob = self.paper_percentage + scores[Scissors]*base
+        paper_prob = self.rock_percentage + scores[Paper]*base
+        return random.choice(Choices, p=(rock_prob, scissors_prob, paper_prob))
+
     def __str__(self):
         return str((self.rock_percentage, self.paper_percentage, self.scissors_percentage))
 
     def to_tuple(self):
         return self.rock_percentage, self.paper_percentage, self.scissors_percentage
+
+    counter = best_counter  # todo change this to change to probability
 
 
 ##########################################################################################
