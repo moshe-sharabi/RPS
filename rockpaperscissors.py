@@ -34,15 +34,15 @@ class GamePlay:
         self.paper_image_user = PhotoImage(file="images" + os.path.sep + "paperPlayer.png")
         self.paper_image_computer = PhotoImage(file="images" + os.path.sep + "paperComputer.png")
         self.scissors_image_user = PhotoImage(file="images" + os.path.sep + "scissorsPlayer.png")
-        self.scissors_image_computer = PhotoImage(file="images"+os.path.sep+"scissorsComputer.png")
-        self.rock_button_image = PhotoImage(file="images"+os.path.sep+"rockButton.png")
-        self.paper_button_image = PhotoImage(file="images"+os.path.sep+"paperButton.png")
-        self.scissors_button_image = PhotoImage(file="images"+os.path.sep+"scissorsButton.png")
-        self.random_button_image = PhotoImage(file="images"+os.path.sep+"RAND_button.png")
-        self.reflex_button_image = PhotoImage(file="images"+os.path.sep+"REFLEX_button.png")
-        self.ai_button_image = PhotoImage(file="images"+os.path.sep+"AI_button.png")
+        self.scissors_image_computer = PhotoImage(file="images" + os.path.sep + "scissorsComputer.png")
+        self.rock_button_image = PhotoImage(file="images" + os.path.sep + "rockButton.png")
+        self.paper_button_image = PhotoImage(file="images" + os.path.sep + "paperButton.png")
+        self.scissors_button_image = PhotoImage(file="images" + os.path.sep + "scissorsButton.png")
+        self.random_button_image = PhotoImage(file="images" + os.path.sep + "RAND_button.png")
+        self.reflex_button_image = PhotoImage(file="images" + os.path.sep + "REFLEX_button.png")
+        self.ai_button_image = PhotoImage(file="images" + os.path.sep + "AI_button.png")
         self.epoch_button_image = PhotoImage(file="images" + os.path.sep + "Online_Forest.png")
-        self.single_button_image = PhotoImage(file="images"+os.path.sep+"Online_Single_Tree.png")
+        self.single_button_image = PhotoImage(file="images" + os.path.sep + "Online_Single_Tree.png")
         self.user_image = Label(image=self.empty_image)
         self.user_image.image = self.empty_image
         self.computer_image = Label(image=self.empty_image)
@@ -57,14 +57,17 @@ class GamePlay:
 
         self.rock_button = Button(self.main_window, image=self.rock_button_image, command=self.user_choice_rock)
         self.paper_button = Button(self.main_window, image=self.paper_button_image, command=self.user_choice_paper)
-        self.scissors_button = Button(self.main_window, image=self.scissors_button_image, command=self.user_choice_scissors)
+        self.scissors_button = Button(self.main_window, image=self.scissors_button_image,
+                                      command=self.user_choice_scissors)
         self.random_agent_button = Button(self.main_window, image=self.random_button_image,
                                           command=self.random_agent_chosen)
         self.reflex_agent_button = Button(self.main_window, image=self.reflex_button_image,
                                           command=self.reflex_agent_chosen)
         self.ai_agent_button = Button(self.main_window, image=self.ai_button_image, command=self.ai_agent_chosen)
-        self.epoch_agent_button = Button(self.main_window, image=self.epoch_button_image, command=self.epoch_agent_chosen)
-        self.single_agent_button = Button(self.main_window, image=self.single_button_image, command=self.single_agent_chosen)
+        self.epoch_agent_button = Button(self.main_window, image=self.epoch_button_image,
+                                         command=self.epoch_agent_chosen)
+        self.single_agent_button = Button(self.main_window, image=self.single_button_image,
+                                          command=self.single_agent_chosen)
         self.write_mode_button = Checkbutton(self.main_window, text="save log to file",
                                              variable=self.write_mode)
         self.locate_agent_buttons()
@@ -82,9 +85,9 @@ class GamePlay:
     def ai_agent_chosen(self):
         if self.write_mode.get():
             self.output_file_path = "examples" + os.path.sep + "ai_examples.txt"
-        self.agent_chosen(AI_agent())
+        self.agent_chosen(Ai2(5, 5, 0.5))
         # running in the background todo # if we want
-        thread = threading.Thread(target=self.agent.build, args=())
+        thread = threading.Thread(target=self.agent.basic_ai.build, args=())
         # thread.daemon = True  # Daemonize thread
         thread.start()
 

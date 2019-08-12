@@ -10,11 +10,14 @@ ROCK_IND = 0
 PAPER_IND = 1
 SCISSORS_IND = 2
 
+
 class Dummy:
     def __init__(self, idk):
         self.idk = idk
+
     def best_counter(self):
         return self.idk
+
 
 class RandomAgent:
     @staticmethod
@@ -141,6 +144,73 @@ class AI_agent:
                 example = np.array(get_parameters(history))
                 return self.all_trees[AI_agent.jumping_iterations.index(length)].predict(example)
 
+    def get_relevant_tree(self, history_length):
+        for length in self.jumping_iterations[::-1]:
+            if history_length >= length:
+                return self.all_trees[AI_agent.jumping_iterations.index(length)]
+
+
+class Ai2:
+
+    def __init__(self, epoch, starting_at, gamma1):
+        self.trees = []
+        self.epoch = epoch
+        self.starting_at = starting_at
+        self.gamma = gamma1
+        self.counter = 0
+        self.epoch_examples = []
+        self.entire_history = []
+        # self.last_play = Paper
+        self.basic_ai = AI_agent()
+        self.trees.append(self.basic_ai.get_relevant_tree(0))
+
+    def get_tree_score(self, tree):
+        score = 0
+        for i in range(self.epoch):
+            hist = self.entire_history[:-i - 1]
+            played = self.entire_history[-i - 1][INDEX_OF_PLAY]
+            if tree.predict(get_parameters(hist)).best_counter() == played:
+                score += self.epoch - i
+        return score
+
+    def tree_voting(self, example):
+        trees_by_relevant = sorted(self.trees, key=lambda x: self.get_tree_score(x), reverse=True)
+        votes = Counter()
+        for i in range(len(trees_by_relevant)):
+            cur_prediction = trees_by_relevant[i].predict(example)
+            cur_power = np.power(self.gamma, len(trees_by_relevant) - 1 - i)
+            votes[Rock] += cur_prediction.rock_percentage * cur_power
+            votes[Paper] += cur_prediction.scissors_percentage * cur_power
+            votes[Scissors] += cur_prediction.paper_percentage * cur_power
+        return Prediction(votes[Rock], votes[Scissors], votes[Paper])
+
+    def get_wins(self, entire_history):
+        c = Counter()
+        for game in entire_history:
+            c[game[INDEX_OF_RESULT]] += 1
+        print("L:" + str(c[LOSS] / len(entire_history)) + "\n" +
+              "W:" + str(c[WIN] / len(entire_history)) + "\n" +
+              "d:" + str(c[DRAW] / len(entire_history)))
+
+    def predict(self, history):
+        print(len(self.trees))
+        self.entire_history = history
+        self.trees[0] = self.basic_ai.get_relevant_tree(len(history))
+        if len(history) > self.starting_at:
+            self.counter += 1
+            example = get_parameters(history[:-1]) + [history[-1][INDEX_OF_PLAY]]
+            self.epoch_examples.append(example)
+            if self.counter == self.epoch:
+                cur_tree = DecisionTree()
+                cur_tree.train(np.array(self.epoch_examples))
+                self.trees.append(cur_tree)
+                self.epoch_examples = []
+                self.counter = 0
+        if len(self.trees) == 1:
+            return self.basic_ai.predict(history)
+        return self.tree_voting(get_parameters(history))
+
+
 class OnlineEpochAgent:
 
     def __init__(self, epoch, round1, gamma1):
@@ -170,18 +240,18 @@ class OnlineEpochAgent:
             cur_prediction = self.trees[i].predict(example)
             rock_percentage, paper_percentage, scissors_percentage = cur_prediction.best_counter_precentage()
             cur_power = np.power(self.gamma, len(self.trees) - 1 - i)
-            votes[Rock] += rock_percentage*cur_power
-            votes[Paper] += paper_percentage*cur_power
-            votes[Scissors] += scissors_percentage*cur_power
+            votes[Rock] += rock_percentage * cur_power
+            votes[Paper] += paper_percentage * cur_power
+            votes[Scissors] += scissors_percentage * cur_power
         return max(votes.keys(), key=(lambda x: votes[x]))
 
     def get_wins(self):
         c = Counter()
         for game in self.entire_history:
             c[game[INDEX_OF_RESULT]] += 1
-        print("L:" + str(c[LOSS]/len(self.entire_history)) + "\n" +
-              "W:" + str(c[WIN]/len(self.entire_history)) + "\n" +
-              "d:" + str(c[DRAW]/len(self.entire_history)))
+        print("L:" + str(c[LOSS] / len(self.entire_history)) + "\n" +
+              "W:" + str(c[WIN] / len(self.entire_history)) + "\n" +
+              "d:" + str(c[DRAW] / len(self.entire_history)))
 
     def predict(self, history):
         if len(history) == 0:
@@ -208,7 +278,7 @@ class OnlineEpochAgent:
 class OnlineSingleTreeAgent:
 
     def __init__(self, epoch, round1):
-        self.tree  = None
+        self.tree = None
         self.epoch = epoch
         self.round = round1
         self.counter = 0
@@ -228,9 +298,9 @@ class OnlineSingleTreeAgent:
         c = Counter()
         for game in self.entire_history:
             c[game[INDEX_OF_RESULT]] += 1
-        print("L:" + str(c[LOSS]/len(self.entire_history)) + "\n" +
-              "W:" + str(c[WIN]/len(self.entire_history)) + "\n" +
-              "d:" + str(c[DRAW]/len(self.entire_history)))
+        print("L:" + str(c[LOSS] / len(self.entire_history)) + "\n" +
+              "W:" + str(c[WIN] / len(self.entire_history)) + "\n" +
+              "d:" + str(c[DRAW] / len(self.entire_history)))
 
     def predict(self, history):
         if len(history) == 0:
