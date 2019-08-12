@@ -127,14 +127,14 @@ class AI_agent:
         self.all_examples = []
         for length in AI_agent.jumping_iterations:
             if os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(length)) not in AI_agent.tree_files:
-                self.build()
+                self.all_trees, self.all_examples = self.build()
                 return
             new_tree = DecisionTree()
             new_tree.parse_tree_dic(os.path.join(AI_agent.tree_folder, TREE_FILE_PREFIX + str(length)))
             self.all_trees.append(new_tree)
 
     def build(self):
-        self.all_trees, self.all_examples = build_trees(AI_agent.example_files)
+        return build_trees(AI_agent.example_files)
 
     def predict(self, history):
         for length in self.jumping_iterations[::-1]:
@@ -193,7 +193,6 @@ class Ai2:
               "d:" + str(c[DRAW] / len(entire_history)))
 
     def predict(self, history):
-        print(len(self.trees))
         self.entire_history = history
         self.trees[0] = self.basic_ai.get_relevant_tree(len(history))
         if len(history) > self.starting_at:
