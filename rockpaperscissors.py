@@ -94,7 +94,7 @@ class GamePlay:
     def epoch_agent_chosen(self):
         if self.write_mode.get():
             self.output_file_path = "examples" + os.path.sep + "epoch_examples.txt"
-        self.agent_chosen(OnlineEpochAgent(5, 5, 0.9))
+        self.agent_chosen(OnlineEpochAgent(3, 5, 0.9))
 
     def single_agent_chosen(self):
         if self.write_mode.get():

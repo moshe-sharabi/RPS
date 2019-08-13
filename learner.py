@@ -253,23 +253,43 @@ class OnlineEpochAgent:
               "d:" + str(c[DRAW] / len(self.entire_history)))
 
     def predict(self, history):
+        #if len(history) == 0:
+        #    return Dummy(self.last_play)
+        #previous_play = history[-1]
+        #self.counter += 1
+        #if self.counter == self.round:
+        #    example = get_parameters(self.cur_round) + [previous_play[INDEX_OF_PLAY]]
+        #    self.epoch_examples.append(example)
+        #    if len(self.epoch_examples) == self.epoch:
+        #        cur_tree = DecisionTree()
+        #        cur_tree.train(np.array(self.epoch_examples))
+        #        self.trees.append(cur_tree)
+        #        self.epoch_examples = []
+        #    self.counter = 0
+        #    self.cur_round = []
+        #else:
+        #    self.cur_round.append(previous_play)
+        #self.entire_history.append(previous_play)
+        #self.last_play = self.tree_voting()
+        #return Dummy(self.last_play)
         if len(history) == 0:
             return Dummy(self.last_play)
+        if len(history) < 25:
+            self.last_play = self.tree_voting()
+            return Dummy(self.last_play)
         previous_play = history[-1]
-        self.counter += 1
-        if self.counter == self.round:
-            example = get_parameters(self.cur_round) + [previous_play[INDEX_OF_PLAY]]
-            self.epoch_examples.append(example)
-            if len(self.epoch_examples) == self.epoch:
-                cur_tree = DecisionTree()
-                cur_tree.train(np.array(self.epoch_examples))
-                self.trees.append(cur_tree)
-                self.epoch_examples = []
-            self.counter = 0
-            self.cur_round = []
-        else:
-            self.cur_round.append(previous_play)
         self.entire_history.append(previous_play)
+        example = get_parameters(history[-5:-1]) + [previous_play[INDEX_OF_PLAY]]
+        self.epoch_examples.append(example)
+        for i in range(4):
+            self.epoch_examples.append(get_parameters(history[-i*5-10:-i*5-5])+ [history[-i*5-5][INDEX_OF_PLAY]])
+        self.counter += 1
+        if self.counter == self.epoch:
+            cur_tree = DecisionTree()
+            cur_tree.train(np.array(self.epoch_examples))
+            self.trees.append(cur_tree)
+            self.epoch_examples = []
+            self.counter = 0
         self.last_play = self.tree_voting()
         return Dummy(self.last_play)
 
