@@ -184,16 +184,16 @@ class GamePlay:
     def play(self):
         self.main_window.mainloop()
         if self.write_mode.get():
-            os.system('git checkout master -- ' + self.output_file_path)
-            self.output_file = open(self.output_file_path, 'a')
+            #os.system('git checkout master -- ' + self.output_file_path)
+            self.output_file = open(self.output_file_path, 'a+')
             self.output_file.write(' '.join(self.history))
             self.output_file.write('\n')
             self.output_file.close()
-            name = os.path.basename(self.output_file_path)
-            command = "git commit " + self.output_file_path + f" -m \"updated {name}\""
-            print(command)
-            os.system(command)
-            os.system('git push')
+            #name = os.path.basename(self.output_file_path)
+            #command = "git commit " + self.output_file_path + f" -m \"updated {name}\""
+            #print(command)
+            #os.system(command)
+            #os.system('git push')
         if self.build_process:
             self.build_process.join()
 
