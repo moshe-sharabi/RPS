@@ -148,6 +148,4 @@ parameters = {
     LAST_WINNING_STREAK: LENGTH_PARAMETERS
 }
 
-print(len(attribute_names) , len(attribute_functions_list) , len(parameters))
-
 assert len(attribute_names) == len(attribute_functions_list) == len(parameters)
