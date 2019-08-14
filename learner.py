@@ -40,9 +40,9 @@ def read_histories(path):
     :return: a list of attributes per history
     """
     # get update from git:
-    command = 'git checkout master -- ' + path
+    # command = 'git checkout master -- ' + path
     # print(command)
-    os.system(command)
+    # os.system(command)
     file_str = open(path).read()
     histories_str = file_str.split("\n")
     histories_str = [history.split(" ") for history in histories_str if history]  # if history is not empty
