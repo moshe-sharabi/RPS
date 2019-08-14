@@ -104,6 +104,25 @@ def num_smth(member):
 
     return count
 
+def num_smth_in_last_x(member,x):
+    """
+    return a functionn that counts how many times the member appeared in history
+    :param member: member
+    :return: the function
+    """
+
+    def count(history):
+        history = history[-x:]
+        counter = 0
+        for move in history:
+            if move[cons.INDEX_OF_PLAY] == member:
+                counter += 1
+        if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
+            return cons.PARAM_MAX_LENGTH
+        return quantize(counter)  # /float(len(history))
+
+    return count
+
 
 def longer_sequence(history):
     """
@@ -147,3 +166,28 @@ def sequence_smth(member):
         return quantize(counter)  # /float(len(history))
 
     return count
+
+def sequence_smth_in_last_x(member, x):
+    """
+    creates a function that countss the lenght of the last sequence of the member in history
+    :param member:the member
+    :return:the function
+    """
+
+    def count(history):
+        history = history[-x:]
+        flag = False
+        counter = 0
+        for i in range(len(history) - 1, 0, -1):
+            if history[i][cons.INDEX_OF_PLAY] == member:
+                flag = True
+                counter += 1
+                continue
+            if flag:
+                break
+        if counter >= cons.MAX_LENGTH_FOR_EVERYTHING:
+            return cons.PARAM_MAX_LENGTH
+        return quantize(counter)  # /float(len(history))
+
+    return count
+
