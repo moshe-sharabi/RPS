@@ -59,13 +59,13 @@ for epoch in range(5,11):
     for _gamma in range(11):
         arr[(epoch-5)*11 + _gamma] = (epoch, _gamma)
 pool = mp.Pool(mp.cpu_count())
-pool.map(get_scores_for_params, arr)
+res = pool.map(get_scores_for_params, arr)
 
 
 for epoch in range(5,11):
     for _gamma in range(11):
-        score1 = arr[(epoch-5)*11 + _gamma]["Ai2"]
-        score1_prob = arr[(epoch-5)*11 + _gamma]["Ai2_prob"]
+        score1 = res[(epoch-5)*11 + _gamma]["Ai2"]
+        score1_prob = res[(epoch-5)*11 + _gamma]["Ai2_prob"]
         print(f"Ai2({epoch},5,{gamma}) score: {score1}")
         save_to.write(f"Ai2({epoch},5,{gamma}) score: {score1}\n\n")
         print(f"Ai2_probapilistic({epoch},5,{gamma}) score: {score1_prob}")
