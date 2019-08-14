@@ -159,6 +159,7 @@ class Ai2:
         self.gamma = gamma1
         self.counter = 0
         self.epoch_examples = []
+        self.all_examples = []
         self.entire_history = []
         # self.last_play = Paper
         self.basic_ai = AI_agent()
@@ -199,9 +200,10 @@ class Ai2:
             self.counter += 1
             example = get_parameters(history[:-1]) + [history[-1][INDEX_OF_PLAY]]
             self.epoch_examples.append(example)
+            self.all_examples.append(example)
             if self.counter == self.epoch:
                 cur_tree = DecisionTree()
-                cur_tree.train(np.array(self.epoch_examples))
+                cur_tree.train(np.array(self.all_examples[-3*self.epoch:]))
                 self.trees.append(cur_tree)
                 self.epoch_examples = []
                 self.counter = 0
