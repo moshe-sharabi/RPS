@@ -4,20 +4,57 @@
  "children": [
   {
    "leaf": false,
-   "attribute": "num scissors",
+   "attribute": "last winning streak",
    "children": [
     {
      "leaf": false,
-     "attribute": "last played",
+     "attribute": "num rock",
      "children": [
+      {
+       "leaf": false,
+       "attribute": "last played",
+       "children": [
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0,
+          0,
+          0
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.3543339150668994,
+          0.3483129726585224,
+          0.2973531122745782
+         ]
+        },
+        {
+         "leaf": true,
+         "attribute": null,
+         "children": null,
+         "label": [
+          0.30819994383600113,
+          0.35720303285593935,
+          0.3345970233080595
+         ]
+        }
+       ],
+       "label": null
+      },
       {
        "leaf": true,
        "attribute": null,
        "children": null,
        "label": [
-        0.3224455611390285,
-        0.3355282157916017,
-        0.34202622306936986
+        0.3671339099314047,
+        0.29704742022069786,
+        0.33581866984789743
        ]
       },
       {
@@ -35,9 +72,29 @@
        "attribute": null,
        "children": null,
        "label": [
-        0.30819994383600113,
-        0.35720303285593935,
-        0.3345970233080595
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
+       ]
+      },
+      {
+       "leaf": true,
+       "attribute": null,
+       "children": null,
+       "label": [
+        0,
+        0,
+        0
        ]
       }
      ],
@@ -48,9 +105,9 @@
      "attribute": null,
      "children": null,
      "label": [
-      0.3543442217632857,
-      0.3483231042205998,
-      0.29733267401611446
+      0.2604769782189137,
+      0.3888888888888889,
+      0.3506341328921974
      ]
     },
     {
