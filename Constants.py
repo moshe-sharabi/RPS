@@ -76,13 +76,14 @@ NUM_PAPER_IN_LAST_10 = "num paper in last 10"
 LAST_SEQ_ROCK_IN_LAST_10 = "last sequence rock in last 10"
 LAST_SEQ_SCISSORS_IN_LAST_10 = "last sequence scissors in last 10"
 LAST_SEQ_PAPER_IN_LAST_10 = "last sequence paper in last 10"
+LAST_WINNING_STREAK = "last winning streak"
 attribute_names = [LAST_PLAYED, MOST_PLAYED, MOST_PLAYED_IN_LAST_10, MOST_SUCCESSFUL, MOST_SUCCESSFUL_IN_LAST_5,
                    MOST_PLAYED_AFTER_COMP_MOVE, LAST_SEQUENCE_S_LENGTH, PATTERN_S_NEXT_CHOICE, NUM_ROCK, NUM_SCISSORS,
                    NUM_PAPER, LONGER_SEQUENCE, LAST_SEQ_ROCK, LAST_SEQ_SCISSORS, LAST_SEQ_PAPER,
                    NUM_ROCK_IN_LAST_5,NUM_PAPER_IN_LAST_5,NUM_SCISSORS_IN_LAST_5,
                    NUM_ROCK_IN_LAST_10,NUM_PAPER_IN_LAST_10,NUM_SCISSORS_IN_LAST_10,
                    LAST_SEQ_ROCK_IN_LAST_5,LAST_SEQ_PAPER_IN_LAST_5,LAST_SEQ_SCISSORS_IN_LAST_5,
-                   LAST_SEQ_ROCK_IN_LAST_10,LAST_SEQ_PAPER_IN_LAST_10,LAST_SEQ_SCISSORS_IN_LAST_10]
+                   LAST_SEQ_ROCK_IN_LAST_10,LAST_SEQ_PAPER_IN_LAST_10,LAST_SEQ_SCISSORS_IN_LAST_10, LAST_WINNING_STREAK]
 num_rock = num_smth(Rock)
 num_scissors = num_smth(Scissors)
 num_paper = num_smth(Paper)
@@ -109,7 +110,7 @@ attribute_functions_list = [get_last_played, get_most_played, get_most_playedd_i
                             num_rock_in_last_5, num_paper_in_last_5, num_scissors_in_last_5,
                             last_seq_rock_in_last_5, last_seq_paper_in_last_5, last_seq_scissors_in_last_5,
                             num_rock_in_last_10, num_paper_in_last_10, num_scissors_in_last_10,
-                            last_seq_rock_in_last_10, last_seq_paper_in_last_10, last_seq_scissors_in_last_10]
+                            last_seq_rock_in_last_10, last_seq_paper_in_last_10, last_seq_scissors_in_last_10, last_winning_streak]
 
 # MAX_LAST_SEQUENCE_S_LENGTH = 5
 MAX_LENGTH_FOR_EVERYTHING = 5
@@ -143,7 +144,8 @@ parameters = {
     LAST_SEQ_SCISSORS_IN_LAST_5: LENGTH_PARAMETERS,
     LAST_SEQ_ROCK_IN_LAST_10: LENGTH_PARAMETERS,
     LAST_SEQ_PAPER_IN_LAST_10: LENGTH_PARAMETERS,
-    LAST_SEQ_SCISSORS_IN_LAST_10: LENGTH_PARAMETERS
+    LAST_SEQ_SCISSORS_IN_LAST_10: LENGTH_PARAMETERS,
+    LAST_WINNING_STREAK: LENGTH_PARAMETERS
 }
 
 print(len(attribute_names) , len(attribute_functions_list) , len(parameters))

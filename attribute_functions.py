@@ -191,3 +191,11 @@ def sequence_smth_in_last_x(member, x):
 
     return count
 
+def last_winning_streak(history):
+    count = 0
+    for game in history[::-1]:
+        if game[cons.INDEX_OF_RESULT] == cons.WIN:
+            count += 1
+        else:
+            break
+    return quantize(count)
