@@ -20,11 +20,12 @@ class GamePlay:
 
     def __init__(self):
         self.build_process = None
+        self.output_file_path = None
 
         # main program
         self.main_window = Tk()
         self.scores_text = "SCORE:\nYou: {}\nComputer: {}"
-        self.write_mode = BooleanVar()
+        self.write_mode = BooleanVar(value=1)
         self.main_window.title("Rock-Paper-Scissors by Nahaliel")
 
         # images
@@ -185,9 +186,9 @@ class GamePlay:
         self.main_window.mainloop()
         if self.write_mode.get():
             #os.system('git checkout master -- ' + self.output_file_path)
-            self.output_file = open(self.output_file_path, 'a+')
-            self.output_file.write(' '.join(self.history))
-            self.output_file.write('\n')
+            self.output_file = open(self.output_file_path, 'a')
+            self.output_file.write("\n"+' '.join(self.history))
+
             self.output_file.close()
             #name = os.path.basename(self.output_file_path)
             #command = "git commit " + self.output_file_path + f" -m \"updated {name}\""
