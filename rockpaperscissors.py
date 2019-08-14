@@ -87,9 +87,9 @@ class GamePlay:
             self.output_file_path = "examples" + os.path.sep + "ai_examples.txt"
         self.agent_chosen(Ai2(5, 5, 0.5))
         # running in the background todo # if we want
-        thread = threading.Thread(target=self.agent.basic_ai.build, args=())
+        # thread = threading.Thread(target=self.agent.basic_ai.build, args=())
         # thread.daemon = True  # Daemonize thread
-        thread.start()
+        # thread.start()
 
     def epoch_agent_chosen(self):
         if self.write_mode.get():
