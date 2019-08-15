@@ -6,11 +6,14 @@ class HistoryException(ValueError):
     def __init__(self):
         super(HistoryException, self).__init__()
 
+
 def quantize(count):
     if count < cons.MAX_LENGTH_FOR_EVERYTHING:
         return str(count)
     else:
         return cons.PARAM_MAX_LENGTH
+
+
 def get_last_played(history):
     if not history:
         raise HistoryException
@@ -108,7 +111,8 @@ def num_smth(member):
 
     return count
 
-def num_smth_in_last_x(member,x):
+
+def num_smth_in_last_x(member, x):
     """
     return a functionn that counts how many times the member appeared in history
     :param member: member
@@ -148,6 +152,10 @@ def longer_sequence(history):
     return c.argMax()
 
 
+def continues_winning(history):
+    return history[-1][cons.INDEX_OF_RESULT] == cons.WIN and history[-1] == history[-2] == history[-3]
+
+
 def sequence_smth(member):
     """
     creates a function that countss the lenght of the last sequence of the member in history
@@ -170,6 +178,7 @@ def sequence_smth(member):
         return quantize(counter)  # /float(len(history))
 
     return count
+
 
 def sequence_smth_in_last_x(member, x):
     """
@@ -194,6 +203,7 @@ def sequence_smth_in_last_x(member, x):
         return quantize(counter)  # /float(len(history))
 
     return count
+
 
 def last_winning_streak(history):
     count = 0
