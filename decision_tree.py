@@ -38,6 +38,12 @@ class Prediction:
         self.paper_percentage = c[Paper] / len(rock_percentage)
         self.scissors_percentage = c[Scissors] / len(rock_percentage)
 
+    def __str__(self):
+        return str((self.rock_percentage, self.paper_percentage, self.scissors_percentage))
+
+    def to_tuple(self):
+        return self.rock_percentage, self.paper_percentage, self.scissors_percentage
+
     def best_counter_precentage(self):
         scores = Counter()
         scores[Rock] = self.scissors_percentage - self.paper_percentage
@@ -60,21 +66,24 @@ class Prediction:
         return random.choice(choose_from)
 
     def best_counter_probabilistic(self):
+        normalizer = sum(self.to_tuple())
+        if normalizer == 0:
+            probabilities = np.array([1,1,1])/3
+            return np.random.choice(Choices, p=probabilities)
+        self.rock_percentage /= normalizer
+        self.paper_percentage /= normalizer
+        self.scissors_percentage /= normalizer
         scores = Counter()
         scores[Rock] = self.scissors_percentage - self.paper_percentage
         scores[Paper] = self.rock_percentage - self.scissors_percentage
         scores[Scissors] = self.paper_percentage - self.rock_percentage
-        base = min(scores.values())
+        base = min(self.to_tuple())
         rock_prob = self.scissors_percentage + scores[Rock]*base
         scissors_prob = self.paper_percentage + scores[Scissors]*base
         paper_prob = self.rock_percentage + scores[Paper]*base
-        return random.choice(Choices, p=(rock_prob, scissors_prob, paper_prob))
-
-    def __str__(self):
-        return str((self.rock_percentage, self.paper_percentage, self.scissors_percentage))
-
-    def to_tuple(self):
-        return self.rock_percentage, self.paper_percentage, self.scissors_percentage
+        probabilities = np.array([rock_prob, paper_prob, scissors_prob])
+        probabilities = probabilities / np.sum(probabilities)
+        return np.random.choice(Choices, p=probabilities)
 
     counter = best_counter  # todo change this to change to probability
 

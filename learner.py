@@ -203,7 +203,7 @@ class Ai2:
             self.all_examples.append(example)
             if self.counter == self.epoch:
                 cur_tree = DecisionTree()
-                cur_tree.train(np.array(self.all_examples[-3*self.epoch:]))
+                cur_tree.train(np.array(self.all_examples[-25:]))
                 self.trees.append(cur_tree)
                 self.epoch_examples = []
                 self.counter = 0

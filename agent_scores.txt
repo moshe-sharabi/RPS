@@ -1,0 +1,264 @@
+Ai2(5,5,0.0) score: 456, normalized: 0.16
+
+OnlineEpochAgent(5,5,0.0) score: 215, normalized: 0.07543859649122807
+
+Ai2(5,5,0.1) score: 463, normalized: 0.1624561403508772
+
+OnlineEpochAgent(5,5,0.1) score: 220, normalized: 0.07719298245614035
+
+Ai2(5,5,0.2) score: 430, normalized: 0.15087719298245614
+
+OnlineEpochAgent(5,5,0.2) score: 235, normalized: 0.0824561403508772
+
+Ai2(5,5,0.30000000000000004) score: 433, normalized: 0.1519298245614035
+
+OnlineEpochAgent(5,5,0.30000000000000004) score: 246, normalized: 0.0863157894736842
+
+Ai2(5,5,0.4) score: 470, normalized: 0.1649122807017544
+
+OnlineEpochAgent(5,5,0.4) score: 265, normalized: 0.09298245614035087
+
+Ai2(5,5,0.5) score: 483, normalized: 0.1694736842105263
+
+OnlineEpochAgent(5,5,0.5) score: 290, normalized: 0.10175438596491228
+
+Ai2(5,5,0.6000000000000001) score: 490, normalized: 0.17192982456140352
+
+OnlineEpochAgent(5,5,0.6000000000000001) score: 275, normalized: 0.09649122807017543
+
+Ai2(5,5,0.7000000000000001) score: 496, normalized: 0.17403508771929824
+
+OnlineEpochAgent(5,5,0.7000000000000001) score: 250, normalized: 0.08771929824561403
+
+Ai2(5,5,0.8) score: 484, normalized: 0.16982456140350877
+
+OnlineEpochAgent(5,5,0.8) score: 244, normalized: 0.0856140350877193
+
+Ai2(5,5,0.9) score: 438, normalized: 0.15368421052631578
+
+OnlineEpochAgent(5,5,0.9) score: 195, normalized: 0.06842105263157895
+
+Ai2(5,5,1.0) score: 373, normalized: 0.13087719298245615
+
+OnlineEpochAgent(5,5,1.0) score: 284, normalized: 0.09964912280701754
+
+Ai2(6,5,0.0) score: 453, normalized: 0.15894736842105264
+
+OnlineEpochAgent(6,5,0.0) score: 237, normalized: 0.08315789473684211
+
+Ai2(6,5,0.1) score: 493, normalized: 0.17298245614035088
+
+OnlineEpochAgent(6,5,0.1) score: 260, normalized: 0.0912280701754386
+
+Ai2(6,5,0.2) score: 494, normalized: 0.17333333333333334
+
+OnlineEpochAgent(6,5,0.2) score: 216, normalized: 0.07578947368421053
+
+Ai2(6,5,0.30000000000000004) score: 464, normalized: 0.16280701754385965
+
+OnlineEpochAgent(6,5,0.30000000000000004) score: 242, normalized: 0.08491228070175438
+
+Ai2(6,5,0.4) score: 488, normalized: 0.1712280701754386
+
+OnlineEpochAgent(6,5,0.4) score: 279, normalized: 0.09789473684210526
+
+Ai2(6,5,0.5) score: 533, normalized: 0.1870175438596491
+
+OnlineEpochAgent(6,5,0.5) score: 243, normalized: 0.08526315789473685
+
+Ai2(6,5,0.6000000000000001) score: 574, normalized: 0.20140350877192983
+
+OnlineEpochAgent(6,5,0.6000000000000001) score: 302, normalized: 0.10596491228070175
+
+Ai2(6,5,0.7000000000000001) score: 586, normalized: 0.2056140350877193
+
+OnlineEpochAgent(6,5,0.7000000000000001) score: 225, normalized: 0.07894736842105263
+
+Ai2(6,5,0.8) score: 553, normalized: 0.19403508771929825
+
+OnlineEpochAgent(6,5,0.8) score: 289, normalized: 0.10140350877192983
+
+Ai2(6,5,0.9) score: 546, normalized: 0.19157894736842104
+
+OnlineEpochAgent(6,5,0.9) score: 336, normalized: 0.11789473684210526
+
+Ai2(6,5,1.0) score: 461, normalized: 0.1617543859649123
+
+OnlineEpochAgent(6,5,1.0) score: 339, normalized: 0.11894736842105263
+
+Ai2(7,5,0.0) score: 525, normalized: 0.18421052631578946
+
+OnlineEpochAgent(7,5,0.0) score: 218, normalized: 0.07649122807017544
+
+Ai2(7,5,0.1) score: 549, normalized: 0.19263157894736843
+
+OnlineEpochAgent(7,5,0.1) score: 285, normalized: 0.1
+
+Ai2(7,5,0.2) score: 543, normalized: 0.19052631578947368
+
+OnlineEpochAgent(7,5,0.2) score: 276, normalized: 0.0968421052631579
+
+Ai2(7,5,0.30000000000000004) score: 513, normalized: 0.18
+
+OnlineEpochAgent(7,5,0.30000000000000004) score: 243, normalized: 0.08526315789473685
+
+Ai2(7,5,0.4) score: 555, normalized: 0.19473684210526315
+
+OnlineEpochAgent(7,5,0.4) score: 226, normalized: 0.07929824561403509
+
+Ai2(7,5,0.5) score: 547, normalized: 0.1919298245614035
+
+OnlineEpochAgent(7,5,0.5) score: 238, normalized: 0.08350877192982456
+
+Ai2(7,5,0.6000000000000001) score: 559, normalized: 0.19614035087719298
+
+OnlineEpochAgent(7,5,0.6000000000000001) score: 245, normalized: 0.08596491228070176
+
+Ai2(7,5,0.7000000000000001) score: 552, normalized: 0.1936842105263158
+
+OnlineEpochAgent(7,5,0.7000000000000001) score: 312, normalized: 0.10947368421052632
+
+Ai2(7,5,0.8) score: 570, normalized: 0.2
+
+OnlineEpochAgent(7,5,0.8) score: 256, normalized: 0.08982456140350877
+
+Ai2(7,5,0.9) score: 541, normalized: 0.18982456140350878
+
+OnlineEpochAgent(7,5,0.9) score: 287, normalized: 0.10070175438596492
+
+Ai2(7,5,1.0) score: 476, normalized: 0.16701754385964912
+
+OnlineEpochAgent(7,5,1.0) score: 343, normalized: 0.12035087719298246
+
+Ai2(8,5,0.0) score: 490, normalized: 0.17192982456140352
+
+OnlineEpochAgent(8,5,0.0) score: 253, normalized: 0.0887719298245614
+
+Ai2(8,5,0.1) score: 544, normalized: 0.19087719298245615
+
+OnlineEpochAgent(8,5,0.1) score: 314, normalized: 0.11017543859649123
+
+Ai2(8,5,0.2) score: 541, normalized: 0.18982456140350878
+
+OnlineEpochAgent(8,5,0.2) score: 316, normalized: 0.11087719298245614
+
+Ai2(8,5,0.30000000000000004) score: 508, normalized: 0.1782456140350877
+
+OnlineEpochAgent(8,5,0.30000000000000004) score: 345, normalized: 0.12105263157894737
+
+Ai2(8,5,0.4) score: 555, normalized: 0.19473684210526315
+
+OnlineEpochAgent(8,5,0.4) score: 344, normalized: 0.12070175438596491
+
+Ai2(8,5,0.5) score: 551, normalized: 0.19333333333333333
+
+OnlineEpochAgent(8,5,0.5) score: 307, normalized: 0.10771929824561403
+
+Ai2(8,5,0.6000000000000001) score: 564, normalized: 0.19789473684210526
+
+OnlineEpochAgent(8,5,0.6000000000000001) score: 328, normalized: 0.11508771929824561
+
+Ai2(8,5,0.7000000000000001) score: 596, normalized: 0.20912280701754385
+
+OnlineEpochAgent(8,5,0.7000000000000001) score: 335, normalized: 0.11754385964912281
+
+Ai2(8,5,0.8) score: 559, normalized: 0.19614035087719298
+
+OnlineEpochAgent(8,5,0.8) score: 318, normalized: 0.11157894736842106
+
+Ai2(8,5,0.9) score: 580, normalized: 0.20350877192982456
+
+OnlineEpochAgent(8,5,0.9) score: 353, normalized: 0.12385964912280702
+
+Ai2(8,5,1.0) score: 508, normalized: 0.1782456140350877
+
+OnlineEpochAgent(8,5,1.0) score: 313, normalized: 0.10982456140350877
+
+Ai2(9,5,0.0) score: 427, normalized: 0.14982456140350878
+
+OnlineEpochAgent(9,5,0.0) score: 158, normalized: 0.05543859649122807
+
+Ai2(9,5,0.1) score: 513, normalized: 0.18
+
+OnlineEpochAgent(9,5,0.1) score: 272, normalized: 0.09543859649122807
+
+Ai2(9,5,0.2) score: 497, normalized: 0.1743859649122807
+
+OnlineEpochAgent(9,5,0.2) score: 308, normalized: 0.1080701754385965
+
+Ai2(9,5,0.30000000000000004) score: 520, normalized: 0.1824561403508772
+
+OnlineEpochAgent(9,5,0.30000000000000004) score: 252, normalized: 0.08842105263157894
+
+Ai2(9,5,0.4) score: 529, normalized: 0.1856140350877193
+
+OnlineEpochAgent(9,5,0.4) score: 248, normalized: 0.08701754385964912
+
+Ai2(9,5,0.5) score: 528, normalized: 0.18526315789473685
+
+OnlineEpochAgent(9,5,0.5) score: 279, normalized: 0.09789473684210526
+
+Ai2(9,5,0.6000000000000001) score: 531, normalized: 0.1863157894736842
+
+OnlineEpochAgent(9,5,0.6000000000000001) score: 310, normalized: 0.10877192982456141
+
+Ai2(9,5,0.7000000000000001) score: 572, normalized: 0.2007017543859649
+
+OnlineEpochAgent(9,5,0.7000000000000001) score: 369, normalized: 0.12947368421052632
+
+Ai2(9,5,0.8) score: 568, normalized: 0.19929824561403509
+
+OnlineEpochAgent(9,5,0.8) score: 363, normalized: 0.12736842105263158
+
+Ai2(9,5,0.9) score: 579, normalized: 0.2031578947368421
+
+OnlineEpochAgent(9,5,0.9) score: 361, normalized: 0.12666666666666668
+
+Ai2(9,5,1.0) score: 550, normalized: 0.19298245614035087
+
+OnlineEpochAgent(9,5,1.0) score: 284, normalized: 0.09964912280701754
+
+Ai2(10,5,0.0) score: 367, normalized: 0.1287719298245614
+
+OnlineEpochAgent(10,5,0.0) score: 259, normalized: 0.09087719298245614
+
+Ai2(10,5,0.1) score: 509, normalized: 0.17859649122807017
+
+OnlineEpochAgent(10,5,0.1) score: 329, normalized: 0.11543859649122808
+
+Ai2(10,5,0.2) score: 475, normalized: 0.16666666666666666
+
+OnlineEpochAgent(10,5,0.2) score: 329, normalized: 0.11543859649122808
+
+Ai2(10,5,0.30000000000000004) score: 504, normalized: 0.17684210526315788
+
+OnlineEpochAgent(10,5,0.30000000000000004) score: 326, normalized: 0.1143859649122807
+
+Ai2(10,5,0.4) score: 560, normalized: 0.19649122807017544
+
+OnlineEpochAgent(10,5,0.4) score: 319, normalized: 0.1119298245614035
+
+Ai2(10,5,0.5) score: 546, normalized: 0.19157894736842104
+
+OnlineEpochAgent(10,5,0.5) score: 334, normalized: 0.11719298245614035
+
+Ai2(10,5,0.6000000000000001) score: 565, normalized: 0.19824561403508772
+
+OnlineEpochAgent(10,5,0.6000000000000001) score: 325, normalized: 0.11403508771929824
+
+Ai2(10,5,0.7000000000000001) score: 575, normalized: 0.20175438596491227
+
+OnlineEpochAgent(10,5,0.7000000000000001) score: 340, normalized: 0.11929824561403508
+
+Ai2(10,5,0.8) score: 601, normalized: 0.21087719298245614
+
+OnlineEpochAgent(10,5,0.8) score: 319, normalized: 0.1119298245614035
+
+Ai2(10,5,0.9) score: 566, normalized: 0.1985964912280702
+
+OnlineEpochAgent(10,5,0.9) score: 360, normalized: 0.12631578947368421
+
+Ai2(10,5,1.0) score: 528, normalized: 0.18526315789473685
+
+OnlineEpochAgent(10,5,1.0) score: 327, normalized: 0.11473684210526315
+
