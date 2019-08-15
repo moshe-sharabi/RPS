@@ -19,28 +19,29 @@ def get_scores_for_params(params):
     score1_prob = 0
     count = 0
     for match in histories:
-        agent1 = Ai2(epoch, 5, gamma)
-        # agent2 = OnlineEpochAgent(epoch,5,gamma)
-        for i in range(len(match) - 2):
-            count += 1
-            cur_hist = match[:i]
-            played = match[i][INDEX_OF_PLAY]
+        for j in range(5):
+            agent1 = Ai2(epoch, 5, gamma)
+            # agent2 = OnlineEpochAgent(epoch,5,gamma)
+            for i in range(len(match) - 2):
+                count += 1
+                cur_hist = match[:i]
+                played = match[i][INDEX_OF_PLAY]
 
-            prediction = agent1.predict(cur_hist)
-            comp_move = prediction.best_counter()
-            game = PAIR_TRANSLATOR[played + comp_move]
-            comp_result = neg[game][INDEX_OF_RESULT]
-            score1 += points[comp_result]
+                prediction = agent1.predict(cur_hist)
+                comp_move = prediction.best_counter()
+                game = PAIR_TRANSLATOR[played + comp_move]
+                comp_result = neg[game][INDEX_OF_RESULT]
+                score1 += points[comp_result]
 
-            # comp_move = prediction.best_counter_probabilistic()
-            # game = PAIR_TRANSLATOR[played + comp_move]
-            # comp_result = neg[game][INDEX_OF_RESULT]
-            # score1_prob += points[comp_result]
+                # comp_move = prediction.best_counter_probabilistic()
+                # game = PAIR_TRANSLATOR[played + comp_move]
+                # comp_result = neg[game][INDEX_OF_RESULT]
+                # score1_prob += points[comp_result]
 
-            # comp_move = agent2.predict(cur_hist).best_counter()
-            # game = PAIR_TRANSLATOR[played + comp_move]
-            # comp_result = neg[game][INDEX_OF_RESULT]
-            # score2 += points[comp_result]
+                # comp_move = agent2.predict(cur_hist).best_counter()
+                # game = PAIR_TRANSLATOR[played + comp_move]
+                # comp_result = neg[game][INDEX_OF_RESULT]
+                # score2 += points[comp_result]
     norm1 = score1 / count
     norm_prob1 = score1_prob / count
     norm2 = score2 / count
