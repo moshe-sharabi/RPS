@@ -153,6 +153,8 @@ def longer_sequence(history):
 
 
 def continues_winning(history):
+    if len(history) < 3:
+        return False
     return history[-1][cons.INDEX_OF_RESULT] == cons.WIN and history[-1] == history[-2] == history[-3]
 
 
