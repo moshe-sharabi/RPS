@@ -82,6 +82,10 @@ def get_pattern_next_choice(history):
         set2 = history_no_results[-3:-1]
         if set1 == set2 and set1[0] == history_no_results[-1]:
             return set1[1]
+    # checking for staying with the same choice
+    if len(history) >= 3:
+        if history_no_results[-3] == history_no_results[-2] == history_no_results[-1]:
+            return history_no_results[-1]
     # no pattern was found
     return cons.NOT_AVAILABLE
 
