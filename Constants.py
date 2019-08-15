@@ -62,15 +62,15 @@ LAST_SEQ_PAPER = "last sequence paper"
 NUM_ROCK_IN_LAST_5 = "num rock in last 5"
 NUM_SCISSORS_IN_LAST_5 = "num scissors in last 5"
 NUM_PAPER_IN_LAST_5 = "num paper in last 5"
-LAST_SEQ_ROCK_IN_LAST_5 = "last sequence rock in last 5"
-LAST_SEQ_SCISSORS_IN_LAST_5 = "last sequence scissors in last 5"
-LAST_SEQ_PAPER_IN_LAST_5 = "last sequence paper in last 5"
+# LAST_SEQ_ROCK_IN_LAST_5 = "last sequence rock in last 5"
+# LAST_SEQ_SCISSORS_IN_LAST_5 = "last sequence scissors in last 5"
+# LAST_SEQ_PAPER_IN_LAST_5 = "last sequence paper in last 5"
 NUM_ROCK_IN_LAST_10 = "num rock in last 10"
 NUM_SCISSORS_IN_LAST_10 = "num scissors in last 10"
 NUM_PAPER_IN_LAST_10 = "num paper in last 10"
-LAST_SEQ_ROCK_IN_LAST_10 = "last sequence rock in last 10"
-LAST_SEQ_SCISSORS_IN_LAST_10 = "last sequence scissors in last 10"
-LAST_SEQ_PAPER_IN_LAST_10 = "last sequence paper in last 10"
+# LAST_SEQ_ROCK_IN_LAST_10 = "last sequence rock in last 10"
+# LAST_SEQ_SCISSORS_IN_LAST_10 = "last sequence scissors in last 10"
+# LAST_SEQ_PAPER_IN_LAST_10 = "last sequence paper in last 10"
 LAST_WINNING_STREAK = "last winning streak"
 CONTINUES_WINNING = "continues_winning"
 
@@ -92,24 +92,24 @@ last_seq_scissors = sequence_smth(Scissors)
 num_rock_in_last_5 = num_smth_in_last_x(Rock, 5)
 num_scissors_in_last_5 = num_smth_in_last_x(Scissors, 5)
 num_paper_in_last_5 = num_smth_in_last_x(Paper, 5)
-last_seq_rock_in_last_5 = sequence_smth_in_last_x(Rock, 5)
-last_seq_paper_in_last_5 = sequence_smth_in_last_x(Paper, 5)
-last_seq_scissors_in_last_5 = sequence_smth_in_last_x(Scissors, 5)
+# last_seq_rock_in_last_5 = sequence_smth_in_last_x(Rock, 5)
+# last_seq_paper_in_last_5 = sequence_smth_in_last_x(Paper, 5)
+# last_seq_scissors_in_last_5 = sequence_smth_in_last_x(Scissors, 5)
 num_rock_in_last_10 = num_smth_in_last_x(Rock, 10)
 num_scissors_in_last_10 = num_smth_in_last_x(Scissors, 10)
 num_paper_in_last_10 = num_smth_in_last_x(Paper, 10)
-last_seq_rock_in_last_10 = sequence_smth_in_last_x(Rock, 10)
-last_seq_paper_in_last_10 = sequence_smth_in_last_x(Paper, 10)
-last_seq_scissors_in_last_10 = sequence_smth_in_last_x(Scissors, 10)
+# last_seq_rock_in_last_10 = sequence_smth_in_last_x(Rock, 10)
+# last_seq_paper_in_last_10 = sequence_smth_in_last_x(Paper, 10)
+# last_seq_scissors_in_last_10 = sequence_smth_in_last_x(Scissors, 10)
 
 attribute_functions_list = [get_last_played, get_most_played, get_most_playedd_in_last_10, get_most_successful,
                             get_most_successful_in_last_5, get_most_played_after_comp_move, get_last_sequence_length,
                             get_pattern_next_choice, num_rock, num_paper, num_scissors, longer_sequence, last_seq_rock,
                             last_seq_paper, last_seq_scissors,
                             num_rock_in_last_5, num_paper_in_last_5, num_scissors_in_last_5,
-                            last_seq_rock_in_last_5, last_seq_paper_in_last_5, last_seq_scissors_in_last_5,
+                            # last_seq_rock_in_last_5, last_seq_paper_in_last_5, last_seq_scissors_in_last_5,
                             num_rock_in_last_10, num_paper_in_last_10, num_scissors_in_last_10,
-                            last_seq_rock_in_last_10, last_seq_paper_in_last_10, last_seq_scissors_in_last_10,
+                            # last_seq_rock_in_last_10, last_seq_paper_in_last_10, last_seq_scissors_in_last_10,
                             last_winning_streak,
                             continues_winning]
 
@@ -140,12 +140,12 @@ parameters = {
     NUM_ROCK_IN_LAST_10: LENGTH_PARAMETERS,
     NUM_PAPER_IN_LAST_10: LENGTH_PARAMETERS,
     NUM_SCISSORS_IN_LAST_10: LENGTH_PARAMETERS,
-    LAST_SEQ_ROCK_IN_LAST_5: LENGTH_PARAMETERS,
-    LAST_SEQ_PAPER_IN_LAST_5: LENGTH_PARAMETERS,
-    LAST_SEQ_SCISSORS_IN_LAST_5: LENGTH_PARAMETERS,
-    LAST_SEQ_ROCK_IN_LAST_10: LENGTH_PARAMETERS,
-    LAST_SEQ_PAPER_IN_LAST_10: LENGTH_PARAMETERS,
-    LAST_SEQ_SCISSORS_IN_LAST_10: LENGTH_PARAMETERS,
+    # LAST_SEQ_ROCK_IN_LAST_5: LENGTH_PARAMETERS,
+    # LAST_SEQ_PAPER_IN_LAST_5: LENGTH_PARAMETERS,
+    # LAST_SEQ_SCISSORS_IN_LAST_5: LENGTH_PARAMETERS,
+    # LAST_SEQ_ROCK_IN_LAST_10: LENGTH_PARAMETERS,
+    # LAST_SEQ_PAPER_IN_LAST_10: LENGTH_PARAMETERS,
+    # LAST_SEQ_SCISSORS_IN_LAST_10: LENGTH_PARAMETERS,
     LAST_WINNING_STREAK: LENGTH_PARAMETERS,
     CONTINUES_WINNING: ['True', 'False']
 }
