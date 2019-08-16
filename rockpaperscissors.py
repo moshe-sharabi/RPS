@@ -5,6 +5,7 @@ from tkinter import *
 from learner import *
 
 ########################
+EPOCH = 6
 PLAYER_SCORE_INDEX = 0
 COMPUTER_SCORE_INDEX = 1
 
@@ -86,7 +87,7 @@ class GamePlay:
     def ai_agent_chosen(self):
         if self.write_mode.get():
             self.output_file_path = "examples" + os.path.sep + "ai_examples.txt"
-        self.agent_chosen(Ai2(6, 5, 0.7))
+        self.agent_chosen(Ai2(EPOCH, 5, 0.7))
         # running in the background todo # if we want
         # thread = threading.Thread(target=self.agent.basic_ai.build, args=())
         # thread.daemon = True  # Daemonize thread
@@ -110,7 +111,7 @@ class GamePlay:
         self.write_mode_button.grid_remove()
         self.epoch_agent_button.grid_remove()
         self.single_agent_button.grid_remove()
-        self.next_move = self.agent.predict(self.history).best_counter()
+        self.next_move = self.agent.predict(self.history).best_counter_probabilistic()
         self.locate_play_table()
 
     def locate_agent_buttons(self):
@@ -138,19 +139,28 @@ class GamePlay:
         userChoice = Rock
         self.turn(userChoice)
         self.user_image.configure(image=self.rock_image_user)
-        self.next_move = self.agent.predict(self.history).best_counter()
+        if len(self.history) <= EPOCH * 2:
+            self.next_move = self.agent.predict(self.history).best_counter_probabilistic()
+        else:
+            self.next_move = self.agent.predict(self.history).best_counter()
 
     def user_choice_paper(self):
         userChoice = Paper
         self.turn(userChoice)
         self.user_image.configure(image=self.paper_image_user)
-        self.next_move = self.agent.predict(self.history).best_counter()
+        if len(self.history) <= EPOCH * 2:
+            self.next_move = self.agent.predict(self.history).best_counter_probabilistic()
+        else:
+            self.next_move = self.agent.predict(self.history).best_counter()
 
     def user_choice_scissors(self):
         userChoice = Scissors
         self.turn(userChoice)
         self.user_image.configure(image=self.scissors_image_user)
-        self.next_move = self.agent.predict(self.history).best_counter()
+        if len(self.history) <= EPOCH * 2:
+            self.next_move = self.agent.predict(self.history).best_counter_probabilistic()
+        else:
+            self.next_move = self.agent.predict(self.history).best_counter()
 
     # gameplay section
     def turn(self, user_choice):
