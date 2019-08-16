@@ -86,7 +86,7 @@ class GamePlay:
 
     def ai_agent_chosen(self):
         if self.write_mode.get():
-            self.output_file_path = "examples" + os.path.sep + "ai_examples.txt"
+            self.output_file_path = "final_games.txt"
         self.agent_chosen(Ai2(EPOCH, 5, 0.7))
         # running in the background todo # if we want
         # thread = threading.Thread(target=self.agent.basic_ai.build, args=())
@@ -109,8 +109,8 @@ class GamePlay:
         self.reflex_agent_button.grid_remove()
         self.random_agent_button.grid_remove()
         self.write_mode_button.grid_remove()
-        self.epoch_agent_button.grid_remove()
-        self.single_agent_button.grid_remove()
+        # self.epoch_agent_button.grid_remove()
+        # self.single_agent_button.grid_remove()
         self.next_move = self.agent.predict(self.history).best_counter_probabilistic()
         self.locate_play_table()
 
@@ -118,8 +118,8 @@ class GamePlay:
         self.ai_agent_button.grid(row=2, column=1)
         self.reflex_agent_button.grid(row=2, column=2)
         self.random_agent_button.grid(row=2, column=3)
-        self.epoch_agent_button.grid(row=3, column=2)
-        self.single_agent_button.grid(row=3, column=3)
+        # self.epoch_agent_button.grid(row=3, column=2)
+        # self.single_agent_button.grid(row=3, column=3)
         self.write_mode_button.grid(row=3, column=1)
 
     def locate_play_table(self):
