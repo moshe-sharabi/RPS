@@ -85,7 +85,7 @@ class Prediction:
         probabilities = probabilities / np.sum(probabilities)
         return np.random.choice(Choices, p=probabilities)
 
-    counter = best_counter  # todo change this to change to probability
+    counter = best_counter
 
 
 ##########################################################################################
@@ -224,7 +224,7 @@ class DecisionTree(object):
 
     def __init__(self, epsilon=0.01, tree_path=None):
         self.root = None
-        self.epsilon = epsilon  # todo use epsilon to prun
+        self.epsilon = epsilon
         if tree_path is not None:
             self.parse_tree_dic(tree_path)
 
@@ -325,7 +325,6 @@ class DecisionTree(object):
         """
         if node.leaf:
             return node.label
-        # todo check - I think it's fine (peleg)
         nodes_attribute_index = attribute_names.index(node.attribute)
         xs_parameter = x[nodes_attribute_index]
         children_num = parameters[node.attribute].index(xs_parameter)
@@ -349,7 +348,7 @@ class DecisionTree(object):
         with open(path, 'w') as fp:
             json.dump(dic, fp, indent=1)
         fp.close()
-        name = os.path.basename(path)
-        command = "git commit " + path + f" -m \"new {name}\""
-        os.system(command)
-        os.system('git push')
+        # name = os.path.basename(path)
+        # command = "git commit " + path + f" -m \"new {name}\""
+        # os.system(command)
+        # os.system('git push')
