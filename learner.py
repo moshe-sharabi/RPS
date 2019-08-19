@@ -1,5 +1,4 @@
 from decision_tree import *
-from attribute_functions import *
 from Constants import *
 import glob
 import random
@@ -357,7 +356,19 @@ class OnlineSingleTreeAgent:
 
 
 if __name__ == "__main__":
-    AI_agent().build()
+    agent1 = OnlineEpochAgent(6, 5, 0.7)
+    re_agent = Ai2(6, 5, 0.7)
+    last_move = []
+    history = []
+    history2 = []
+    for i in range(500):
+        ai_choice = agent1.predict(history).best_counter()
+        print("ai choice:" + ai_choice)
+        last_move = re_agent.predict(history2).best_counter()
+        print("reflex choice: " + last_move)
+        history.append(cons.PAIR_TRANSLATOR[last_move + ai_choice])
+        history2.append(cons.PAIR_TRANSLATOR[ai_choice + last_move])
+    agent1.get_wins()
     # flag = True
     # idk = OnlineEpochAgent(5, 3, 0.9)
     # last_choice = None
