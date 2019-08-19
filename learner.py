@@ -354,21 +354,38 @@ class OnlineSingleTreeAgent:
 
         return Dummy(self.last_play)
 
+def create_agent(name):
+    if name == "random":
+        return RandomAgent()
+    if name == "reflex":
+        return ReflexAgent()
+    if name == "ai":
+        return Ai2(6, 5, 0.7)
 
+def fuck_you_karasik(path, agent1_name, agent2_name):
+    text = ""
+
+    for j in range(15):
+        agent1 = create_agent(agent1_name)
+        agent2 = create_agent(agent2_name)
+        last_move = []
+        history = []
+        history2 = []
+        for i in range(150):
+            ai_choice = agent1.predict(history).best_counter()
+            last_move = agent2.predict(history2).best_counter()
+            history.append(cons.PAIR_TRANSLATOR[last_move + ai_choice])
+            history2.append(cons.PAIR_TRANSLATOR[ai_choice + last_move])
+        text += " ".join(history2) + "\n"
+
+    with open(path, "w+") as fp:
+        fp.write(text)
+        fp.close()
 if __name__ == "__main__":
-    agent1 = OnlineEpochAgent(6, 5, 0.7)
-    re_agent = Ai2(6, 5, 0.7)
-    last_move = []
-    history = []
-    history2 = []
-    for i in range(500):
-        ai_choice = agent1.predict(history).best_counter()
-        print("ai choice:" + ai_choice)
-        last_move = re_agent.predict(history2).best_counter()
-        print("reflex choice: " + last_move)
-        history.append(cons.PAIR_TRANSLATOR[last_move + ai_choice])
-        history2.append(cons.PAIR_TRANSLATOR[ai_choice + last_move])
-    agent1.get_wins()
+    fuck_you_karasik("examples\\random_vs_ai.txt", "random", "ai")
+    fuck_you_karasik("examples\\random_vs_reflex.txt", "random", "reflex")
+    fuck_you_karasik("examples\\reflex_vs_ai.txt", "reflex", "ai")
+    fuck_you_karasik("examples\\ai_vs_ai", "ai", "ai")
     # flag = True
     # idk = OnlineEpochAgent(5, 3, 0.9)
     # last_choice = None
