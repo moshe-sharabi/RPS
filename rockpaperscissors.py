@@ -87,7 +87,7 @@ class GamePlay:
         if self.write_mode.get():
             self.output_file_path = "final_games.txt"
         self.agent_chosen(Ai2(EPOCH, 5, 0.7))
-        # running in the background todo # if we want
+        # running in the background
         # thread = threading.Thread(target=self.agent.basic_ai.build, args=())
         # thread.daemon = True  # Daemonize thread
         # thread.start()
