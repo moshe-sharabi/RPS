@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import threading
 from random import *
 from tkinter import *
