@@ -107,7 +107,7 @@ class GamePlay:
         self.ai_agent_button.grid_remove()
         self.reflex_agent_button.grid_remove()
         self.random_agent_button.grid_remove()
-        self.write_mode_button.grid_remove()
+        # self.write_mode_button.grid_remove()
         # self.epoch_agent_button.grid_remove()
         # self.single_agent_button.grid_remove()
         self.next_move = self.agent.predict(self.history).best_counter_probabilistic()
@@ -119,7 +119,7 @@ class GamePlay:
         self.random_agent_button.grid(row=2, column=3)
         # self.epoch_agent_button.grid(row=3, column=2)
         # self.single_agent_button.grid(row=3, column=3)
-        self.write_mode_button.grid(row=3, column=1)
+        # self.write_mode_button.grid(row=3, column=1)
 
     def locate_play_table(self):
         # Tk GUI grid
