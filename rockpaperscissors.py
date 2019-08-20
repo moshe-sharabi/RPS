@@ -25,7 +25,7 @@ class GamePlay:
         # main program
         self.main_window = Tk()
         self.scores_text = "SCORE:\nYou: {}\nComputer: {}"
-        self.write_mode = BooleanVar(value=1)
+        self.write_mode = BooleanVar(value=0)
         self.main_window.title("Rock-Paper-Scissors by Nahaliel")
 
         # images
